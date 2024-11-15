@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="/css/dangky.css">
+</head>
+<body>
+    <div id="dangky">
+        <img src="/logo.png" alt="Logo" class="logo"/>
+        <h2>Đăng ký tài khoản</h2>
+        
+        <label for="ten">Tài Khoản: <span class="required">*</span></label>
+        <input type="text" class="txt" id="ten" placeholder="Nhập tên tài khoản..."/>
+        
+        <label for="hoten">Tên đầy đủ: <span class="required">*</span></label>
+        <input type="text" class="txt" id="hoten" placeholder="Nhập họ và tên..."/>
+        
+        <label for="email">Email: <span class="required">*</span></label>
+        <input type="email" class="txt" id="email" placeholder="Nhập email..."/>
+        
+        <label for="mk">Mật khẩu: <span class="required">*</span></label>
+        <input type="password" class="txt" id="mk" placeholder="Nhập mật khẩu..."/>
+        
+        <label for="confirm-mk">Xác nhận mật khẩu: <span class="required">*</span></label>
+        <input type="password" class="txt" id="confirm-mk" placeholder="Xác nhận mật khẩu..."/>
+        
+        <input type="button" value="ĐĂNG KÝ" id="dk" onclick="validateForm()"/>
+        
+        <div class="signin">
+            <span>Đã có tài khoản?</span>
+            <a href="./dangnhap.html">Đăng nhập ngay</a>
+        </div>
+    </div>
+</body>
+<script src="/js/dangky.js"></script>
+</html>

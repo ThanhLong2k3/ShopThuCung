@@ -1,0 +1,33 @@
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.deps.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.pdb
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\refint\DTO.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.pdb
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\ref\DTO.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.deps.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.pdb
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\refint\DTO.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.pdb
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\ref\DTO.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.deps.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.pdb
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\refint\DTO.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.pdb
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\ref\DTO.dll

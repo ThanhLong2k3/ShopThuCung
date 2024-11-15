@@ -1,0 +1,447 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dfdede;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: #f9758f;
+    display: flex;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+}
+.head-l{
+    width: 30%;height: 100%; background-color: rgb(252, 137, 175);display: flex;padding-left: 10%;
+}
+.head-r{
+    width: 70%; background-color:#e7e7e7;display: flex;
+}
+.timkiem {
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+
+    && input {
+        margin-top: 20px;
+        height: 30px;
+        border-radius: 5px;
+
+        width: 60%;
+    }
+
+    && button {
+        margin-top: 20px;
+        height: 30px;
+    }
+}
+
+.header-item {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10PX;
+}
+
+.header-item img {
+    height: 60%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-item span {
+    padding-top: 5px;
+}
+
+.content {
+   min-height: 500px; 
+    width: 80%;
+    margin-left: 10%;
+    background-color: white;
+    margin-top: 80px;
+}
+.content     h1 {
+    margin: 0; 
+    font-size: 20px;
+    padding-left: 20px;
+}
+.sp-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.anhsp{
+    padding: 20px;
+    height: 100%;
+    width: 35%;
+}
+
+.anh{
+    border-radius: 5px;
+}
+.camket {
+    margin-top: -10px;
+    width: 20%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.camket-container {
+    background-color: white;
+    border: 1px solid rgb(199, 191, 191);
+    padding: 10px;
+}
+
+.camket-header {
+    height: 20px;
+    width: 100%;
+    font-size: 13px;
+    border-bottom: 1px solid rgb(130, 122, 122);
+    text-align: center;
+    padding: 5px 0;
+    font-weight: bold;
+    color: black;
+}
+
+.camket ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.camket ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.camket ul li img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.camket ul li span {
+    flex-grow: 1;
+    color: black;
+}
+
+
+.contensp {
+    width: 45%;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.gia {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.gia-label {
+    color: black;
+}
+
+.gia del {
+    color: #999;
+}
+
+.gia-moi {
+    font-weight: 700;
+    color: red;
+    font-size: larger;
+    padding-left: 20px;
+}
+
+.ton-kho {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.ton-kho-status {
+    color: red;
+    font-weight: bold;
+}
+
+.ma-san-pham {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.ma {
+    color: #FF0000;
+}
+
+.mo-ta {
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.mo-ta li {
+    margin-bottom: 5px;
+}
+
+.them-gio-hang {
+    display: block;
+    width: 100%;
+    background-color: #f72585;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.them-gio-hang:hover {
+    background-color: #f72585;
+}
+.tanggiam{
+    display: flex;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.btn{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f72585;
+    border: 1px solid #ccc;
+    color: white;
+    cursor: pointer;
+
+}
+input[type="number"] {
+    width: 50px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    margin: 0;
+  }
+
+  .toan_bo_noi_dung {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+.noi_dung_trai {
+    width: 70%;
+    padding: 20px;
+    background-color: aliceblue;
+}
+.noi_dung_phai {
+    width: 30%;
+    padding: 20px;
+}
+.thanh_tab ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+.thanh_tab ul li {
+    margin-right: 20px;
+}
+.thanh_tab ul li:hover {color: #f72585;}
+.hop_mo_ta {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    height: 80px;
+    font-style: italic;
+}
+.chi_tiet {
+    margin-top: 20px;
+}
+.chi_tiet h2, .chi_tiet h3 {
+    color: #E91E63;
+}
+.chi_tiet ul {
+    padding-left: 20px;
+}
+.chi_tiet ul li {
+    list-style: disc;
+}
+.so_sanh {
+    border: 1px solid black;
+    padding: 10px;
+}
+.so_sanh h3 {
+    text-align: center;
+}
+.cac_muc_so_sanh {
+    display: flex;
+    flex-direction: column;
+}
+.muc_so_sanh {
+    display: flex;
+    margin-bottom: 10px;
+}
+.txt-ss{
+    border: 1px solid blue;width: 100px;border-radius: 5px;text-decoration: none;
+}
+.muc_so_sanh img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.muc_so_sanh div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.muc_so_sanh a {
+    color: #00F;
+}
+
+
+
+.anhcho{
+    clear: both;
+    width: 12.5%;
+    height: 100%;
+}
+.img{
+    margin-bottom: -300px;
+}#footerr {
+    background-color: #f9758f;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+#footer {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#lienlac {
+    width: 30%;
+}
+#lienlac h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#listll {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+#listll li {
+    margin-bottom: 10px;
+}
+#sdt {
+    text-decoration: none;
+    color: #a16b29;
+}
+#sdt:hover {
+    color: bisque;
+}
+#youtube, #chinhsach {
+    width: 30%;
+}
+#youtube h2, #chinhsach h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#youtube iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#chinhsach ul {
+    padding-left: 20px;
+}
+#chinhsach ul li {
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (min-width: 1280px) {
+    .ct-tensp{
+        height: 50px;width: 100%; background-color: aliceblue;display: flex;line-height: 50px;text-align: center;padding: 0;
+        && h1{
+            font-size: 28px;
+        }
+    }
+    
+  #cho{
+    margin:0px auto;
+   
+    margin-bottom: -30px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+}
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .head-l{
+        width: 100%;
+    }
+    .head-r{
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+    .ct-tensp h1{
+        font-size: 20px;
+    }
+    .sp-content{
+        display: block;
+    }
+    .anhsp{
+        width: 100%;
+    }
+    .contensp{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .camket{
+        width: 100%;
+    }
+    .toan_bo_noi_dung{
+        display: none;
+    }
+   
+        
+  #cho{
+    margin-top: -100px;
+   
+    margin-bottom: -30px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+}
+}

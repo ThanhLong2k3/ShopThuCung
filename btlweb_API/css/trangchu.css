@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#header{
+    margin:0px auto;
+    height: 300px;
+    width: 80%;
+    margin-top: 0px;
+}
+#h-b{
+    width: 100%;
+    background-color: bisque;
+    height: 40px;
+    line-height: 40px;
+}
+#h-banner{
+    width: 80%;
+    height: 40px;
+    margin: 0px auto;
+    line-height: 40px;
+}
+#h-banner ul{
+    width: 70%;
+    float: left;
+}
+#h-left{
+    width: 30%;
+    height: 300px;
+    line-height: 300px;
+    float: left;
+    margin-top: 30px;
+}
+#h-right{
+    width: 70%;
+    margin-top: 30px;
+    height: 300px;
+    float:right;
+}
+#lh{
+    width: 50px;
+    height: 200px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    
+}
+#bt{
+    margin-top: 10px;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+#bt:hover{
+    cursor: pointer;
+}
+#banner{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-top: 0px;
+}
+#banner li{
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 16px;
+    color: rgb(171, 142, 107);
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#banner li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(171, 142, 107);
+}
+#banner li:hover a{
+    cursor: pointer;
+    color: white;
+    background-color: rgb(171, 142, 107);
+}
+#dangnhap{
+    width: 150px;
+    height: 40px;
+    float: left;
+}
+#giohang{
+    float: right;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #ececec;
+    margin-top: 0px;
+}
+#giohang:hover{
+    cursor: pointer;
+}#slide {
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 250px;
+}
+#slides{
+    position: relative; 
+    margin-top: 0px;
+    width: 100%;
+    height: 250px;
+}
+#trai {
+    position: absolute;
+    z-index: 3;
+    height: 250px;
+    width: 30px;
+    line-height: 250px;
+    margin-top: -250px;
+    text-align: center;
+    left: 10px; 
+}
+
+#phai {
+    position: absolute;
+    z-index: 3;
+    margin-top: -250px;
+    height: 250px;
+    width: 30px;
+    line-height: 250px;
+    text-align: center;
+    right: 10px; 
+}
+#trai:hover,
+#phai:hover {
+    cursor: pointer;
+    border: 1px solid #ececec;
+}
+#main{
+    width: 80%;
+    min-height:1200px;
+    margin:0px auto;
+    font-family:Arial, Helvetica, sans-serif;
+    color:rgb(144, 118, 88);
+    text-align: center;
+}
+.sanpham{
+    height: 280px;
+    width: 100%;
+    padding-top: 0px;
+}
+#spnoibat{
+    display: flex;
+    list-style-type: none;
+    float: left;
+    padding-left: 0px;
+    width: 100%;
+    height: 250px;
+    margin-top: 0px;
+}
+#spnoibat li{
+    width: 24%;
+    height: 280px;
+    margin-top: 0px;
+    background-color: #FEF9EA;
+}
+.anhto{
+    width:100%;
+    height: 180px;
+}
+/* .mo{
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(209, 204, 204, 0.5); /* Màu đen với độ trong suốt 50% */
+.anhto:hover .mo{
+    cursor: pointer;
+    /* opacity: 1; */
+}
+.tenthu{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    max-height: 25px;
+}
+.giathu{
+    color: rgb(161, 107, 41);
+    font-weight: bold;
+    margin-top: 5px;
+}
+#cho{
+    margin:0px auto;
+    margin-bottom: -30px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+}
+.anhcho{
+    clear: both;
+    width: 12.5%;
+    height: 100%;
+}
+.img{
+    margin-bottom: -300px;
+}
+#footerr{
+    background-color: #FEF9EA;
+    height: 380px;
+    width: 100%;
+}
+#footer{
+    height: 380px;
+    width: 80%;
+    margin:35px auto;
+    color: rgb(161, 107, 41);
+    display: flex;
+}
+#lienlac{
+    width: 35%;
+}
+#listll{
+    list-style-type: disc;
+    margin-left: 0px;
+
+}
+#sdt:hover text{
+    color:bisque;
+}
+#chinhsach{
+    margin-left: 50px;
+}

@@ -1,0 +1,499 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\thucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\thucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\nhanvien_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\nhanvien_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\thucung_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\thucung_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\nhanvien_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\nhanvien_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\nhacungcap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\nhacungcap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\nhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\nhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\khachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\khachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\ikhachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\ikhachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\khachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\khachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\khachhang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\khachhang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\donnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\donnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\loaithucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\loaithucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\thucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\thucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\donbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\donbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\donnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\donnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\giohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\giohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\nhacungcaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\nhacungcaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\taikhoan_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\taikhoan_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\ctdonban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\ctdonban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\use\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\longm\\onedrive\\m\u00E1y t\u00EDnh\\btl_doan\\btl_doan\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NhanVienRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhanVienRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\NhanVienRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhanVienRepository.cs",
+              "RelativeToolTip": "DAL\\NhanVienRepository.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowG0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:00:41.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NhanVien_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhanVien_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\NhanVien_BLL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhanVien_BLL.cs",
+              "RelativeToolTip": "BLL\\NhanVien_BLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:08:14.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ThuCung_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ThuCung_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ThuCung_DTO.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ThuCung_DTO.cs",
+              "RelativeToolTip": "DTO\\ThuCung_DTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T07:51:26.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NhanVien_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\NhanVien_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\NhanVien_DTO.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\NhanVien_DTO.cs",
+              "RelativeToolTip": "DTO\\NhanVien_DTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:02:01.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThuCungRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThuCungRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\ThuCungRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThuCungRepository.cs",
+              "RelativeToolTip": "DAL\\ThuCungRepository.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAjwGMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T08:08:03.535Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NhanVien_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAA7wEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:41:41.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NhaCungCap_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowE8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:40:14.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Program.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Program.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:05:50.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "INhanVienRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhanVienRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interface\\INhanVienRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhanVienRepository.cs",
+              "RelativeToolTip": "DAL\\Interface\\INhanVienRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:08:02.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "KhachHang_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\KhachHang_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\KhachHang_BLL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\KhachHang_BLL.cs",
+              "RelativeToolTip": "BLL\\KhachHang_BLL.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:04:18.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IKhachHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IKhachHangRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interface\\IKhachHangRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IKhachHangRepository.cs",
+              "RelativeToolTip": "DAL\\Interface\\IKhachHangRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:04:00.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "KhachHang_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\KhachHang_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\KhachHang_DTO.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\KhachHang_DTO.cs",
+              "RelativeToolTip": "DTO\\KhachHang_DTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T03:53:49.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "KhachHang_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwDoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:45:18.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoaiThuCungRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\LoaiThuCungRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
+              "RelativeToolTip": "DAL\\LoaiThuCungRepository.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAwGIAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:00:51.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ThuCung_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAowE8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:41:32.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "KhachHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\KhachHangRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
+              "RelativeToolTip": "DAL\\KhachHangRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:06.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DonBan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAwCkAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:44:12.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GioHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\GioHangRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\GioHangRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\GioHangRepository.cs",
+              "RelativeToolTip": "DAL\\GioHangRepository.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowFUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:11.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "LoaiThuCung_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowFIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:44:50.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DonNhap_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAowE8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:45:35.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DonNhapRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonNhapRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\DonNhapRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonNhapRepository.cs",
+              "RelativeToolTip": "DAL\\DonNhapRepository.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:21.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DonBanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonBanRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\DonBanRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonBanRepository.cs",
+              "RelativeToolTip": "DAL\\DonBanRepository.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAswH8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:29.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "TaiKhoanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\TaiKhoanRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\TaiKhoanRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\TaiKhoanRepository.cs",
+              "RelativeToolTip": "DAL\\TaiKhoanRepository.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:00:33.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "DTO.csproj",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
+              "RelativeDocumentMoniker": "DTO\\DTO.csproj",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
+              "RelativeToolTip": "DTO\\DTO.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-05T07:45:03.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "NhaCungCapRepository.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhaCungCapRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\NhaCungCapRepository.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhaCungCapRepository.cs",
+              "RelativeToolTip": "DAL\\NhaCungCapRepository.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAswGUAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:39:28.244Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "TaiKhoan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:41:37.19Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CTDonBan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAqwB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:44:56.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\appsettings.json",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\appsettings.json",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\appsettings.json",
+              "RelativeToolTip": "QuanLyThuCung\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-02T07:41:45.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\appsettings.json",
+              "RelativeDocumentMoniker": "USE\\appsettings.json",
+              "ToolTip": "C:\\Users\\longm\\OneDrive\\M\u00E1y t\u00EDnh\\BTL_DOAN\\BTL_DOAN\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\appsettings.json",
+              "RelativeToolTip": "USE\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-02T07:41:40.87Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

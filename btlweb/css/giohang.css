@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: #f9758f;
+    display: flex;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+}
+.head-l{
+    width: 30%;height: 100%; background-color: rgb(252, 137, 175);display: flex;padding-left: 10%;
+}
+.head-r{
+    width: 70%; background-color:#e7e7e7;display: flex;
+}
+.timkiem {
+    margin-left: 20px;
+    height: 100%;
+    width: 100%;
+
+    && input {
+        margin-top: 20px;
+        height: 30px;
+        border-radius: 5px;
+
+        width: 60%;
+    }
+
+    && button {
+        margin-top: 20px;
+        height: 30px;
+    }
+}
+
+.header-item {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 10PX;
+}
+
+.header-item img {
+    height: 60%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header-item span {
+    padding-top: 5px;
+}
+
+#than {
+    margin-top: 100px; 
+    background-color: white;
+    width: 80%; 
+    margin-left: 10%;
+        display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /
+}
+
+
+#trai {
+    flex: 1; 
+    min-width: 300px;
+    padding: 10px;
+    margin-right: 10px; 
+    border-radius: 5px;
+    background-color: white;
+}
+
+#sanpham {
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+}
+
+#sanpham img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+
+#thongtin {
+    flex: 1; 
+}
+
+#gia {
+    display: flex;
+    align-items: center; 
+}
+
+#gia input[type="button"] {
+    background-color: #f9758f;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 5px; 
+}
+
+#gia input[type="number"] {
+    width: 40px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    margin: 0 5px; 
+}
+
+
+#phai {
+    flex: 1; 
+    min-width: 300px; 
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#lbtongtien {
+    font-size: 18px;
+}
+
+#tongtien {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    float: right;
+}
+
+#tt {
+    color: #828282;
+    font-size: 14px;
+    padding-left: 0; 
+    margin-top: 10px; 
+}
+
+#thanhtoan {
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: #f9758f;
+    border-radius: 5px;
+    border: none;
+    width: calc(100% - 20px); 
+    max-width: 200px; 
+    height: 40px;
+    margin-top: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    #than {
+        flex-direction: column;  
+    }
+    
+    #trai, #phai {
+        width: 100%; 
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+#cho{
+    margin:0px auto;
+   
+    margin-bottom: -30px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+}
+.anhcho{
+    clear: both;
+    width: 12.5%;
+    height: 100%;
+}
+.img{
+    margin-bottom: -300px;
+}#footerr {
+    background-color: #f9758f;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+#footer {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#lienlac {
+    width: 30%;
+}
+#lienlac h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#listll {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+#listll li {
+    margin-bottom: 10px;
+}
+#sdt {
+    text-decoration: none;
+    color: #a16b29;
+}
+#sdt:hover {
+    color: bisque;
+}
+#youtube, #chinhsach {
+    width: 30%;
+}
+#youtube h2, #chinhsach h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#youtube iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#chinhsach ul {
+    padding-left: 20px;
+}
+#chinhsach ul li {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 1280px) {
+   
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .head-l{
+        width: 100%;
+    }
+    .head-r{
+        display: none;
+    }
+}

@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.trang_quan_tri {
+    display: flex;
+    min-height: 720px;
+}
+
+.ben_trai {
+    width: 200px;
+    background-color: rgb(252, 137, 175);
+}
+.logo{
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #f8f5f5;
+    margin-bottom: 20px;
+
+}
+.logo h2{
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(252, 137, 175);
+    border: 1px solid #ffffff;
+    margin-top: -20px;
+}
+ul ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(252, 137, 175);
+    border: 1px solid #ffffff;
+    margin-top: -20px;
+}
+ul ul li {
+    margin: 10px 0;
+}
+ul ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+nav ul li {
+    margin: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+#ul_item{
+    margin-top: 10px;color: white;display: none;
+}
+nav ul li a:hover {
+    background-color:pink;
+}
+
+.noi_dung {
+    flex-grow: 1;
+    background-color: #fbf7f7e3;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(252, 137, 175);
+   
+        width: 100%;
+        height: 70px;
+        margin-top: 0px;
+    border: 1px solid white;
+}
+.thong_tin{
+    display: flex;
+    color: white;
+}
+
+.header .thong_tin p {
+    margin: 0;
+    padding: 0 15px;
+}
+
+.header .tai_khoan {
+    display: flex;
+    align-items: center;
+    background-color:pink;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.noi_dung_con{
+    width: 98%;
+    margin-left: 1%;
+    .thong_ke{
+        height: 100px;
+        width: 100%;
+        display: flex;
+
+        justify-content: space-between;
+        .thong_ke_item{
+            height: 80%;
+            width: 20%;
+            padding: 10px;
+            background-color:pink;
+            border: 1px solid rgb(231, 219, 219);
+            color: white;
+        }
+    }
+    .noidung_sanpham{
+        margin-top: 20px;
+        background-color:#fff;
+        height: 100%;
+        display: flex;
+        .thoi_tiet{
+            height: 100%;
+            width: 70%;
+            border: 1px solid pink;
+            
+        }
+        .san_pham_da_ban{
+            height: 100%;
+            width: 30%;
+            .san_pham_da_ban_item{
+                padding-left: 20px;
+                height: 10%;
+                color:  rgb(248, 31, 103);
+                width: 100%;
+                background-color: white;
+                border: 1px solid pink;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

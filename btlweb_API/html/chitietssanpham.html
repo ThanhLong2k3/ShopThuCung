@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/chitietsanpham.css">
+    <link rel="stylesheet" href="/css/home.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-search">
+            <a href="./Home.html" class="logo">
+                <img src="/logo.png" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <img src="/iconsearch.png" alt="Search" width="20" height="20">
+                </button>
+            </div>
+        </div>
+    
+        <nav class="nav-items">
+            <a href="./Home.html" class="nav-item">
+                <img src="/anh/gt.png" alt="Trang chủ">
+                <span>TRANG CHỦ</span>
+            </a>
+    
+            <!-- Giỏ hàng - Mặc định ẩn -->
+            <a href="./giohang.html" class="nav-item" id="cartLink" style="display: none;">
+                <img src="/anh/giohang.png" alt="Giỏ hàng">
+                <span>GIỎ HÀNG</span>
+            </a>
+    
+            <!-- Thông tin cá nhân - Mặc định ẩn -->
+            <a href="/profile" class="nav-item" id="profileLink" style="display: none;">
+                <img src="/anh/blog.png" alt="Thông tin">
+                <span>THÔNG TIN CÁ NHÂN</span>
+            </a>
+    
+            <div class="nav-item" id="userDropdown" style="display: none;">
+                <span id="userName" style="margin-right: 50px;"></span>
+                <div class="dropdown-content">
+                    <a href="/settings">Cài đặt</a>
+                    <a href="#" id="logoutBtn">Đăng xuất</a>
+                </div>
+            </div>
+    
+            <a href="./dangnhap.html" class="nav-item" id="loginBtn" style="margin-right: 100px;">
+                <span>ĐĂNG NHẬP</span>
+            </a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="ct-tensp">
+            <h1 id="tensp">Tên sản phẩm</h1>
+        </div>
+        <hr style="margin: 0;margin-bottom: 20px;">
+
+
+        <div class="sp-content">
+                <div class="anhsp">
+                    <img id="anh" src="/anh/phocbe2.jpg" style="height: 350px;width: 90%;" alt="">
+                    <div class="anh" style="width: 90%;height: 80px;margin-top: 10px;justify-content: space-between;display: flex;">
+                        <img class="anh" id="anh1" src="/anh/phocbe2.jpg" style="height: 100%;width: 20%;" alt="">
+                        <img class="anh" id="anh2" src="/anh/phocbe2.jpg" style="height: 100%;width: 20%;" alt="">
+                        <img class="anh" id="anh3" src="/anh/phocbe2.jpg" style="height: 100%;width: 20%;" alt="">
+                        <img class="anh" id="anh4" src="/anh/phocbe2.jpg" style="height: 100%;width: 20%;" alt="">
+                    </div>
+                </div>
+                <div class="contensp">
+                    <p class="gia">
+                        <span class="gia-label">Giá tham khảo: </span>
+                        <del>
+                            <span id="giacu">160.000đ</span>
+                        </del>
+                        <span class="gia-moi" ><strong id="giamoi">100.000</strong>vnđ</span>
+                    </p>
+                    <p class="ton-kho"><strong>Tồn kho:</strong> <span class="ton-kho-status" id="soLuongSp">1000</span></p>
+                    <p class="ma-san-pham">Mã sản phẩm: <span class="ma" id="maSp">SP012220</span></p>
+                    <ul class="mo-ta">
+                        <li>100% đậu nành tự nhiên, an toàn cho bé</li>
+                        <li>Không bụi, khử mùi tốt</li>
+                        <li>Hạt nhuyễn dùng được cho máy</li>
+                    </ul>
+                    <div class="tanggiam" >
+                        <div class="btn" onclick="giam()">-</div>
+                        <input id="soluong" type="number" value="1">
+                        <div class="btn" onclick="tang()">+</div>
+                    </div>
+                    <button class="them-gio-hang" onclick="addgh()" >THÊM VÀO GIỎ HÀNG</button>
+                    
+                </div>
+                
+
+
+                <div class="camket">
+                    <div class="camket-container">
+                        <div class="camket-header">CAM KẾT VỚI KHÁCH HÀNG</div>
+                        <ul>
+                            <li>
+                                <img src="/anh/camket-1.png" alt="">
+                                <span>Hàng chính hãng 100%</span>
+                            </li>
+                            <li>
+                                <img src="/anh/ck-2.png" alt="">
+                                <span>Uy tín chất lượng</span>
+                            </li>
+                            <li>
+                                <img src="/anh/ck-3.png" alt="">
+                                <span>Hỗ trợ liên tục trong quá trình sử dụng sản phẩm</span>
+                            </li>
+                            <li>
+                                <img src="/anh/ck-4.png" alt="">
+                                <span>Chính sách đổi trả rõ ràng</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <hr>
+        <div class="toan_bo_noi_dung">
+            <div class="noi_dung_trai">
+                <div class="thanh_tab">
+                    <ul>
+                        <li>Mô Tả</li>
+                        <li>Thành Phần Chính</li>
+                        <li>Hướng Dẫn Sử Dụng</li>
+                        <li>Đánh Giá</li>
+                        <li>Hỏi Đáp</li>
+                    </ul>
+                </div>
+                <div class="hop_mo_ta" id="moTa">
+                    Cát đậu nành vệ sinh cho mèo Miao với thành phần 100% từ đậu nành nên rất an toàn cho mèo cưng nhà bạn. Với những ưu điểm vượt trội như hạt cát nhỏ, nhuyễn có thể sử dụng bằng máy, khử mùi rất tốt, không bị bụi, vón cục nhanh, thấm hút tốt và có thể phân hủy trong môi trường nên rất tiện cho việc xả bằng bồn cầu.
+                </div>
+                <div class="chi_tiet">
+                    <h2 id="tenspsau">Cát đậu nành Miao vệ sinh cho mèo</h2>
+                    <ul>
+                        <li>Thương hiệu Miao</li>
+                        <li>Khối lượng 6lit</li>
+                        <li>Có 5 mùi là dâu sữa, cà phê, than tre, đào , trà xanh</li>
+                        <li>Dành cho mèo mọi lứa tuổi</li>
+                    </ul>
+                    <h3>Công dụng của cát Miao là gì ?</h3>
+                    <p>Cát được làm từ thiên nhiên, không gây hại cho mèo của bạn. Cát đậu nành Miao rất ít bụi nên rất an toàn cho hô hấp của mèo cưng, đặc biệt khi mèo con vô tình nuốt phải vẫn không gây hại. Đặc biệt dành cho các “sen” thường hay dị ứng và nhạy cảm về đường hô hấp.</p>
+                    <p>Tác dụng của cát đậu nành Miao còn vượt trội hơn ở phần khử mùi tốt, cát thấm hút nhanh, vón cục chắc không bị vỡ, hạt to không lo dính chân mèo và có thể xả vào bồn cầu mà không lo tắc nghẽn vì độ phân hủy 100%.</p>
+                </div>
+            </div>
+            <div class="noi_dung_phai">
+                <div class="so_sanh">
+                    <h3>So sách với</h3>
+                    <div class="cac_muc_so_sanh">
+                        <div class="muc_so_sanh">
+                            <img src="/anh/spss1.jpg" alt="Găng tay tắm khô cho chó mèo">
+                            <div>
+                                <span>Găng tay tắm khô cho chó mèo (5 cái)</span>
+                                <a href="#" class="txt-ss">So sanh chi tiet</a>
+                            </div>
+                        </div>
+                        <div class="muc_so_sanh">
+                            <img src="/anh/spss2.jpg" alt="Bánh thưởng cỏ mèo mix thịt gà">
+                            <div>
+                                <span>Bánh thưởng cỏ mèo mix thịt gà cho mèo tiêu búi lông</span>
+                                <a href="#" class="txt-ss">So sanh chi tiet</a>
+                            </div>
+                        </div>
+                        <div class="muc_so_sanh">
+                            <img src="/anh/spss3.jpg" alt="Sữa tắm Master Care">
+                            <div>
+                                <span>Sữa tắm Master Care khử mùi, giảm rụng lông, ngăn ngừa ve ghẻ</span>
+                                <a href="#" class="txt-ss">So sanh chi tiet</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <br/><br/>
+    <hr size="3" color="#f72585"/>   
+    <div id="cho">
+        <div class="anhcho">
+            <img src="/anh/dog1.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog2.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog3.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog4.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog5.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog6.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog7.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog8.png" class="img" alt="Jack Russel">
+        </div>
+    </div>
+    <hr size="3" color="#f72585"/>
+    <div id="footerr">
+        <div id="footer">
+            <br/>
+            <div id="lienlac">
+                <h2>LIÊN LẠC</h2>
+                <ul id="listll">
+                    <li><p>Địa chỉ</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8074959677538!2d106.05027497519545!3d20.92006319150312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a498186ff919%3A0x64e2a3025899d2eb!2zTGnDqnUgWMOhLCBZw6puIE3hu7ksIEjGsG5nIFnDqm4sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1718295495067!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                    <li><p>Điện thoại: <a href="tel:0963726658" id="sdt" style="text-decoration: none;color: rgb(161, 107, 41);">0963.726.658</a></p>             
+                    </li>
+                </ul>
+            </div>
+            <div id="youtube">
+                <h2>YOUTUBE</h2>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/_nLUJu4ev_c?si=zl3I4cu3zlJGwmWB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="chinhsach">
+                <h2>CHÍNH SÁCH</h2>
+                <ul>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách mua bán</li>
+                    <li>Chính sách vận chuyển và bảo hành</li>
+                    <li>Chính sách hỗ trợ trả góp 0%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/js/JS_ADMIN/apiService.js    "></script>
+<script src="/js/trangchu.js"></script>
+
+
+<script src="/js/ctsp.js"></script>
+</html>

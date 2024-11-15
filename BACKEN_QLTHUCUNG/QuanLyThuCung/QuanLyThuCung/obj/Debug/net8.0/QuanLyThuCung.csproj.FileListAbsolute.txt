@@ -1,0 +1,261 @@
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\appsettings.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.exe
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.deps.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.runtimeconfig.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.pdb
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\BLL.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DAL.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DTO.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\BLL.pdb
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DAL.pdb
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DTO.pdb
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.csproj.AssemblyReference.cache
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.AssemblyInfoInputs.cache
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.AssemblyInfo.cs
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.csproj.CoreCompileInputs.cache
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.QuanLyThuCung.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.build.QuanLyThuCung.props
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.QuanLyThuCung.props
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.QuanLyThuCung.props
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\scopedcss\bundle\QuanLyThuCung.styles.css
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyTh.E1A71470.Up2Date
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\refint\QuanLyThuCung.dll
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.pdb
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.genruntimeconfig.cache
+C:\Users\plong\Desktop\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\ref\QuanLyThuCung.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\appsettings.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.exe
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.deps.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.runtimeconfig.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.pdb
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\BLL.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DAL.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DTO.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\BLL.pdb
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DAL.pdb
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DTO.pdb
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.csproj.AssemblyReference.cache
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.AssemblyInfoInputs.cache
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.AssemblyInfo.cs
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.csproj.CoreCompileInputs.cache
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.QuanLyThuCung.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.build.QuanLyThuCung.props
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.QuanLyThuCung.props
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.QuanLyThuCung.props
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\scopedcss\bundle\QuanLyThuCung.styles.css
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyTh.E1A71470.Up2Date
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\refint\QuanLyThuCung.dll
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.pdb
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.genruntimeconfig.cache
+C:\Users\longm\OneDrive\Máy tính\BTL_DOAN\BTL_DOAN\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\ref\QuanLyThuCung.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\appsettings.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.exe
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.deps.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.runtimeconfig.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\QuanLyThuCung.pdb
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\BLL.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DAL.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DTO.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\BLL.pdb
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DAL.pdb
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\bin\Debug\net8.0\DTO.pdb
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.csproj.AssemblyReference.cache
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.AssemblyInfoInputs.cache
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.AssemblyInfo.cs
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.csproj.CoreCompileInputs.cache
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.QuanLyThuCung.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.build.QuanLyThuCung.props
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.QuanLyThuCung.props
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.QuanLyThuCung.props
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\scopedcss\bundle\QuanLyThuCung.styles.css
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyTh.E1A71470.Up2Date
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\refint\QuanLyThuCung.dll
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.pdb
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\QuanLyThuCung.genruntimeconfig.cache
+C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\QuanLyThuCung\obj\Debug\net8.0\ref\QuanLyThuCung.dll

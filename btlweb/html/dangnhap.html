@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập tài khoản</title>
+    <link rel="stylesheet" href="/css/dangnhap.css">
+</head>
+<body>
+    <div id="dangnhap">
+        <img src="/logo.png" alt="Logo" class="logo"/>
+        <h2>Đăng nhập</h2>
+        <label> Đăng nhập bằng :</label>
+        <select name="quyen" id="quyen"  class="txt">
+            <option value="Use">NGƯỜI DÙNG</option>
+            <option value="Admin">ADMIN</option>
+        </select>
+        <label for="sdt">Tên đăng nhập hoặc email:</label>
+        <input type="text" class="txt" id="tk" placeholder="Nhập Tên đăng nhập hoặc email..."/>
+        
+        <label for="mk">Mật khẩu:</label>
+        <input type="password" class="txt" id="mk" placeholder="Nhập mật khẩu..."/>
+        
+        <a href="#" class="forgot-password">Quên mật khẩu?</a>
+        
+        <input type="button" onclick="dangnhap()" value="ĐĂNG NHẬP" id="dn"/>
+        
+        <div class="divider">
+            <hr>
+            <span>Hoặc đăng nhập bằng</span>
+            <hr>
+        </div>
+        
+        <input type="button" id="gg" class="social-login" alt="Google Login"/>
+        
+        <div class="signup">
+            <span>Chưa có tài khoản?</span>
+            <a href="#">Đăng ký tài khoản mới</a>
+        </div>
+    </div>
+</body>
+<script src="/js/dangky.js"></script>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="/css/giohang.css">
+    <link rel="stylesheet" href="/css/home.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo-search">
+            <a href="./Home.html" class="logo">
+                <img src="/logo.png" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <img src="/iconsearch.png" alt="Search" width="20" height="20">
+                </button>
+            </div>
+        </div>
+    
+        <nav class="nav-items">
+            <a href="./Home.html" class="nav-item">
+                <img src="/anh/gt.png" alt="Trang chủ">
+                <span>TRANG CHỦ</span>
+            </a>
+    
+            <!-- Giỏ hàng - Mặc định ẩn -->
+            <a href="./giohang.html" class="nav-item" id="cartLink" style="display: none;">
+                <img src="/anh/giohang.png" alt="Giỏ hàng">
+                <span>GIỎ HÀNG</span>
+            </a>
+    
+            <!-- Thông tin cá nhân - Mặc định ẩn -->
+            <a href="/profile" class="nav-item" id="profileLink" style="display: none;">
+                <img src="/anh/blog.png" alt="Thông tin">
+                <span>THÔNG TIN CÁ NHÂN</span>
+            </a>
+    
+            <div class="nav-item" id="userDropdown" style="display: none;">
+                <span id="userName" style="margin-right: 50px;"></span>
+                <div class="dropdown-content">
+                    <a href="/settings">Cài đặt</a>
+                    <a href="#" id="logoutBtn">Đăng xuất</a>
+                </div>
+            </div>
+    
+            <a href="./dangnhap.html" class="nav-item" id="loginBtn" style="margin-right: 100px;">
+                <span>ĐĂNG NHẬP</span>
+            </a>
+        </nav>
+    </header>
+   
+    <div id="than">
+        <div id="trai">
+            <span style="font-size: 26px;font-weight: bold;">Giỏ hàng của bạn</span>
+            <hr size="2" color="bisque" style="margin-top:0px"/>
+            <span id="tongsp"></span>
+            <br/><br/>
+            <div class="listsp">
+                
+            </div>
+        </div>
+        <div id="phai">
+            <span style="font-size: 26px;font-weight: bold;">Thông tin đơn hàng</span>
+            <hr size="2" color="bisque" style="margin-top:0px"/>
+            <span id="lbtongtien">Tổng tiền:</span>
+            <span id="tongtien">Tổng tiền thanh toán</span>
+            <br/><br/>
+            <hr size="2" color="bisque" style="margin-top:0px"/>
+            <ul id="tt">
+                <li><p>
+                    Miễn phí vận chuyển cho đơn hàng từ 399.000đ (giảm tối đa 20.000đ)
+                </p></li>
+                <li><p>
+                    Giao hàng hỏa tốc trong vòng 4 giờ, áp dụng tại khu vực tỉnh Hưng Yên
+                </p></li>
+            </ul>
+            <a href="./ThanhToan.html"> <input type="button"  id="thanhtoan" value="THANH TOÁN"/></a>
+        </div>
+    </div>
+    <br/><br/>
+    <hr size="3" color="#f72585"/>   
+    <div id="cho">
+        <div class="anhcho">
+            <img src="/anh/dog1.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog2.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog3.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog4.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog5.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog6.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog7.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog8.png" class="img" alt="Jack Russel">
+        </div>
+    </div>
+    <hr size="3" color="#f72585"/>
+    <div id="footerr">
+        <div id="footer">
+            <br/>
+            <div id="lienlac">
+                <h2>LIÊN LẠC</h2>
+                <ul id="listll">
+                    <li><p>Địa chỉ</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8074959677538!2d106.05027497519545!3d20.92006319150312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a498186ff919%3A0x64e2a3025899d2eb!2zTGnDqnUgWMOhLCBZw6puIE3hu7ksIEjGsG5nIFnDqm4sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1718295495067!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                    <li><p>Điện thoại: <a href="tel:0963726658" id="sdt" style="text-decoration: none;color: rgb(161, 107, 41);">0963.726.658</a></p>             
+                    </li>
+                </ul>
+            </div>
+            <div id="youtube">
+                <h2>YOUTUBE</h2>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/_nLUJu4ev_c?si=zl3I4cu3zlJGwmWB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="chinhsach">
+                <h2>CHÍNH SÁCH</h2>
+                <ul>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách mua bán</li>
+                    <li>Chính sách vận chuyển và bảo hành</li>
+                    <li>Chính sách hỗ trợ trả góp 0%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/js/JS_ADMIN/apiService.js    "></script>
+
+
+<script src="/js/giohang.js"></script>
+
+</html>

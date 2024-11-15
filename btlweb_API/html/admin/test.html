@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Đơn Hàng</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .header {
+            background-color: #00a8ff;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .header button {
+            background-color: #0097e6;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .cart {
+            padding: 20px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 0;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-item .remove {
+            color: red;
+            cursor: pointer;
+        }
+        .cart-item .quantity {
+            display: flex;
+            align-items: center;
+        }
+        .cart-item .quantity button {
+            background-color: #e0e0e0;
+            border: none;
+            width: 25px;
+            height: 25px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .cart-item .quantity input {
+            width: 40px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            margin: 0 5px;
+        }
+        .total {
+            background-color: #f8f8f8;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+        .product {
+            width: calc(20% - 16px);
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .product h3 {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .product p {
+            margin: 10px 0;
+            color: #00a8ff;
+            font-weight: bold;
+        }
+        .product button {
+            background-color: #00a8ff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .product {
+                width: calc(33.33% - 13.33px);
+            }
+        }
+        @media (max-width: 480px) {
+            .product {
+                width: calc(50% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hóa đơn 1</h1>
+            <button id="addProduct">+</button>
+        </div>
+        <div class="cart" id="cart">
+            <!-- Cart items will be added here dynamically -->
+        </div>
+        <div class="total">
+            <span>Tổng cộng:</span>
+            <span id="totalAmount">0 đ</span>
+        </div>
+    </div>
+    <div class="product-list" id="productList">
+        <!-- Products will be added here dynamically -->
+    </div>
+
+    <script>
+        const products = [
+            { id: 'SP000002', name: 'Set mỹ phẩm Whoo tái sinh da cao cấp', price: 650000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000005', name: 'Combo bộ gội xả ủ Color Beaute đặc biệt', price: 350000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000004', name: 'Set mỹ phẩm Whoo tái sinh da cao cấp 6 lọ', price: 800000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000003', name: 'Set mỹ phẩm Ohui dưỡng trắng da và dành cho da lão hóa', price: 500000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000006', name: 'Kem dưỡng da', price: 200000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000007', name: 'Sữa rửa mặt', price: 150000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000008', name: 'Nước hoa hồng', price: 180000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000009', name: 'Serum vitamin C', price: 300000, image: 'https://via.placeholder.com/150' },
+            { id: 'SP000010', name: 'Mặt nạ dưỡng ẩm', price: 50000, image: 'https://via.placeholder.com/150' },
+        ];
+
+        let cart = [];
+
+        function renderProducts() {
+            const productList = document.getElementById('productList');
+            productList.innerHTML = '';
+            products.forEach(product => {
+                const productElement = document.createElement('div');
+                productElement.className = 'product';
+                productElement.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p>${product.price.toLocaleString()} đ</p>
+                    <button onclick="addToCart('${product.id}')">Thêm vào giỏ hàng</button>
+                `;
+                productList.appendChild(productElement);
+            });
+        }
+
+        function renderCart() {
+            const cartElement = document.getElementById('cart');
+            cartElement.innerHTML = '';
+            cart.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'cart-item';
+                cartItem.innerHTML = `
+                    <span class="remove" onclick="removeFromCart('${item.id}')">&times;</span>
+                    <span>${item.name}</span>
+                    <div class="quantity">
+                        <button onclick="decreaseQuantity('${item.id}')">-</button>
+                        <input type="number" value="${item.quantity}" onchange="updateQuantity('${item.id}', this.value)">
+                        <button onclick="increaseQuantity('${item.id}')">+</button>
+                    </div>
+                    <span>${(item.price * item.quantity).toLocaleString()} đ</span>
+                `;
+                cartElement.appendChild(cartItem);
+            });
+            updateTotal();
+        }
+
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            const existingItem = cart.find(item => item.id === productId);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+            renderCart();
+        }
+
+        function removeFromCart(productId) {
+            cart = cart.filter(item => item.id !== productId);
+            renderCart();
+        }
+
+        function updateQuantity(productId, newQuantity) {
+            const item = cart.find(item => item.id === productId);
+            if (item) {
+                item.quantity = parseInt(newQuantity) || 1;
+                renderCart();
+            }
+        }
+
+        function increaseQuantity(productId) {
+            const item = cart.find(item => item.id === productId);
+            if (item) {
+                item.quantity++;
+                renderCart();
+            }
+        }
+
+        function decreaseQuantity(productId) {
+            const item = cart.find(item => item.id === productId);
+            if (item && item.quantity > 1) {
+                item.quantity--;
+                renderCart();
+            }
+        }
+
+        function updateTotal() {
+            const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+            document.getElementById('totalAmount').textContent = totalAmount.toLocaleString() + ' đ';
+        }
+
+        // Initialize the page
+        renderProducts();
+        renderCart();
+
+        // Add event listener for the "Add Product" button
+        document.getElementById('addProduct').addEventListener('click', () => {
+            const randomProduct = products[Math.floor(Math.random() * products.length)];
+            addToCart(randomProduct.id);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(/anh/nen.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#dangky {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    background-color: white;
+    text-align: center;
+}
+
+.logo {
+    height: 130px;
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #f9758f;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+label .required {
+    color: red;
+}
+
+.txt {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#dk {
+    background-color: #f9758f;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#dk:hover {
+    cursor: pointer;
+    background-color: #e8657f;
+}
+
+.signin {
+    font-size: 14px;
+}
+
+.signin a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signin a:hover {
+    text-decoration: underline;
+}

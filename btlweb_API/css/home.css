@@ -1,0 +1,712 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #dfdede;
+        scroll-behavior: smooth;
+    
+}
+
+.header {
+    background-color: #fc89af;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 40%;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-items {
+    
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+.link-reset {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    width: 100%; 
+}
+
+.anhcon{
+    display: none;
+}
+
+.menucon {
+    border-radius: 5px;
+    height: 180px;
+    width: 30px;
+    display: none;
+    background-color: #f72585;
+    position: fixed;
+    top: 30%;
+    left: 0;
+}
+
+.conten-nemucon {
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+    background-color: #f76f25;
+    position: fixed;
+    top: 30%;
+    display: none;
+    left: 10px;
+    margin-left: 30px;
+    padding: 10px 10px 0px 10px;
+    z-index: 8;
+}
+.menucon-1 {
+    height: 20%;
+    width: 100%;
+    background-color: #f9758f;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+}
+
+.menucon-1 img {
+    height: 70%;
+    width: 70%;
+}
+
+
+
+.menucon-1 {
+    height: 20%;
+    width: 100%;
+    background-color: #f9758f;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.menucon-1:hover .conten-nemucon {
+    display: block;
+}
+.header-item:hover {
+    color: pink;
+    background-color: white;
+}
+
+
+
+.cs-r {
+    overflow: hidden;
+    color: #656565;
+    font-size: 13px;
+    text-align: left;
+}
+footer {
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+
+.chinhsach-ft {
+    height: 70px;
+    width: 100%;
+    display: flex;
+}
+
+
+
+#cho{
+    margin:0px auto;
+   
+    margin-bottom: -30px;
+    width: 80%;
+    height: 300px;
+    display: flex;
+}
+.anhcho{
+    position: relative; 
+    display: inline-block; 
+    clear: both;
+    width: 12.5%;
+    height: 100%;
+}
+.img{
+    margin-bottom: -300px;
+    transition: transform 0.3s ease;
+
+}
+
+
+
+
+.anhcho .content {
+    position: absolute;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-90deg) translate(-60px, -60px);
+    opacity: 0;
+    text-align: center;
+    width: 150px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.anhcho:hover .img {
+    transform: scale(1.1);
+}
+
+.anhcho:hover .content {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg) translate(0, 0);
+}
+
+
+#footer {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-color: #f9758f;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#lienlac {
+    width: 30%;
+}
+#lienlac h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#listll {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+#listll li {
+    margin-bottom: 10px;
+}
+#sdt {
+    text-decoration: none;
+    color: #a16b29;
+}
+#sdt:hover {
+    color: bisque;
+}
+#youtube, #chinhsach {
+    width: 30%;
+}
+#youtube h2, #chinhsach h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+#youtube iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#chinhsach ul {
+    padding-left: 20px;
+}
+#chinhsach ul li {
+    margin-bottom: 10px;
+}
+#chinhsach{
+    margin-left: 50px;
+}
+.btn_top{
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #ffffff;
+    position: fixed;
+    display: none;
+    top: 80%;
+    right: 10px;
+    z-index: 8;
+    text-align: center;line-height: 50px;
+}
+
+.sanphamuathich {
+    height: 300px;
+    width: 80%;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.titel {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    line-height: 50px;
+    text-align: center;
+    && span{
+        color:  rgb(234, 49, 79);font-size: 15px;
+    }
+    && .sp1{
+        margin-left: 70%;
+    }
+}
+.anhtt{
+    margin-left: 10px;background-color:#f9758f   ; line-height: 100%;height: 100%;width: 50px;margin-right: 20px;
+}
+.spuathich {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sp-uathich:hover {
+    transform: scale(1.05);
+}
+.sp-uathich {
+    box-shadow: 5px 5px 10px #888888;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    .sptren {
+        width: 90%;
+        margin-left: 5%;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .giamgia {
+        border-radius: 5px;
+        width: 40px;
+        line-height: 22px;
+        background-color: #f9758f;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 5;
+    }
+
+    .anh {
+        width: 100%;
+        position: relative;
+    }
+
+    .chusp {
+        width: 90%;
+        height: 20%;
+        margin-left: 5%;
+    }
+
+}
+
+/*PC*/
+@media only screen and (min-width: 1280px) {
+    .danhmuc-paner{
+        width: 100%;
+    }
+    .danhmuc{
+        width: 10%;
+    }
+    .paner{
+    
+        && img{
+            width: 100%;
+            height: 100%;
+            padding-top: -20px;
+            object-fit: contain;
+        }
+    }
+    
+.danhmuc-paner {
+    margin-top: 90px;
+    min-height: 410px;
+    height: 200px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+}
+.head-R{
+    width: 70%; background-color:#e7e7e7;display: flex;
+}
+.danhmuc {
+    background-color: white;
+    min-height: 410px;
+    width: 20%;
+
+    && ul {
+        margin-top: 0px;
+        margin-left: -40px;
+    }
+
+    && ul li {
+        list-style: none;
+        line-height: 30px;
+        border: 1px solid black;
+
+    }
+    && li:hover{
+        background-color: #f72585;
+        color: white;
+
+    }
+}
+.anh{
+    height: 218px;
+}
+.slides {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    z-index: 2;
+}
+.chinhsach {
+    width: 80%;
+    margin-left: 10%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.chinhsach-con {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+
+}
+
+.loaisp {
+    width: 80%;
+    margin-left: 10%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loai-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    background-color: white;
+    text-align: center;
+    border-right: 1px solid #ccc;
+
+}
+
+.loai-item span {
+    font-size: 15px;
+    padding-bottom: 0px;
+}
+
+.loai-item img {
+    padding-left: -10px;
+    max-width: 100%;
+    max-height: 50px; 
+    object-fit: contain;
+}
+
+.loai-item:hover {
+    cursor: pointer;
+    color: #f9758f;
+    background-color: white;
+}
+
+
+
+    
+}
+
+/* mobile*/
+@media only screen and (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #dfdede;
+            scroll-behavior: smooth;
+    }
+    header {
+        height: 50px;
+        width: 100%;
+        background-color: #f9758f;
+        display: flex;
+        position: fixed;
+        z-index: 8;
+        top: 0;
+        left: 0;
+    }
+    .head-R{
+        display: none;
+    }
+    .timkiem {
+        display: none;
+    }
+
+    .danhmuc{
+        display: none;
+    }
+    .danhmuc-paner{
+        width: 100%;
+    }
+    
+    .paner{
+        margin-left: 10%;
+        width:80%;
+        margin-top: 60px;
+        && img{
+            width: 100%;
+            height: 100%;
+            padding-top: -20px;
+            object-fit: contain;
+        }
+    }
+    
+    .chinhsach {
+        width: 80%;
+        margin-left: 10%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+    }
+    
+    .chinhsach-con {
+        height: 120%;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+.loaisp {
+    width: 80%;
+    margin-left: 10%;
+    height: 40px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.loai-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 10%;
+    background-color: white;
+    text-align: center;
+    border-right: 1px solid #ccc;
+
+}
+
+.loai-item span {
+   display: none;
+}
+
+.loai-item img {
+    padding-left: -10px;
+    max-width: 100%;
+    max-height: 50px; 
+    object-fit: contain;
+}
+
+.loai-item:hover {
+    cursor: pointer;
+    color: #f9758f;
+    background-color: white;
+}
+
+.sanphamuathich {
+    width: 80%;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 20px;
+    height: 1000PX;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.titel {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 50px;
+    text-align: center;
+}
+.titel span {
+    color: rgb(234, 49, 79);
+    font-size: 15px;
+}
+.titel .sp1 {
+    display: none;
+}
+.anhtt {
+    margin-left: 10px;
+    background-color: #f9758f;
+    line-height: 100%;
+    height: 100%;
+    width: 50px;
+    margin-right: 20px;
+}
+.spuathich {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.sp-uathich:hover {
+    transform: scale(1.05);
+}
+.sp-uathich {
+    box-shadow: 5px 5px 10px #888888;
+    height: 250px;
+    width: 100%;
+    border-right: 1px solid #ccc;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.sptren {
+    width: 90%;
+    margin-left: 5%;
+    position: relative;
+    margin-top: 10px;
+}
+.giamgia {
+    border-radius: 5px;
+    width: 40px;
+    line-height: 22px;
+    background-color: #f9758f;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 5;
+}
+.anh {
+    width: 121PX;
+    position: relative;
+}
+.chusp {
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.menucon{
+    display: none;
+}
+.cs-r {
+  display: none;
+}
+
+}
+

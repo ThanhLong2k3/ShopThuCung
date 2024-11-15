@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Líu Lo Pet Shop</title>
+    <link rel="stylesheet" href="/css/trangchu.css">
+ 
+</head>
+<body>
+    <div id="lh">
+        <a href="tel:0963726658"><input type="button" id="bt" style="background-image: url(/anh/dt.png)"/></a>
+        <a href="https://www.facebook.com/plinh11824/?locale=vi_VN"><input type="button" id="bt" style="background-image: url(/anh/fb.png)"/></a>
+        <a href="https://zalo.me/0963726658"><input type="button" id="bt" style="background-image: url(/anh/zalo.png)"/></a>
+    </div>
+    <div id="h-b">
+        <div id="h-banner">
+            <ul id="banner">
+                <li>TRANG CHỦ</li>
+                <li>THÚ CƯNG <img src="/anh/nau.png" style="float:right;width: 20px;height: 20px;background-size: cover;margin-top: 5px;"/></li>
+                <li>PHỤ KIỆN</li>
+                <li>DỊCH VỤ</li>
+                <li>GIỚI THIỆU</li>
+                <li><a href="#lienlac" style="text-decoration: none;color: rgb(171, 142, 107);">LIÊN HỆ</a></li>
+            </ul>
+            <span style="color: rgb(171, 142, 107);font-size: 14px;float: right;" >Giỏ hàng</span>
+            <input type="button" id="giohang" style="background-image: url(/anh/giohang.png);"/> 
+            <div id="dangnhap">
+                <img src="/anh/dangnhap.png" style="background-size: cover;width: 30px; height: 30px;margin-top: 5px;float: left;"/>
+                <input type="button" value="Tài khoản" style="border:none;color: rgb(171, 142, 107); background-color: #ffffff00;"/>
+
+            </div>
+        </div>
+         
+    </div>
+    <div id="header">
+        <div id="timkiem" style="width: 100%; height: 40px;clear: both;">
+            <div id="loai" style="width: 30%;float: left;border-radius: 5px;border:1px solid #DDD;height: 40px;">
+                <span style="line-height: 40px;color: #797979;font-size: 15px;">Các loại thú cưng</span>
+                <img src="/anh/den.png" style="float:right;width: 20px; margin-right: 5px ;margin-top: 10px; height: 20px;background-size: cover;"/>
+            </div>
+            <div id="timkiemten" style="width: 70%;height: 40px;float:right">
+                <input type="text" placeholder="Tìm kiếm..." style="width: 94.5%;float: left;height: 40px;border: 1px solid #DDD;border-radius: 5px;"/>
+                <input type="button" id="tk" style="width: 40px;height: 40px;background-image: url(timkiem.png);float: right;border:none;border-radius: 5px;border: 1px solid #DDD;"/>
+            </div>
+        </div>
+        <div id="h-left">
+            <img src="/anh/logo.png" style="width: 200px;height: 200px;margin-top: 0px;margin-left: 50px;"/>
+        </div>
+        <div id="h-right">       
+            <div id="slide">
+                        <div id="slides">
+
+                        </div>
+                    
+                <div id="trai" >
+                    <input type="button" onclick="slidetruoc()" style="background-image: url(/anh/left.png);width: 30px;height: 30px;background-size: cover;border: none;"/>
+                </div>
+                <div id="phai">
+                    <input type="button" onclick="slidesau()" style="background-image: url(/anh/right.png);width: 30px;height: 30px;background-size: cover;border: none;"/>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <br/><br/><br/>
+    <hr size="3" color="bisque"/>
+    <div id="main">
+        <h2 class="muc">TẤT CẢ THÚ CƯNG</h2>
+        <div class="mo"></div>
+        <div class="sanpham">
+            <ul id="spnoibat">
+                <!-- <div class="mo"></div> -->
+                <li>
+                    <img class="anhto" src="/anh/phocbe1.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/dog3.png"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe3.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng cute đáng iu </p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+            </ul>
+        </div>
+        <h2 class="muc">PHỤ KIỆN THÚ CƯNG</h2>
+        <div class="sanpham">
+            <ul id="spnoibat">
+                <li>
+                    <img class="anhto" src="/anh/phocbe1.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng cute đáng iu </p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+            </ul>
+        </div>
+        <h2>CHÓ</h2>
+        <div class="sanpham">
+            <ul id="spnoibat">
+                <li>
+                    <img class="anhto" src="/anh/phocbe1.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng cute đáng iu </p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+            </ul>
+        </div>
+        <h2>MÈO</h2>
+        <div class="sanpham">
+            <ul id="spnoibat">
+                <li>
+                    <img class="anhto" src="/anh/phocbe1.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng</p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+                <li style="margin-left: 20px;">
+                    <img class="anhto" src="/anh/phocbe2.jpg"/>
+                    <span>Mã thú cưng</span>
+                    <p class="tenthu">Tên thú cưng cute đáng iu </p>
+                    <p class="giathu">1.000.000đ</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <br/><br/>
+    <hr size="3" color="bisque"/>   
+    <div id="cho">
+        <div class="anhcho">
+            <img src="/anh/dog1.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog2.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog3.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog4.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog5.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog6.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog7.png" class="img" alt="Jack Russel">
+        </div>
+        <div class="anhcho">
+            <img src="/anh/dog8.png" class="img" alt="Jack Russel">
+        </div>
+    </div>
+    <hr size="3" color="bisque"/>
+    <div id="footerr">
+        <div id="footer">
+            <br/>
+            <div id="lienlac">
+                <h2>LIÊN LẠC</h2>
+                <ul id="listll">
+                    <li><p>Địa chỉ</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8074959677538!2d106.05027497519545!3d20.92006319150312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135a498186ff919%3A0x64e2a3025899d2eb!2zTGnDqnUgWMOhLCBZw6puIE3hu7ksIEjGsG5nIFnDqm4sIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1718295495067!5m2!1svi!2s" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+                    <li><p>Điện thoại: <a href="tel:0963726658" id="sdt" style="text-decoration: none;color: rgb(161, 107, 41);">0963.726.658</a></p>             
+                    </li>
+                </ul>
+            </div>
+            <div id="youtube">
+                <h2>YOUTUBE</h2>
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/_nLUJu4ev_c?si=zl3I4cu3zlJGwmWB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div id="chinhsach">
+                <h2>CHÍNH SÁCH</h2>
+                <ul>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách mua bán</li>
+                    <li>Chính sách vận chuyển và bảo hành</li>
+                    <li>Chính sách hỗ trợ trả góp 0%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>  
+<script src="/js/trangchu.js"></script>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao Diện Quản Trị</title>
+    <link rel="stylesheet" href="/CSS/CSS_ADMIN/ADMIN.CSS">
+    <link rel="stylesheet" href="/CSS/CSS_ADMIN/QLloai.css">
+    <link rel="stylesheet" href="/CSS//CSS_ADMIN/QLDONNHAP.CSS">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+
+</head>
+<body>
+    <div class="trang_quan_tri">
+        <aside class="ben_trai">
+            <div class="logo" onclick="showSection('ADMIN')">
+                <h2>Adminator</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="showSection('Loai')">Loại Thú Cưng</a></li>
+                    <li><a href="#" onclick="showSection('users')">Thú Cưng</a></li>
+                    <li><a href="#" onclick="showSection('QL_Nhanvien')">Quản Lý Nhân Viên</a></li>
+                    <li><a href="#" onclick="showSection('QL_NhaCungCap')">Quản Lý Nhà Cung Cấp</a></li>
+                    <li><a href="#" onclick="showSection('QL_KhachHang')">Quản Lý Khách Hàng</a></li>
+                    <li><a href="#" onclick="showSection('QL_DonNhap')">Quản Lý Đơn Nhập</a>
+                        <ul id="ul_item"></ul>
+                            <li><a onclick="showSection('ThemDonNhap')">Thêm Đơn Nhập</a></li>
+                            <li><a onclick="showSection('DanhSachDonNhap')">Danh Sách Đơn Nhập</a></li>
+                            <li><a onclick="showSection('XoaDonNhap')">Xóa Đơn Nhập</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" onclick="showdangxuat()">CÀI ĐẶT</a>
+                        <ul id="ul_item">
+                            <li><a>Đổi Mật Khẩu</a></li>
+                            <li><a onclick="dangxuat()">Đăng Xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="noi_dung">
+            <header class="header">
+                <div class="thong_tin">
+                    <p>Total Visits</p>
+                    <p>Total Page Views</p>
+                    <p>Unique Visitors</p>
+                    <p>Bounce Rate</p>
+                </div>
+                <div class="tai_khoan">
+                    <div style="height: 100%;margin-right: 10px;">chuông</div>
+                    <div style="height: 100%;margin-right: 10px;">thông báo</div>
+                 <img id="anh_loign" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/438942840_1517325412181020_7866582693558725071_n.jpg?stp=c0.120.720.720a_dst-jpg_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGcW12VJzkaDQr51LsTQIXkxls2yseWNPjGWzbKx5Y0-MbDiCdIrxLK1r7xc69JmkSSWMxwQwFS6IdTlLLf-Kgx&_nc_ohc=CBgN5u663_cQ7kNvgHXN6Up&_nc_ht=scontent.fhan14-2.fna&oh=00_AYAsCuovXsTc3giKe-B65ETQCD5XySj5qyM2uPQF81EtuA&oe=66CF1596"  style="height: 100%; width: 30px; border-radius: 50%; border: 2px solid #000;margin-right: 5px;" alt="" /> 
+                 <div id="ten_loign">John Doe</div>
+
+                </div>
+            </header>
+        
+            <section class="noi_dung_con">
+                <section id="ADMIN" class="content-section">
+                   <div class="thong_ke">
+                        <div class="thong_ke_item">
+                            <span>Doanh Thu</span>
+                            <h3>20000000000000000</h3>
+
+                        </div>
+                        <div class="thong_ke_item">
+                            <span>Lãi Xuất</span>
+                            <h3>20000000000000000</h3>
+                        </div>
+                        <div class="thong_ke_item">
+                            <span>Tiền Nhập</span>
+                            <h3>20000000000000000</h3>
+
+                        </div>
+                        <div class="thong_ke_item">
+                            <span>Tiền Bán</span>
+                            <h3>20000000000000000</h3>
+
+                        </div>
+                   </div>
+
+                   <div class="noidung_sanpham">
+                        <div class="thoi_tiet">
+
+
+                        </div>
+                        <div class="san_pham_da_ban">
+                                    <div  class="san_pham_da_ban_item">
+                                        <h3>Tên Loại </h3>
+                                        <span>phần trăm sản phẩm</span>
+                                    </div>
+                                    <div  class="san_pham_da_ban_item">
+                                        <h3>Tên Loại </h3>
+                                        <span>phần trăm sản phẩm</span>
+                                    </div>
+                                    <div  class="san_pham_da_ban_item">
+                                        <h3>Tên Loại </h3>
+                                        <span>phần trăm sản phẩm</span>
+                                    </div>
+                                    <div  class="san_pham_da_ban_item">
+                                        <h3>Tên Loại </h3>
+                                        <span>phần trăm sản phẩm</span>
+                                    </div>
+                                    <div  class="san_pham_da_ban_item">
+                                        <h3>Tên Loại </h3>
+                                        <span>phần trăm sản phẩm</span>
+                                    </div>
+                   </div>
+                </section>
+
+
+
+
+                <section id="Loai" class="content-section">
+                    <h2 style="color:  rgb(248, 31, 103);">QUẢN LÝ LOẠI THÚ CƯNG</h2>
+                    
+
+                    <div id="Modal_Loai" class="modal">
+
+                        <div class="modal-content" style="width: 500px;">
+                          <div onclick="close_Modal_Loai('Modal_Loai')" style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;"><span >&times;</span></div>  
+                                <label for="maloai">Mã Loại: </label>
+                                <br>
+                                <input id="maloai" style="width: 500px;" type="number">
+                                <br>
+                                <label for="tenloai">Tên Loại:</label>
+                                <br>
+                                <input id="tenloai" style="width: 500px;" type="text">
+                                <div>
+                                    <button id="btn_up"  style="display:none;" onclick="UpdateL()">Cập nhật thú cưng</button>
+                                    <button id="btn_add"  onclick="setloai()">Thêm thú cưng</button>
+                                </div>
+                        </div>
+                
+                    </div>
+                    <button class="btn"  onclick="openmodal('Modal_Loai')" >Thêm thú cưng</button>
+                    <div class="table-loai">
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Mã Loại</th>
+                                    <th>Tên Loại</th>
+                                    <th colspan="2">Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody class="dsloai">
+                              
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+
+
+                <section id="users" class="content-section">
+                    <h2 style="color:  rgb(248, 31, 103);">QUẢN LÝ THÚ CƯNG</h2>
+                    <div id="Modal_ThuCung" class="modal">
+                        <div class="modal-content">
+                        <div onclick="close_Modal_SP()" style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;"><span >&times;</span></div>  
+                        
+                        <div style="display: flex;width: 1000px;justify-content: space-between;">
+                            <div style="flex: 1;">
+                                <label>Mã Thú Cưng:</label>
+                                <input id="mathucung" type="text">
+                                <label>Tên Thú Cưng:</label>
+                                <input id="tenthucung" type="text">
+                            </div>
+                            <div style="flex: 1;margin-left: 10px;margin-right: 10px;">
+                                <label>Loại Thú Cưng:</label>
+                                <select id="loai" style="padding: 8px; margin-top: 5px;width: 98%;"></select>
+                                <label>Số Lượng:</label>
+                                <input type="number" id="soluong">
+                            </div>    
+                            <div style="flex: 1;">
+                                <label>Giá Nhập:</label>
+                                <input type="number" id="gianhap">
+                                <label>Giá Bán:</label>
+                                <input type="number" id="giaban">
+                            </div>
+                        </div>
+                        
+                        <label>Ảnh:</label>
+                        <input type="file" style="width: 980px;" id="anh" accept="image/*" onchange="previewImage(event)">
+                        <div>
+                            <img id="preview" src="#" alt="Preview Image" style="display:none; width: 120px;height: 130px; margin-top:10px;">
+                        </div>
+                        <label>Mô Tả:</label>
+                        <textarea name="description" id="description"></textarea>
+                        <div>
+                            <button id="btnupdate" style="display:none;" onclick="capnhatthucung()">Cập nhật thú cưng</button>
+                            <button id="btnadd" onclick="themthucung()">Thêm thú cưng</button>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="btn"  onclick="openmodal('Modal_ThuCung')" >Thêm thú cưng</button>
+                    
+                    <div class="table-loai">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Tên Thú Cưng</th>
+                                    <th>Loại Thú Cưng</th>
+                                    <th>Số Lượng</th>
+                                    <th>Giá Bán</th>
+                                    <th>Giá Nhập</th>
+                                    <th>Mô Tả</th>
+                                    <th colspan="2">Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody class="dsthucung">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+
+
+                <section id="QL_Nhanvien" class="content-section">
+                    <h2 style="color:  rgb(248, 31, 103);">QUẢN LÝ NHÂN VIÊN</h2>
+                    <div id="Modal_NhanVien" class="modal">
+                        <div class="modal-content">
+                            <div onclick="close_Modal_NhanVien('Modal_NhanVien')" style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;">
+                                <span>&times;</span>
+                            </div>  
+                
+                            <div style="display: flex;width: 1000px;justify-content: space-between;">
+                                <div style="flex: 1;">
+                                    <label>Tài Khoản:</label>
+                                    <input id="taikhoan" type="text">
+                                    <label>Mật Khẩu:</label>
+                                    <input id="matkhau" type="password">
+                                    <label>Tên Nhân Viên:</label>
+                                    <input id="tennhanvien" type="text">
+                                </div>
+                                  
+                                <div style="flex: 1;">
+                                    <label>Địa Chỉ:</label>
+                                    <input id="diachi" type="text">
+                                    <label>Số Điện Thoại:</label>
+                                    <input type="text" id="sodienthoai">
+                                    <label>Chức Vụ:</label>
+                                    <select id="chucvu" style="padding: 8px; margin-top: 5px;width: 98%;">
+                                        <option value="Admin">ADMIN</option>
+                                        <option value="Nhân Viên">Nhân Viên</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                            
+                            <label>Ảnh Thẻ:</label>
+                            <input type="file" style="width: 980px;" id="anhthe" accept="image/*" onchange="previewImage(event)">
+                            <div>
+                                <img id="preview" src="#" alt="Preview Image" style="display:none; width: 120px;height: 130px; margin-top:10px;">
+                            </div>
+                            
+                            <div>
+                                <button id="btnupdate1" style="display:none;" onclick="capnhatnhanvien()">Cập nhật nhân viên</button>
+                                <button id="btnadd1" onclick="themnhanvien()">Thêm nhân viên</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="openmodal('Modal_NhanVien')">Thêm nhân viên</button>
+                    
+                    <div class="table-loai">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tài Khoản</th>
+                                    <th>Mật Khẩu</th>
+                                    <th>Ảnh Thẻ</th>
+                                    <th>Tên Nhân Viên</th>
+                                    <th>Địa Chỉ</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th>Chức Vụ</th>
+                                    <th colspan="2">Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody class="dsnhanvien">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+
+
+                <section id="QL_NhaCungCap" class="content-section">
+                    <h2 style="color: rgb(248, 31, 103);">QUẢN LÝ NHÀ CUNG CẤP</h2>
+                    <div id="Modal_NhaCungCap" class="modal">
+                        <div class="modal-content">
+                            <div onclick="close_Modal_NhaCungCap('Modal_NhaCungCap')" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
+                                <span>&times;</span>
+                            </div>
+                
+                            <div style="display: flex; width: 1000px; justify-content: space-between;">
+                                <div style="flex: 1;">
+                                    <label>Mã Nhà Cung Cấp:</label>
+                                    <input id="manhacungcap" type="text">
+                                    <label>Tên Nhà Cung Cấp:</label>
+                                    <input id="tennhacungcap" type="text">
+                                </div>
+                                <div style="flex: 1; margin-left: 10px; margin-right: 10px;">
+                                    <label>Số Điện Thoại:</label>
+                                    <input id="SDT" type="number">
+                                    <label>Địa Chỉ:</label>
+                                    <input id="DCNCC" type="text">
+                                </div>
+                            </div>
+                
+                            <div>
+                                <button id="btnupdate2" style="display:none;" onclick="capnhatnhacungcap()">Cập nhật nhà cung cấp</button>
+                                <button id="btnadd2" onclick="themnhacungcap()">Thêm nhà cung cấp</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="openmodal('Modal_NhaCungCap')">Thêm nhà cung cấp</button>
+                
+                    <div class="table-loai">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tên Nhà Cung Cấp</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th>Địa Chỉ</th>
+                                    <th colspan="2">Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody class="dsncc">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+
+                <section id="QL_KhachHang" class="content-section">
+                    <h2 style="color: rgb(248, 31, 103);">QUẢN LÝ KHÁCH HÀNG</h2>
+                    <div id="Modal_KhachHang" class="modal">
+                        <div class="modal-content">
+                            <div onclick="close_Modal_KhachHang('Modal_KhachHang')" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
+                                <span>&times;</span>
+                            </div>
+                
+                            <div style="display: flex; width: 1000px; justify-content: space-between;">
+                                <div style="flex: 1;">
+                                    <label>Mã Khách Hàng:</label>
+                                    <input id="makhachhang" type="text">
+                                    <label>Tên Khách Hàng:</label>
+                                    <input id="tenkhachhang" type="text">
+                                </div>
+                                <div style="flex: 1; margin-left: 10px; margin-right: 10px;">
+                                    <label>Địa Chỉ:</label>
+                                    <input id="diachi_KH" type="text">
+                                    <label>Số Điện Thoại:</label>
+                                    <input id="sodienthoai_KH" type="text">
+                                </div>
+                            </div>
+                
+                            <div>
+                                <button id="btnupdate_KH" style="display:none;" onclick="capnhatkhachhang()">Cập nhật khách hàng</button>
+                                <button id="btnadd_KH" onclick="themkhachhang()">Thêm khách hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="openmodal('Modal_KhachHang')">Thêm khách hàng</button>
+                
+                    <div class="table-loai">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tên Khách Hàng</th>
+                                    <th>Địa Chỉ</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th colspan="2">Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody class="dskh">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <section id="QL_DonNhap" class="content-section">
+                    <div class="container">
+                        <h1>Quản Lý Đơn Nhập - Pet Shop</h1>
+                        <button onclick="openModal('donNhapModal')">Tạo Đơn Nhập Mới</button>
+                        
+                        <div class="search-filter">
+                            <input type="text" id="searchInput" placeholder="Tìm kiếm..." onkeyup="searchAndFilterDonNhap()">
+                            <select id="statusFilter" onchange="searchAndFilterDonNhap()">
+                                <option value="">Tất cả trạng thái</option>
+                                <option value="Đã thanh toán">Đã thanh toán</option>
+                                <option value="Chưa thanh toán">Chưa thanh toán</option>
+                            </select>
+                            <input type="date" id="dateFilter" onchange="searchAndFilterDonNhap()">
+                        </div>
+                
+                        <table id="donNhapTable">
+                            <thead>
+                                <tr>
+                                    <th>Mã Đơn</th>
+                                    <th>Nhân Viên</th>
+                                    <th>Nhà Cung Cấp</th>
+                                    <th>Ngày Nhập</th>
+                                    <th>Tổng Tiền</th>
+                                    <th>Số Lượng</th>
+                                    <th>Trạng Thái</th>
+                                    <th>Thao Tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Dữ liệu đơn nhập sẽ được thêm vào đây bằng JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <div id="donNhapModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('donNhapModal')">&times;</span>
+                            <h2>Tạo Đơn Nhập Mới</h2>
+                        <div style="display: flex;">
+                            <div class="form-group">
+                                <label for="nhanVien">Nhân Viên:</label>
+                                <select id="nhanVien">
+                                    <option value="">Chọn Nhân Viên</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="nhaCungCap">Nhà Cung Cấp:</label>
+                                <select id="nhaCungCap">
+                                    <option value="">Chọn Nhà Cung Cấp</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <div class="form-group">
+                                <label for="ngayNhap">Ngày Nhập:</label>
+                                <input type="date" id="ngayNhap">
+                            </div>
+                            <div class="form-group">
+                                <label for="trangThai">Trạng Thái:</label>
+                                <select id="trangThai">
+                                    <option value="Chưa thanh toán">Chưa thanh toán</option>
+                                    <option value="Đã thanh toán">Đã thanh toán</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <label for="ghiChu">Ghi Chú:</label>
+                                <textarea id="ghiChu" rows="3"></textarea>
+                            </div>
+                        <div style="display: flex;">
+                            
+                            <div id="productList" class="product-list">
+                                <h3>Danh Sách Thú Cưng</h3>
+                                <!-- Danh sách thú cưng sẽ được thêm vào đây bằng JavaScript -->
+                            </div>
+                            <div  class="cart">
+                                <h3>Giỏ Hàng</h3>
+                                <div id="cart">
+
+                                </div>
+
+                                <!-- Các mục trong giỏ hàng sẽ được thêm vào đây bằng JavaScript -->
+                            </div>
+                        </div>
+                            <p class="total">Tổng tiền: <span id="tongTien">0</span> VNĐ</p>
+                            <button onclick="createDonNhap()">Tạo Đơn Nhập</button>
+                        </div>
+                    </div>
+                
+                    <div id="chiTietModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('chiTietModal')">&times;</span>
+                            <h2>Chi Tiết Đơn Nhập</h2>
+                            <div id="chiTietContent">
+                                <!-- Chi tiết đơn nhập sẽ được thêm vào đây bằng JavaScript -->
+                            </div>
+                            <button onclick="exportToPDF()">Xuất PDF</button>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <script src="/js/JS_ADMIN/ADMIN.JS  "></script>
+    <script src="/js/JS_ADMIN/QL_Loai.js "></script>
+    <script src="/js/JS_ADMIN/QL_SP.JS  "></script>
+    <script src="/js/JS_ADMIN/QL_NhanVien.js  "></script>
+    <script src="/js/JS_ADMIN/QL_NhaCC.JS  "></script>
+    <script src="/js/JS_ADMIN/QL_KhachHang.js     "></script>
+    <script src="/js/JS_ADMIN/QL_DonNhap.js     "></script>
+
+
+
+
+
+
+
+</body>
+</html>

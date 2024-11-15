@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+   <link rel="stylesheet" href="../css/ThanhToan.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-search">
+            <a href="./Home.html" class="logo">
+                <img src="/logo.png" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <img src="/iconsearch.png" alt="Search" width="20" height="20">
+                </button>
+            </div>
+        </div>
+    
+        <nav class="nav-items">
+            <a href="./Home.html" class="nav-item">
+                <img src="/anh/gt.png" alt="Trang chủ">
+                <span>TRANG CHỦ</span>
+            </a>
+    
+            <a href="./giohang.html" class="nav-item" id="cartLink" style="display: none;">
+                <img src="/anh/giohang.png" alt="Giỏ hàng">
+                <span>GIỎ HÀNG</span>
+            </a>
+    
+            <a href="/profile" class="nav-item" id="profileLink" style="display: none;">
+                <img src="/anh/blog.png" alt="Thông tin">
+                <span>THÔNG TIN CÁ NHÂN</span>
+            </a>
+    
+            <div class="nav-item" id="userDropdown" style="display: none;">
+                <span id="userName" style="margin-right: 50px;"></span>
+                <div class="dropdown-content">
+                    <a href="/settings">Cài đặt</a>
+                    <a href="#" id="logoutBtn">Đăng xuất</a>
+                </div>
+            </div>
+    
+            <a href="./dangnhap.html" class="nav-item" id="loginBtn" style="margin-right: 100px;">
+                <span>ĐĂNG NHẬP</span>
+            </a>
+        </nav>
+    </header>
+    <div id="than" style="margin-bottom: -80px;">
+        <div id="trai">
+            <h2>Danh sách sản phẩm</h2>
+            <div class="product-list" id="productList">
+                <img src="${item.image}" alt="${item.name}">
+                    <div class="product-info">
+                        <div class="product-name">TÊN SẢN PHÂ</div>
+                        <div>Số lượng: ${item.quantity}</div>
+                    </div>
+                    <div class="product-price">${item.price.toLocaleString()}đ</div>
+            </div>
+        </div>
+    </div>
+    <div id="than">
+        <div id="trai">
+            <h2>Thông tin giao hàng</h2>
+            <form id="checkoutForm">
+                <div>
+                    <label for="fullName">Họ và tên:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div>
+                    <label for="phone">Số điện thoại:</label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                
+                <div>
+                    <label for="address">Địa chỉ:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div>
+                    <label for="city">Tỉnh/Thành phố:</label>
+                    <select id="city" name="city" required>
+                        <option value="">Chọn tỉnh/thành phố</option>
+                        <option value="hanoi">Hà Nội</option>
+                        <option value="hochiminh">Hồ Chí Minh</option>
+                        <option value="danang">Đà Nẵng</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div id="phai">
+            <h2>Thông tin đơn hàng</h2>
+            <div>
+                <p>Tổng tiền hàng: <span id="subtotal">0đ</span></p>
+                <p>Phí vận chuyển: <span id="shipping">20.000đ</span></p>
+                <hr>
+                <p><strong>Tổng thanh toán: <span id="total">0đ</span></strong></p>
+            </div>
+            <div>
+                <h3>Phương thức thanh toán</h3>
+                <div style="display: flex;">
+                    <input type="radio" id="cod" name="payment" value="cod" checked>
+                    <label for="cod">Thanh toán khi nhận hàng</label>
+                </div>
+                <div style="display: flex;">
+                    <input type="radio" id="bank" name="payment" value="bank">
+                    <label for="bank">Chuyển khoản ngân hàng</label>
+                </div>
+            </div>
+            <br>
+            <input type="button" id="thanhtoan" value="ĐẶT HÀNG" onclick="placeOrder()">
+        </div>
+    </div>
+
+    <div id="footerr">
+        <div id="footer">
+            <div id="lienlac">
+                <h2>LIÊN LẠC</h2>
+                <ul>
+                    <li>Địa chỉ: Liêu Xá, Yên Mỹ, Hưng Yên</li>
+                    <li>Điện thoại: <a href="tel:0963726658" style="color: #f72585;">0963.726.658</a></li>
+                </ul>
+            </div>
+            <div id="chinhsach">
+                <h2>CHÍNH SÁCH</h2>
+                <ul>
+                    <li>Chính sách bảo mật</li>
+                    <li>Chính sách mua bán</li>
+                    <li>Chính sách vận chuyển và bảo hành</li>
+                    <li>Chính sách hỗ trợ trả góp 0%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/js/JS_ADMIN/apiService.js    "></script>
+<script src="/js/ThanhToan.js    "></script>
+</html>
