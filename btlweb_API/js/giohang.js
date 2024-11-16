@@ -1,29 +1,38 @@
 async function tang(index) {
     let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
-    const data =await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
-    if (data) {
+    const gioHangData = await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
+    
+    if (gioHangData && gioHangData[index]) {
+        let matc = parseInt(gioHangData[index].maThuCung);
         
-        let matc = parseInt(data[index].maThuCung);
-        await updateData_gh(apiEndpoints.GIOHANG.UPDATE_SL_1(taiKhoan,matc,0));
+        const thuCungData = await getDaTa(apiEndpoints.ThuCung.getById(matc));
+        
+        if (thuCungData && thuCungData[0].soLuong > gioHangData[index].soLuong) {
+            await updateData_gh(apiEndpoints.GIOHANG.UPDATE_SL_1(taiKhoan, matc, 0));
             getdl();
             TongTien();
-         
+        } else {
+            alert(`Chỉ còn ${thuCungData[0].soLuong} thú cưng trong kho`);
+        }
     }
 }
-
 async function giam(index) {
     let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
-    const data =await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
-    if (data) {
-        
-        let matc = parseInt(data[index].maThuCung);
-        await updateData_gh(apiEndpoints.GIOHANG.UPDATE_SL_1(taiKhoan,matc,1));
+    const data = await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
+    
+    if (data && data[index]) {
+        if (data[index].soLuong > 1) {
+            let matc = parseInt(data[index].maThuCung);
+            await updateData_gh(apiEndpoints.GIOHANG.UPDATE_SL_1(taiKhoan, matc, 1));
             getdl();
             TongTien();
-         
+        } else {
+            alert("Số lượng không thể nhỏ hơn 1");
+        }
     }
 }
 async function getdl() {
+
     let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
     const data =await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
     console.log(data);
@@ -56,6 +65,7 @@ async function getdl() {
         });
         $('.listsp').html(htmlarr.join(''));
         document.getElementById('tongsp').innerText = `Bạn đang có ${data1.length} sản phẩm trong giỏ hàng`;
+    document.getElementById('soluong').setAttribute('readonly', 'true');
         
 
     }
@@ -76,129 +86,7 @@ async function TongTien(){
 
 async function Xoagiohang(ma)
 {
-    debugger
     let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
     await deleteData(apiEndpoints.GIOHANG.DELETE(taiKhoan,ma),getdl);
     TongTien();
 }
-checkLogin();
-async function checkLogin() {
-    try {
-        let tt = JSON.parse(localStorage.getItem('thongtindangnhap'));
-        
-        if (tt) {
-            let data = await getDaTa(apiEndpoints.KHACHHANG.getByTK(tt));
-            if (data && data.length > 0) {
-                localStorage.setItem('username', data[0].tenKhachHang);
-                localStorage.setItem('isLoggedIn', "true");
-                updateHeader('true', data[0].tenKhachHang);
-            } else {
-                // Nếu không tìm thấy dữ liệu khách hàng, xóa thông tin đăng nhập
-                localStorage.removeItem('isLoggedIn');
-                localStorage.removeItem('username');
-                localStorage.removeItem('thongtindangnhap');
-                updateHeader(false, null);
-            }
-        } else {
-            updateHeader(false, null);
-        }
-    } catch (error) {
-        console.error('Error in checkLogin:', error);
-        updateHeader(false, null);
-    }
-}
-function handleLogout() {
-    localStorage.removeItem('isLoggedIn');
-    localStorage.removeItem('username');
-    localStorage.removeItem('thongtindangnhap'); // Thêm dòng này
-    updateHeader(false, null);
-    window.location.href = './Home.html';
-}
-// Cập nhật giao diện header
-function updateHeader(isLoggedIn, username) {
-    const loginBtn = document.getElementById('loginBtn');
-    const userDropdown = document.getElementById('userDropdown');
-    const profileLink = document.getElementById('profileLink');
-    const userName = document.getElementById('userName');
-    const cartLink = document.getElementById('cartLink'); // Thêm giỏ hàng
-
-    if (!loginBtn || !userDropdown || !profileLink || !userName || !cartLink) {
-        console.error('One or more elements not found');
-        return;
-    }
-
-    if (isLoggedIn === 'true' && username) {
-        loginBtn.style.display = 'none';
-        userDropdown.style.display = 'flex';
-        profileLink.style.display = 'flex';
-        cartLink.style.display = 'flex'; // Hiển thị giỏ hàng
-        userName.textContent = `Xin chào, ${username}`;
-    } else {
-        loginBtn.style.display = 'flex';
-        userDropdown.style.display = 'none';
-        profileLink.style.display = 'none';
-        cartLink.style.display = 'none'; // Ẩn giỏ hàng
-    }
-}
-
-// Xử lý click vào các link yêu cầu đăng nhập
-function handleProtectedLink(e, linkType) {
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    
-    if (isLoggedIn !== 'true') {
-        e.preventDefault();
-        alert(`Bạn cần đăng nhập để truy cập ${linkType}`);
-        window.location.href = './dangnhap.html';
-    }
-}
-
-// Khởi tạo các event listener khi trang đã load
-document.addEventListener('DOMContentLoaded', function() {
-    // Gọi checkLogin ngay khi trang load
-    checkLogin();
-
-    // Thêm event listener cho các link được bảo vệ
-    const cartLink = document.getElementById('cartLink');
-    const profileLink = document.getElementById('profileLink');
-
-    if (cartLink) {
-        cartLink.addEventListener('click', (e) => handleProtectedLink(e, 'giỏ hàng'));
-    }
-
-    if (profileLink) {
-        profileLink.addEventListener('click', (e) => handleProtectedLink(e, 'thông tin cá nhân'));
-    }
-
-    // Thêm event listener cho nút đăng xuất
-    const logoutBtn = document.getElementById('logoutBtn');
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            handleLogout();
-        });
-    }
-
-    // Xử lý dropdown menu
-    const userDropdown = document.getElementById('userDropdown');
-    if (userDropdown) {
-        userDropdown.addEventListener('click', function(e) {
-            const dropdownContent = this.querySelector('.dropdown-content');
-            if (dropdownContent) {
-                dropdownContent.classList.toggle('show');
-            }
-        });
-    }
-
-    // Đóng dropdown khi click ra ngoài
-    window.addEventListener('click', function(e) {
-        if (!e.target.closest('.nav-item')) {
-            const dropdowns = document.getElementsByClassName('dropdown-content');
-            Array.from(dropdowns).forEach(dropdown => {
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-            });
-        }
-    });
-});
-

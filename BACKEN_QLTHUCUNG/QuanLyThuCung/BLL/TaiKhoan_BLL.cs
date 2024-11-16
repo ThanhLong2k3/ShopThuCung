@@ -18,7 +18,14 @@ namespace BLL
         {
             _res = res;
         }
-
+        public List<TaiKhoan_DTO> GetAll()
+        {
+            return _res.GetAll();
+        }
+        public List<TaiKhoan_DTO> GetByTk(string tk)
+        {
+            return _res.GetByTk(tk);
+        }
         public TaiKhoan_DTO DangNhap(string tk,string mk)
         {
             return _res.DangNhap(tk,mk);
@@ -31,6 +38,10 @@ namespace BLL
         public bool DoiMK(string tk,string mkm)
         {
             return _res.DoiMK(tk,mkm);
+        }
+        public bool Delete(string id)
+        {
+            return _res.Delete(id);
         }
     }
     }

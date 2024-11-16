@@ -1,9 +1,16 @@
-function tang() {
+async function tang() {
     let soluong = parseInt(document.getElementById('soluong').value);
-    if (soluong >= 0) {
+    const matc= localStorage.getItem('masp');
+
+    const thuCungData = await getDaTa(apiEndpoints.ThuCung.getById(parseInt(matc)));
+   
+        
+    if (thuCungData && thuCungData[0].soLuong > parseInt(soluong)) {
         soluong++;
         document.getElementById('soluong').value = soluong;
-    } 
+    } else {
+        alert(`Chỉ còn ${thuCungData[0].soLuong} thú cưng trong kho`);
+    }
 }
 
 function giam() {
@@ -14,6 +21,8 @@ function giam() {
     } 
 }
 async function getdulieu(){
+    document.getElementById('soluong').setAttribute('readonly', 'true');
+
     const data= localStorage.getItem('masp');
     if(data){
         const data1 = await getDaTa(apiEndpoints.ThuCung.getById(JSON.parse(data)));
