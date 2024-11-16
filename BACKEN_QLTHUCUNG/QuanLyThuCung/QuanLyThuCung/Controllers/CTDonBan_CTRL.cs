@@ -8,9 +8,9 @@ namespace QuanLyThuCung.Controllers
     [Route("api/[controller]")]
     public class CTDonBan_CTRL : Controller
     {
-        private readonly IDonBan_BLL _donBanBLL;
+        private readonly IBLL<ChiTietDonBan_DTO> _donBanBLL;
 
-        public CTDonBan_CTRL(IDonBan_BLL donBanBLL)
+        public CTDonBan_CTRL(IBLL<ChiTietDonBan_DTO> donBanBLL)
         {
             _donBanBLL = donBanBLL;
         }

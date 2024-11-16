@@ -135,5 +135,26 @@ namespace DAL
                 throw ex;
             }
         }
+        public bool Delete_TK(string tk)
+        {
+            string msgError = "";
+            string kq = "";
+            try
+            {
+                var result = _dbHelper.ExecuteScalarSProcedure(out msgError, "DELETE_GH_TK", "@TaiKhoan", tk);
+                if (Convert.ToInt32(result) > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

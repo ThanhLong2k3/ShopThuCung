@@ -31,3 +31,15 @@ C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug
 C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\refint\DTO.dll
 C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.pdb
 C:\Users\Plinhh\Desktop\DOAN2_PLINH\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\ref\DTO.dll
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.deps.json
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.dll
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\bin\Debug\net8.0\DTO.pdb
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.sourcelink.json
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.dll
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\refint\DTO.dll
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\DTO.pdb
+C:\Users\Plinhh\Desktop\Shop\ShopThuCung\BACKEN_QLTHUCUNG\QuanLyThuCung\DTO\obj\Debug\net8.0\ref\DTO.dll

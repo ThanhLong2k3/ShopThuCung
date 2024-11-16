@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ItFyx3F+WP5jhfHDmcdyOPsc1k97G1Z4UCDNWnZLnBt9rQL5AITtvg9y08iU8U8NRLoz2pt4HP0HzCUkAShaRg==",
+  "dgSpecHash": "aVC1ZlAsGAqnGqdLNJ4p2KTOyu03FkAlnd7E+anNTt+xoVMwWc80x6Y73aLYB2lRH1jcKX/Y2N1j3YvZTzk1Sg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Plinhh\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Plinhh\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

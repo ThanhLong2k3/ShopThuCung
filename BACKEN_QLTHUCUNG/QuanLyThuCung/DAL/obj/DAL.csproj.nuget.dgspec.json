@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj": {}
+    "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj": {
+    "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj",
+        "projectPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\Plinhh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\obj\\",
+        "outputPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Plinhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj": {
-                "projectPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj"
+              "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj": {
+                "projectPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj": {
+    "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
+        "projectUniqueName": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
+        "projectPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
         "packagesPath": "C:\\Users\\Plinhh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\obj\\",
+        "outputPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Plinhh\\AppData\\Roaming\\NuGet\\NuGet.Config",

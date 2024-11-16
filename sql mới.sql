@@ -2,7 +2,6 @@
 GO
 USE Petshop;
 GO
-SELECT*FROM tAIKHOAN
 CREATE TABLE TaiKhoan (
     taiKhoan NVARCHAR(50) PRIMARY KEY,
     matKhau NVARCHAR(50) NOT NULL,
@@ -560,7 +559,8 @@ BEGIN
     WHERE MaDonBan = @MaDonBan;
 END;
 go
-
+ALTER TABLE DonBan ALTER COLUMN MaNhanVien INT NULL;
+go
 CREATE PROCEDURE Them_DonBan
     @NgayBan DATE,
     @MaNhanVien int = null,
@@ -570,13 +570,14 @@ AS
 BEGIN
     INSERT INTO DonBan (NgayBan, MaKhachHang, MaNhanVien, TongTien, TrangThai)
     VALUES (@NgayBan, @MaKhachHang, @MaNhanVien, @TongTien, N'Chờ xác nhận');
+	SELECT SCOPE_IDENTITY() ;
 END;
 go
 CREATE PROCEDURE Sua_DonBan
     @MaDonBan INT,
     @NgayBan DATE,
     @MaKhachHang int,
-    @MaNhanVien int,
+    @MaNhanVien int =null,
     @TongTien DECIMAL(18, 2),
     @TrangThai NVARCHAR(50)
 AS
@@ -613,13 +614,31 @@ BEGIN
 END;
 go
 go
-CREATE PROCEDURE Get_DonBan_ByTaiKhoan
-   @MaNhanVien int = null,
-   @MaKhachHang int = null
+
+CREATE PROCEDURE Get_DonBan_ByMaKH
+   @MaKhachHang int 
 AS
 BEGIN
-    SELECT * FROM DonBan
-    WHERE MaNhanVien = @MaNhanVien or MaKhachHang=@MaKhachHang;
+    SELECT 
+    db.maDonBan,
+    db.ngayBan,
+    db.tongTien,
+    db.trangThai,
+    kh.tenKhachHang,
+    kh.diaChi_KH,
+    kh.soDienThoai_KH,
+    tc.tenThuCung,
+    ctdb.soLuong,
+    ctdb.giaBan
+FROM 
+    DonBan db
+    INNER JOIN ChiTietDonBan ctdb ON db.maDonBan = ctdb.maDonBan
+    INNER JOIN ThuCung tc ON ctdb.maThuCung = tc.maThuCung
+    INNER JOIN KhachHang kh ON db.maKhachHang = kh.maKhachHang
+WHERE 
+    db.maKhachHang = @MaKhachHang
+ORDER BY 
+    db.ngayBan DESC
 END;
 go
 CREATE PROCEDURE Get_All_ChiTietDonNhap
@@ -704,6 +723,7 @@ BEGIN
     VALUES (@MaDonBan, @MaThuCung, @SoLuong, @GiaBan);
 END;
 go
+
 CREATE PROCEDURE Sua_ChiTietDonBan
     @MaDonBan INT,
     @MaThuCung INT,
@@ -1061,3 +1081,16 @@ create proc get_gh_tk_id
 	BEGIN 
 		SELECT*FROM GioHang WHERE taiKhoan=@taiKhoan and maThuCung=@maThuCung
 		END
+		GO
+	
+CREATE PROC DELETE_GH_TK
+	@TaiKhoan nvarchar(50)
+	AS BEGIN
+		DELETE FROM GioHang WHERE taiKhoan=@TaiKhoan;
+		IF @@ROWCOUNT > 0
+        SELECT 1; 
+    ELSE
+        SELECT 0;
+		END
+		SELECT*FROM DonBan
+		SELECT*FROM ChiTietDonBan

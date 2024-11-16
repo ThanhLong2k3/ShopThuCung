@@ -1,9 +1,10 @@
 let Listsp=[];
 let TT_KhachHang=[];
+let tt = JSON.parse(localStorage.getItem('thongtindangnhap'));
+let TongThanhToan=0;
 async function displayProductList() {
     try {
-        let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
-        const Listsp = await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
+        const Listsp = await getDaTa(apiEndpoints.GIOHANG.GETBYTK(tt));
         const productListElement = document.getElementById('productList');
         productListElement.innerHTML = '';
 
@@ -34,9 +35,9 @@ async function displayProductList() {
 
         const TongTien = document.getElementById('subtotal');
         TongTien.textContent = Gia.toLocaleString() + 'đ';
-
+        TongThanhToan=(Gia+20000);
         const TongChiPhi = document.getElementById('total');
-        TongChiPhi.textContent = (Gia + 20000).toLocaleString() + 'đ';
+        TongChiPhi.textContent = TongThanhToan.toLocaleString() + 'đ';
 
     } catch (error) {
         console.error('Lỗi khi hiển thị danh sách sản phẩm:', error);
@@ -44,10 +45,7 @@ async function displayProductList() {
 }
 async function dataKhachHang() {
     try{
-        let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
-        let TT_KhachHang= await getDaTa(apiEndpoints.KHACHHANG.getByTK(taiKhoan));
-        console.log(TT_KhachHang);
-        debugger
+        TT_KhachHang= await getDaTa(apiEndpoints.KHACHHANG.getByTK(tt));
         if(TT_KhachHang.length>0)
         {
             document.getElementById('fullName').value=TT_KhachHang[0].tenKhachHang;
@@ -59,16 +57,36 @@ async function dataKhachHang() {
 
     }
 }
+
 async function Add_DonHang() {
-    let ngayban=Date.now;
-    let DonHang={
+    let ngayban = new Date().toISOString().split('T')[0];
+    let DonHang = {
         ngayBan: ngayban,
-        taiKhoan_nv: string,
-        taiKhoan_kh: string,
-        tongTien: 0,
-        trangThai: string
-      }
+        maNhanVien: null,
+        maKhachHang: TT_KhachHang[0].maKhachHang,
+        tongTien: TongThanhToan,
+        trangThai: "ok"
+    };
+
+    let Ma = await addDonHang(apiEndpoints.DONBAN.create, DonHang);
+    
+    let promises = Listsp.map(item => {
+        let CT_DonHang = {
+            maDonBan: Ma,
+            maThuCung: item.maThuCung,
+            soLuong: item.soLuong,
+            giaBan: item.giaBan
+        };
+        return Add_ChiTietDonHang(apiEndpoints.CTDONBAN.create, CT_DonHang);
+    });
+
+    await Promise.all(promises);
+
+    alert("Thanh Toán thành công!");
+    await deleteData_NO_ALER(apiEndpoints.GIOHANG.DELETE_TK(tt));
+    window.location.href = "./Home.html"; 
 }
+
 
 document.addEventListener('DOMContentLoaded', displayProductList);
 document.addEventListener('DOMContentLoaded', dataKhachHang);

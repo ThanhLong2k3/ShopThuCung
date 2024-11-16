@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Người Dùng</title>
+    <link rel="stylesheet" href="../css/ThongTin.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-search">
+            <a href="./Home.html" class="logo">
+                <img src="/logo.png" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <img src="/iconsearch.png" alt="Search" width="20" height="20">
+                </button>
+            </div>
+        </div>
+    
+        <nav class="nav-items">
+            <a href="./Home.html" class="nav-item">
+                <img src="/anh/gt.png" alt="Trang chủ">
+                <span>TRANG CHỦ</span>
+            </a>
+    
+            <a href="./giohang.html" class="nav-item" id="cartLink" style="display: none;">
+                <img src="/anh/giohang.png" alt="Giỏ hàng">
+                <span>GIỎ HÀNG</span>
+            </a>
+    
+            <a href="./ThongTin.html" class="nav-item" id="profileLink" style="display: none;">
+                <img src="/anh/blog.png" alt="Thông tin">
+                <span>THÔNG TIN CÁ NHÂN</span>
+            </a>
+    
+            <div class="nav-item" id="userDropdown" style="display: none;">
+                <span id="userName" style="margin-right: 50px;"></span>
+                <div class="dropdown-content">
+                    <a href="/settings">Cài đặt</a>
+                    <a href="#" id="logoutBtn">Đăng xuất</a>
+                </div>
+            </div>
+    
+            <a href="./dangnhap.html" class="nav-item" id="loginBtn" style="margin-right: 100px;">
+                <span>ĐĂNG NHẬP</span>
+            </a>
+        </nav>
+    </header>
+    <div class="container_tt">
+        <div class="thongtin-nguoidung">
+            <h1>Thông Tin Người Dùng</h1>
+            <form id="userForm">
+                <div class="form-group">
+                    <label>Họ Tên:</label>
+                    <input type="text" id="hoTen" placeholder="Nhập họ tên">
+                </div>
+                <div class="form-group">
+                    <label>Số Điện Thoại:</label>
+                    <input type="tel" id="soDienThoai" placeholder="Nhập số điện thoại">
+                </div>
+                <div class="form-group">
+                    <label>Địa Chỉ:</label>
+                    <input type="text" id="diaChi" placeholder="Nhập địa chỉ">
+                </div>
+                <div>
+                    <button type="button" id="update" onclick="capNhatThongTinNguoiDung()">Cập Nhật Thông Tin</button>
+                    <button type="button" id="add" onclick="themThongTin()">Thêm Thông Tin</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="danhsach-donhang">
+            <h2>Danh Sách Đơn Hàng</h2>
+            <div id="orderList">
+                <div class="order-item">
+                    <div class="order-header" onclick="toggleOrderDetails(1)">
+                        <span class="order-id">Đơn hàng #12345</span>
+                        <span class="order-date">15/11/2024</span>
+                    </div>
+                    <div class="order-status">Đã giao hàng</div>
+                    <div class="order-details" id="order-1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Thú Cưng</th>
+                                    <th>Số Lượng</th>
+                                    <th>Đơn Giá</th>
+                                    <th>Thành Tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mèo Anh Lông Ngắn</td>
+                                    <td>1</td>
+                                    <td>1.500.000 ₫</td>
+                                    <td>1.500.000 ₫</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="detail-row">
+                            <span>Địa chỉ giao hàng:</span>
+                            <span>123 Đường ABC, Quận XYZ</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Số điện thoại:</span>
+                            <span>0123456789</span>
+                        </div>
+                    </div>
+                    <div class="order-total">Tổng tiền: 1.500.000 ₫</div>
+                </div>
+
+                <div class="order-item">
+                    <div class="order-header" onclick="toggleOrderDetails(2)">
+                        <span class="order-id">Đơn hàng #12346</span>
+                        <span class="order-date">14/11/2024</span>
+                    </div>
+                    <div class="order-status">Đang giao</div>
+                    <div class="order-details" id="order-2">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Thú Cưng</th>
+                                    <th>Số Lượng</th>
+                                    <th>Đơn Giá</th>
+                                    <th>Thành Tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Chó Corgi</td>
+                                    <td>1</td>
+                                    <td>2.300.000 ₫</td>
+                                    <td>2.300.000 ₫</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="detail-row">
+                            <span>Địa chỉ giao hàng:</span>
+                            <span>456 Đường DEF, Quận UVW</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Số điện thoại:</span>
+                            <span>0987654321</span>
+                        </div>
+                    </div>
+                    <div class="order-total">Tổng tiền: 2.300.000 ₫</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        
+    </script>
+</body>
+<script src="/js/JS_ADMIN/apiService.js    "></script>
+<script src="/js/ThongTin.js    "></script>
+
+</html>

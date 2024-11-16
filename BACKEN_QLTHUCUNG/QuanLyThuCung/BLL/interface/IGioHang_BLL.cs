@@ -15,5 +15,7 @@ namespace BLL.Interface
         bool Update(string tk, string matc, int ac);
         bool Update_gh(GioHang_DTO model);
         bool Delete(string tk, int mathucung);
+        bool Delete_TK(string tk);
+
     }
 }

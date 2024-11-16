@@ -1,218 +1,257 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\",
+  "WorkspaceRootPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\donbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\donbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\donbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\use\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Plinhh\\Desktop\\New folder\\PHAMTHANHLONG.CS||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\donban_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\donban_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\use\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\use\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\khachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\khachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\ikhachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\ikhachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\khachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\khachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\giohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\giohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\use\\controllers\\giohang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\controllers\\giohang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\giohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\giohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\thucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\thucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\giohang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\giohang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\igiohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\igiohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\igiohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\igiohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\donnhap_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\donnhap_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\donnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\donnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\use\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\donnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\donnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\donnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\donnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\ibll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\ibll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\idonban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\idonban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\idonnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\idonnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\ithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\ithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\thucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\thucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\use\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\thucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\thucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\ithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\ithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\thucung_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\thucung_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\loaithucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\loaithucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\ql_loaithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\ql_loaithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\iloai_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\iloai_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\itaikhoanbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\itaikhoanbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\iloaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\iloaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\nhanvien_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\nhanvien_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\nhanvien_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\nhanvien_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\nhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\nhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\inhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\inhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\ikhachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\ikhachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\interface\\itaikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\itaikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\nhacungcap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\nhacungcap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\khachhang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\khachhang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\donban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dal\\nhacungcaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\nhacungcaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\donban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\donban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\dto\\dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\idonban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\idonban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\taikhoan_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\taikhoan_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\idonnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\idonnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\ctdonban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\idonbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\idonbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\use\\controllers\\giohang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\controllers\\giohang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\giohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\giohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\igiohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\igiohang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\igiohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\igiohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\giohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\giohangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\use\\controllers\\ctdonban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\controllers\\ctdonban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\ctdonban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\ctdonban_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\doan2_plinh\\backen_qlthucung\\quanlythucung\\bll\\interface\\idonnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\idonnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\chitietdonban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\chitietdonban_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\ichitietdonbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\ichitietdonbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\chitietdonbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\chitietdonbanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\chitietdonban_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\chitietdonban_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\donnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\donnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\ctdonnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\ctdonnhap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\donnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\donnhap_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\idonnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\idonnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\donnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\donnhaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\use\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\khachhang_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\khachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\khachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\ikhachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\ikhachhang_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\khachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\khachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\thucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\thucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\giohang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\giohang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\donnhap_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\donnhap_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\use\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\ibll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\ibll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\ithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\ithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\thucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\thucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\use\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A43720A6-9531-4978-98E8-BDD47464922D}|USE\\USE.csproj|solutionrelative:use\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\thucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\thucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\ithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\ithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\thucung_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\thucung_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\loaithucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\loaithucung_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\ql_loaithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\ql_loaithucung_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\iloai_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\iloai_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\itaikhoanbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\itaikhoanbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\iloaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\iloaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\nhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\nhanvien_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\nhanvien_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\nhanvien_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\nhanvien_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\nhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\nhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\bll\\interface\\inhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27BDEDF6-2987-44AF-801C-6DBE10D001CE}|BLL\\BLL.csproj|solutionrelative:bll\\interface\\inhanvien_bll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\ikhachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\ikhachhangrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\inhanvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\interface\\itaikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\itaikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\taikhoanrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\nhacungcap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\nhacungcap_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\khachhang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\khachhang_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\nhacungcaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\nhacungcaprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\dto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\quanlythucung\\controllers\\taikhoan_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50569D57-133C-4B12-AA88-C1B79D41E1B5}|QuanLyThuCung\\QuanLyThuCung.csproj|solutionrelative:quanlythucung\\controllers\\taikhoan_ctrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -222,7 +261,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -234,265 +273,308 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KhachHang_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
-              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
-              "RelativeToolTip": "QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:45:18.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GioHangRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\GioHangRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\GioHangRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\GioHangRepository.cs",
-              "RelativeToolTip": "DAL\\GioHangRepository.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAmwHUAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:01:11.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GioHang_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\GioHang_CTRL.cs",
-              "RelativeDocumentMoniker": "USE\\Controllers\\GioHang_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\GioHang_CTRL.cs",
-              "RelativeToolTip": "USE\\Controllers\\GioHang_CTRL.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAQwEIAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:16:08.771Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DonBanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonBanRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\DonBanRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonBanRepository.cs",
-              "RelativeToolTip": "DAL\\DonBanRepository.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAkwEEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:01:29.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ThuCungRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThuCungRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\ThuCungRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThuCungRepository.cs",
-              "RelativeToolTip": "DAL\\ThuCungRepository.cs",
-              "ViewState": "AQIAAIAAAAAAAAAAAAAswJAAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:08:03.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KhachHang_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\KhachHang_CTRL.cs",
-              "RelativeDocumentMoniker": "USE\\Controllers\\KhachHang_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\KhachHang_CTRL.cs",
-              "RelativeToolTip": "USE\\Controllers\\KhachHang_CTRL.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAiwFoAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T17:04:23.287Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "PHAMTHANHLONG.CS",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\New folder\\PHAMTHANHLONG.CS",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\New folder\\PHAMTHANHLONG.CS",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\New folder\\PHAMTHANHLONG.CS",
+              "RelativeToolTip": "..\\..\\..\\..\\New folder\\PHAMTHANHLONG.CS",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAAALoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T08:48:10.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonBan_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonBan_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\DonBan_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonBan_BLL.cs",
+              "RelativeToolTip": "BLL\\DonBan_BLL.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:51:39.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "DonBan_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\DonBan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:44:12.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DonBan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\DonBan_CTRL.cs",
               "RelativeDocumentMoniker": "USE\\Controllers\\DonBan_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\DonBan_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\DonBan_CTRL.cs",
               "RelativeToolTip": "USE\\Controllers\\DonBan_CTRL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwBQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T02:09:00.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DonBanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonBanRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\DonBanRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonBanRepository.cs",
+              "RelativeToolTip": "DAL\\DonBanRepository.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAswCMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:29.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DonBan_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonBan_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\DonBan_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonBan_DTO.cs",
+              "RelativeToolTip": "DTO\\DonBan_DTO.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAYwBwAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:57:07.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "KhachHangRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\KhachHangRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
-              "RelativeToolTip": "DAL\\KhachHangRepository.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowC4AAAAZAAAA",
+              "Title": "IDonBan_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonBan_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\interface\\IDonBan_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonBan_BLL.cs",
+              "RelativeToolTip": "BLL\\interface\\IDonBan_BLL.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAIwAwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:01:06.834Z",
+              "WhenOpened": "2024-11-08T08:38:38.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ThuCung_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
-              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
-              "RelativeToolTip": "QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCYAAAAAAAAA",
+              "DocumentIndex": 7,
+              "Title": "IDonNhap_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonNhap_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\interface\\IDonNhap_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonNhap_BLL.cs",
+              "RelativeToolTip": "BLL\\interface\\IDonNhap_BLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T07:41:32.976Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IKhachHang_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IKhachHang_BLL.cs",
-              "RelativeDocumentMoniker": "BLL\\interface\\IKhachHang_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IKhachHang_BLL.cs",
-              "RelativeToolTip": "BLL\\interface\\IKhachHang_BLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:27:37.199Z",
+              "WhenOpened": "2024-11-13T17:13:58.229Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "KhachHang_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\KhachHang_BLL.cs",
-              "RelativeDocumentMoniker": "BLL\\KhachHang_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\KhachHang_BLL.cs",
-              "RelativeToolTip": "BLL\\KhachHang_BLL.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAA1AAAA",
+              "DocumentIndex": 8,
+              "Title": "IDonBanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonBanRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interface\\IDonBanRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonBanRepository.cs",
+              "RelativeToolTip": "DAL\\Interface\\IDonBanRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:04:18.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GioHang_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\GioHang_DTO.cs",
-              "RelativeDocumentMoniker": "DTO\\GioHang_DTO.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\GioHang_DTO.cs",
-              "RelativeToolTip": "DTO\\GioHang_DTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T15:59:18.044Z",
+              "WhenOpened": "2024-11-15T02:51:19.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "DonNhap_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonNhap_DTO.cs",
-              "RelativeDocumentMoniker": "DTO\\DonNhap_DTO.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonNhap_DTO.cs",
-              "RelativeToolTip": "DTO\\DonNhap_DTO.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBoAAAAAAAAA",
+              "Title": "CTDonBan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\CTDonBan_CTRL.cs",
+              "RelativeDocumentMoniker": "USE\\Controllers\\CTDonBan_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\CTDonBan_CTRL.cs",
+              "RelativeToolTip": "USE\\Controllers\\CTDonBan_CTRL.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwBwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T05:58:09.84Z"
+              "WhenOpened": "2024-11-15T03:07:41.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GioHang_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\GioHang_CTRL.cs",
+              "RelativeDocumentMoniker": "USE\\Controllers\\GioHang_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\GioHang_CTRL.cs",
+              "RelativeToolTip": "USE\\Controllers\\GioHang_CTRL.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAA2wEYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:16:08.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GioHang_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\GioHang_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\GioHang_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\GioHang_BLL.cs",
+              "RelativeToolTip": "BLL\\GioHang_BLL.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAxwC4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:15:15.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IGioHang_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IGioHang_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\interface\\IGioHang_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IGioHang_BLL.cs",
+              "RelativeToolTip": "BLL\\interface\\IGioHang_BLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:14:57.957Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IGioHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IGioHangRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interface\\IGioHangRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IGioHangRepository.cs",
+              "RelativeToolTip": "DAL\\Interface\\IGioHangRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:13:07.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GioHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\GioHangRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\GioHangRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\GioHangRepository.cs",
+              "RelativeToolTip": "DAL\\GioHangRepository.cs",
+              "ViewState": "AQIAAH4AAAAAAAAAAAAiwIgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:11.592Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "CTDonBan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwAwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T07:44:56.082Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChiTietDonBanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ChiTietDonBanRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\ChiTietDonBanRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ChiTietDonBanRepository.cs",
+              "RelativeToolTip": "DAL\\ChiTietDonBanRepository.cs",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T03:06:39.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IChiTietDonBanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IChiTietDonBanRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\Interface\\IChiTietDonBanRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IChiTietDonBanRepository.cs",
+              "RelativeToolTip": "DAL\\Interface\\IChiTietDonBanRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T03:07:24.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChiTietDonBan_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ChiTietDonBan_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\ChiTietDonBan_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ChiTietDonBan_BLL.cs",
+              "RelativeToolTip": "BLL\\ChiTietDonBan_BLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T03:07:33.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ChiTietDonBan_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ChiTietDonBan_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ChiTietDonBan_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ChiTietDonBan_DTO.cs",
+              "RelativeToolTip": "DTO\\ChiTietDonBan_DTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T03:06:44.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DonNhap_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAkAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:45:35.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CTDonNhap_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonNhap_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\CTDonNhap_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonNhap_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\CTDonNhap_CTRL.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:51:58.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DonNhap_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonNhap_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\DonNhap_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonNhap_BLL.cs",
+              "RelativeToolTip": "BLL\\DonNhap_BLL.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T17:14:24.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "DonNhapRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonNhapRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonNhapRepository.cs",
               "RelativeDocumentMoniker": "DAL\\DonNhapRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonNhapRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonNhapRepository.cs",
               "RelativeToolTip": "DAL\\DonNhapRepository.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAYwBIAAAAIAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAA7wEsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T08:01:21.382Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GioHang_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\GioHang_BLL.cs",
-              "RelativeDocumentMoniker": "BLL\\GioHang_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\GioHang_BLL.cs",
-              "RelativeToolTip": "BLL\\GioHang_BLL.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAwC0AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:15:15.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IGioHang_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IGioHang_BLL.cs",
-              "RelativeDocumentMoniker": "BLL\\interface\\IGioHang_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IGioHang_BLL.cs",
-              "RelativeToolTip": "BLL\\interface\\IGioHang_BLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:14:57.957Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IGioHangRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IGioHangRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\Interface\\IGioHangRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IGioHangRepository.cs",
-              "RelativeToolTip": "DAL\\Interface\\IGioHangRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-14T07:13:07.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Program.cs",
-              "RelativeDocumentMoniker": "USE\\Program.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Program.cs",
-              "RelativeToolTip": "USE\\Program.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAqwBkAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T09:35:01.503Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Program.cs",
-              "RelativeDocumentMoniker": "QuanLyThuCung\\Program.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Program.cs",
-              "RelativeToolTip": "QuanLyThuCung\\Program.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T04:05:50.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IBLL.cs",
-              "RelativeDocumentMoniker": "BLL\\interface\\IBLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IBLL.cs",
-              "RelativeToolTip": "BLL\\interface\\IBLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:37:29.006Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "IDonNhapRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonNhapRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonNhapRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IDonNhapRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonNhapRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonNhapRepository.cs",
               "RelativeToolTip": "DAL\\Interface\\IDonNhapRepository.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -500,59 +582,155 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "DonNhap_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
-              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
-              "RelativeToolTip": "QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:45:35.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "IDonNhap_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonNhap_BLL.cs",
-              "RelativeDocumentMoniker": "BLL\\interface\\IDonNhap_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonNhap_BLL.cs",
-              "RelativeToolTip": "BLL\\interface\\IDonNhap_BLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:13:58.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DonNhap_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonNhap_BLL.cs",
-              "RelativeDocumentMoniker": "BLL\\DonNhap_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonNhap_BLL.cs",
-              "RelativeToolTip": "BLL\\DonNhap_BLL.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T17:14:24.195Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IDonBan_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonBan_BLL.cs",
-              "RelativeDocumentMoniker": "BLL\\interface\\IDonBan_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonBan_BLL.cs",
-              "RelativeToolTip": "BLL\\interface\\IDonBan_BLL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T08:38:38.865Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 26,
+              "Title": "KhachHang_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:45:18.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ThuCungRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThuCungRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\ThuCungRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThuCungRepository.cs",
+              "RelativeToolTip": "DAL\\ThuCungRepository.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAswJAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T08:08:03.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "KhachHang_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\KhachHang_CTRL.cs",
+              "RelativeDocumentMoniker": "USE\\Controllers\\KhachHang_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\KhachHang_CTRL.cs",
+              "RelativeToolTip": "USE\\Controllers\\KhachHang_CTRL.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAiwFoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T17:04:23.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "KhachHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\KhachHangRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
+              "RelativeToolTip": "DAL\\KhachHangRepository.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowC4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:06.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "ThuCung_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T07:41:32.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IKhachHang_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IKhachHang_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\interface\\IKhachHang_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IKhachHang_BLL.cs",
+              "RelativeToolTip": "BLL\\interface\\IKhachHang_BLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:27:37.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "KhachHang_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\KhachHang_BLL.cs",
+              "RelativeDocumentMoniker": "BLL\\KhachHang_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\KhachHang_BLL.cs",
+              "RelativeToolTip": "BLL\\KhachHang_BLL.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:04:18.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GioHang_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\GioHang_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\GioHang_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\GioHang_DTO.cs",
+              "RelativeToolTip": "DTO\\GioHang_DTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T15:59:18.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "DonNhap_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonNhap_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\DonNhap_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonNhap_DTO.cs",
+              "RelativeToolTip": "DTO\\DonNhap_DTO.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T05:58:09.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Program.cs",
+              "RelativeDocumentMoniker": "USE\\Program.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Program.cs",
+              "RelativeToolTip": "USE\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAqwBkAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T09:35:01.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Program.cs",
+              "RelativeDocumentMoniker": "QuanLyThuCung\\Program.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Program.cs",
+              "RelativeToolTip": "QuanLyThuCung\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T04:05:50.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IBLL.cs",
+              "RelativeDocumentMoniker": "BLL\\interface\\IBLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IBLL.cs",
+              "RelativeToolTip": "BLL\\interface\\IBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T08:37:29.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\appsettings.json",
               "RelativeDocumentMoniker": "QuanLyThuCung\\appsettings.json",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\appsettings.json",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\appsettings.json",
               "RelativeToolTip": "QuanLyThuCung\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -560,11 +738,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 40,
               "Title": "ThuCung_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ThuCung_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ThuCung_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\ThuCung_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ThuCung_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ThuCung_BLL.cs",
               "RelativeToolTip": "BLL\\ThuCung_BLL.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwBQAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -572,11 +750,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 36,
               "Title": "IThuCungRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IThuCungRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IThuCungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IThuCungRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IThuCungRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IThuCungRepository.cs",
               "RelativeToolTip": "DAL\\Interface\\IThuCungRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -584,11 +762,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 38,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\appsettings.json",
               "RelativeDocumentMoniker": "USE\\appsettings.json",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\appsettings.json",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\appsettings.json",
               "RelativeToolTip": "USE\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -596,11 +774,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 41,
               "Title": "IThuCung_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IThuCung_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IThuCung_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\IThuCung_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IThuCung_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IThuCung_BLL.cs",
               "RelativeToolTip": "BLL\\interface\\IThuCung_BLL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -608,11 +786,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 42,
               "Title": "ThuCung_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ThuCung_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ThuCung_DTO.cs",
               "RelativeDocumentMoniker": "DTO\\ThuCung_DTO.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ThuCung_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ThuCung_DTO.cs",
               "RelativeToolTip": "DTO\\ThuCung_DTO.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAA6wBMAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -620,11 +798,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 43,
               "Title": "LoaiThuCungRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\LoaiThuCungRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
               "RelativeToolTip": "DAL\\LoaiThuCungRepository.cs",
               "ViewState": "AQIAACgAAAAAAAAAAAAYwDQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -632,11 +810,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 48,
               "Title": "ILoaiThuCungRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ILoaiThuCungRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ILoaiThuCungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\ILoaiThuCungRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ILoaiThuCungRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ILoaiThuCungRepository.cs",
               "RelativeToolTip": "DAL\\Interface\\ILoaiThuCungRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -644,11 +822,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 44,
               "Title": "LoaiThuCung_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
               "RelativeToolTip": "QuanLyThuCung\\Controllers\\LoaiThuCung_CTRL.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwAwAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -656,11 +834,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 46,
               "Title": "ILoai_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ILoai_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ILoai_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\ILoai_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ILoai_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ILoai_BLL.cs",
               "RelativeToolTip": "BLL\\interface\\ILoai_BLL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -668,11 +846,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 45,
               "Title": "QL_LoaiThuCung_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\QL_LoaiThuCung_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\QL_LoaiThuCung_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\QL_LoaiThuCung_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\QL_LoaiThuCung_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\QL_LoaiThuCung_BLL.cs",
               "RelativeToolTip": "BLL\\QL_LoaiThuCung_BLL.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAIwBsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -680,11 +858,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 47,
               "Title": "ITaiKhoanBLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ITaiKhoanBLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ITaiKhoanBLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\ITaiKhoanBLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ITaiKhoanBLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ITaiKhoanBLL.cs",
               "RelativeToolTip": "BLL\\interface\\ITaiKhoanBLL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -692,11 +870,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 49,
               "Title": "NhanVienRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhanVienRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhanVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\NhanVienRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhanVienRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhanVienRepository.cs",
               "RelativeToolTip": "DAL\\NhanVienRepository.cs",
               "ViewState": "AQIAAE8AAAAAAAAAAAAqwFUAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -704,11 +882,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 50,
               "Title": "NhanVien_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\NhanVien_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\NhanVien_DTO.cs",
               "RelativeDocumentMoniker": "DTO\\NhanVien_DTO.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\NhanVien_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\NhanVien_DTO.cs",
               "RelativeToolTip": "DTO\\NhanVien_DTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -716,11 +894,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 51,
               "Title": "NhanVien_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
               "RelativeToolTip": "QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAQwB8AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -728,11 +906,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 52,
               "Title": "NhanVien_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhanVien_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhanVien_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\NhanVien_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhanVien_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhanVien_BLL.cs",
               "RelativeToolTip": "BLL\\NhanVien_BLL.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwBsAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -740,11 +918,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 53,
               "Title": "INhanVien_BLL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\INhanVien_BLL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\INhanVien_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\INhanVien_BLL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\INhanVien_BLL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\INhanVien_BLL.cs",
               "RelativeToolTip": "BLL\\interface\\INhanVien_BLL.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -752,11 +930,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 56,
               "Title": "ITaiKhoanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ITaiKhoanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ITaiKhoanRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\ITaiKhoanRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ITaiKhoanRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\ITaiKhoanRepository.cs",
               "RelativeToolTip": "DAL\\Interface\\ITaiKhoanRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -764,11 +942,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 55,
               "Title": "INhanVienRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhanVienRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhanVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\INhanVienRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhanVienRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhanVienRepository.cs",
               "RelativeToolTip": "DAL\\Interface\\INhanVienRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -776,11 +954,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 54,
               "Title": "IKhachHangRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IKhachHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IKhachHangRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IKhachHangRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IKhachHangRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IKhachHangRepository.cs",
               "RelativeToolTip": "DAL\\Interface\\IKhachHangRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -788,11 +966,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 57,
               "Title": "TaiKhoanRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\TaiKhoanRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\TaiKhoanRepository.cs",
               "RelativeDocumentMoniker": "DAL\\TaiKhoanRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\TaiKhoanRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\TaiKhoanRepository.cs",
               "RelativeToolTip": "DAL\\TaiKhoanRepository.cs",
               "ViewState": "AQIAACMAAAAAAAAAAAAgwDoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -800,11 +978,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 58,
               "Title": "NhaCungCap_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
               "RelativeToolTip": "QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
               "ViewState": "AgIAADwAAAAAAAAAAAAowE8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -812,11 +990,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 59,
               "Title": "KhachHang_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\KhachHang_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\KhachHang_DTO.cs",
               "RelativeDocumentMoniker": "DTO\\KhachHang_DTO.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\KhachHang_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\KhachHang_DTO.cs",
               "RelativeToolTip": "DTO\\KhachHang_DTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -824,23 +1002,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "DonBan_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
-              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
-              "RelativeToolTip": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAwCkAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:44:12.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 61,
               "Title": "DTO.csproj",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
               "RelativeDocumentMoniker": "DTO\\DTO.csproj",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj",
               "RelativeToolTip": "DTO\\DTO.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -848,11 +1014,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 60,
               "Title": "NhaCungCapRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhaCungCapRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhaCungCapRepository.cs",
               "RelativeDocumentMoniker": "DAL\\NhaCungCapRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhaCungCapRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhaCungCapRepository.cs",
               "RelativeToolTip": "DAL\\NhaCungCapRepository.cs",
               "ViewState": "AgIAAFwAAAAAAAAAAAAswGUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -860,27 +1026,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 62,
               "Title": "TaiKhoan_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
               "RelativeToolTip": "QuanLyThuCung\\Controllers\\TaiKhoan_CTRL.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T07:41:37.19Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "CTDonBan_CTRL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
-              "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
-              "RelativeToolTip": "QuanLyThuCung\\Controllers\\CTDonBan_CTRL.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAqwB0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:44:56.082Z"
             }
           ]
         }

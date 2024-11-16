@@ -52,8 +52,9 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/DonNhap_CTRL/delete/${MA}`,
     },
     DONBAN:{
+        create:`${localHot_ND}/api/DonBan_CTRL/create`,
         getAll: `${localHot_AD}api/DonBan_CTRL/get_all`,
-        getById: (MA) => `${localHot_AD}api/DonBan_CTRL/get_by_id=${MA}`,
+        getById: (MA) => `${localHot_AD}api/DonBan_CTRL/get_by_id?id=${MA}`,
         delete: (MA) => `${localHot_AD}api/DonBan_CTRL/delete/${MA}`,    
     },
     CTDONNHAP:{
@@ -64,6 +65,7 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/CTDonNhap_CTRL/delete/${MA}`,
     },
     CTDONBAN:{
+        create:`${localHot_ND}/api/CTDonBan_CTRL/create`,
         getAll: `${localHot_AD}api/CTDonBan_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/CTDonBan_CTRL/get_by_id=${MA}`,
         delete: (MA) => `${localHot_AD}api/CTDonBan_CTRL/delete/${MA}`,    
@@ -79,6 +81,8 @@ const apiEndpoints = {
         ADD:`${localHot_ND}/api/GioHang_CTRL/create`,
         UPDATE_SL_1:(TK,MATK,GT)=>`${localHot_ND}/api/GioHang_CTRL/update?tk=${TK}&matc=${MATK}&ac=${GT}`, /* ac= 0 TĂNG SỐ LƯỢNG, 1 GIẢM SỐ LƯỢNG*/
         DELETE:(MAKH,MATC)=> `${localHot_ND}/api/GioHang_CTRL/delete?tk=${MAKH}&mathucung=${MATC}`,
+        DELETE_TK:(TK)=> `${localHot_ND}/api/GioHang_CTRL/delete_TK?tk=${TK}`,
+
     },
     async fetchWithError(url, options = {}) {
         const response = await fetch(url, options);
@@ -201,7 +205,17 @@ const updateData_gh = async (url, data = {}) => {
         alert(MESSAGES.ERROR);
     }
 }
-
+const deleteData_NO_ALER = async (url) => {
+    try {
+      let a =  await apiEndpoints.fetchWithError(url, {
+            method: 'DELETE'
+        });
+        
+    } catch (error) {
+        alert(MESSAGES.ERROR);
+        console.error('Error deleting data:', error);
+    }
+};
 window.apiEndpoints = apiEndpoints;
 window.getDaTa = getDaTa;
 window.addData = addData;
@@ -209,4 +223,5 @@ window.updateData = updateData;
 window.deleteData = deleteData;
 window.addDonHang=addDonHang;
 window.updateData_gh=updateData_gh;
+window.deleteData_NO_ALER=deleteData_NO_ALER;
 window.MESSAGES = MESSAGES;
