@@ -32,6 +32,36 @@ namespace DAL
                 throw ex;
             }
         }
+        public List< TaiKhoan_DTO> GetAll()
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "GetAllTk");
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<TaiKhoan_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<TaiKhoan_DTO> GetByTk(string tk)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "GetAllByTk","@TaiKhoan",tk);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<TaiKhoan_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public int DangKy(TaiKhoan_DTO model)
         {
             string msgError = "";
@@ -86,6 +116,26 @@ namespace DAL
             catch (Exception ex)
             {
                 throw new Exception("Error in DoiMK: ", ex);
+            }
+        }
+        public bool Delete(string id)
+        {
+            string msgError = "";
+            try
+            {
+                var result = _dbHelper.ExecuteScalarSProcedure(out msgError, "DELETE_TK", "@TaiKhoan", id);
+                if (result != null && Convert.ToInt32(result) > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
 

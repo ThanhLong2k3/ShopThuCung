@@ -32,7 +32,7 @@ public class KhachHang_CTRL : ControllerBase
         var result = _khachHangBLL.GetByTK(id);
         if (result == null || result.Count == 0)
         {
-            return NotFound($"Không tìm thấy khách hàng với ID: {id}");
+            return Ok(1);
         }
         return Ok(result);
     }

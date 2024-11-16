@@ -31,17 +31,26 @@ namespace QuanLyThuCung.Controllers
         [HttpPost]
         public IActionResult CreateItem([FromBody] TaiKhoan_DTO model)
         {
-            if (model == null)
+            var list = _taiKhoanBLL.GetByTk(model.taiKhoan);
+            if (list == null)
             {
-                return BadRequest("Dữ liệu đầu vào không hợp lệ.");
-            }
+                if (model == null)
+                {
+                    return BadRequest("Dữ liệu đầu vào không hợp lệ.");
+                }
 
-            var result = _taiKhoanBLL.DangKy(model);
-            if (result > 0)
-            {
-                return Ok("Đăng ký thành công.");
+                var result = _taiKhoanBLL.DangKy(model);
+                if (result > 0)
+                {
+                    return Ok("Đăng ký thành công.");
+                }
+                return StatusCode(500, "Đăng ký không thành công.");
             }
-            return StatusCode(500, "Đăng ký không thành công.");
+            else
+            {
+                return Ok("Tài Khoản này đã tồn tại, vui lòng đăng ký tài koanr khác!");
+            }
+            
         }
 
         [Route("doimatkhau")]

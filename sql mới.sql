@@ -523,25 +523,45 @@ BEGIN
 END;
 GO
 
-CREATE PROCEDURE Xoa_DonNhap
+CREATE OR ALTER PROCEDURE Xoa_DonNhap
     @MaDonNhap INT
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    -- Check for related records in ChiTietDonNhap
-    IF EXISTS (SELECT 1 FROM ChiTietDonNhap WHERE maDonNhap = @MaDonNhap)
+    BEGIN TRANSACTION;
+
+    -- Update the quantity in ThuCung table
+    UPDATE tc
+    SET tc.soLuong = tc.soLuong - ctdn.soLuong
+    FROM ThuCung tc
+    INNER JOIN ChiTietDonNhap ctdn ON tc.maThuCung = ctdn.maThuCung
+    WHERE ctdn.maDonNhap = @MaDonNhap;
+
+    -- Check if any ThuCung now has negative quantity
+    IF EXISTS (SELECT 1 FROM ThuCung WHERE soLuong < 0)
     BEGIN
-        SELECT 0; -- Constraint violation
+        ROLLBACK;
+        SELECT -1 AS Result; -- Deletion failed due to negative quantity
+        RETURN;
     END
 
-    -- Attempt to delete
+    -- Delete the related records in ChiTietDonNhap
+    DELETE FROM ChiTietDonNhap WHERE maDonNhap = @MaDonNhap;
+
+    -- Delete the DonNhap record
     DELETE FROM DonNhap WHERE MaDonNhap = @MaDonNhap;
     
-    IF @@ROWCOUNT > 0
-        SELECT 1; -- Deletion successful
+    IF @@ERROR <> 0
+    BEGIN
+        ROLLBACK;
+        SELECT 0 AS Result; -- Deletion failed
+    END
     ELSE
-        SELECT 0; -- No record found to delete
+    BEGIN
+        COMMIT;
+        SELECT 1 AS Result; -- Deletion successful
+    END
 END;
 go
 --===============================Don Ban ===================
@@ -592,25 +612,37 @@ BEGIN
 END;
 go
 
-CREATE PROCEDURE Xoa_DonBan
+CREATE OR ALTER PROCEDURE Xoa_DonBan
     @MaDonBan INT
 AS
 BEGIN
     SET NOCOUNT ON;
 
-    -- Check for related records in ChiTietDonBan
-    IF EXISTS (SELECT 1 FROM ChiTietDonBan WHERE MaDonBan = @MaDonBan)
-    BEGIN
-        SELECT 0; -- Constraint violation
-    END
+    BEGIN TRANSACTION;
 
-    -- Attempt to delete
+    -- Update the quantity in ThuCung table
+    UPDATE tc
+    SET tc.soLuong = tc.soLuong + ctdb.soLuong
+    FROM ThuCung tc
+    INNER JOIN ChiTietDonBan ctdb ON tc.maThuCung = ctdb.maThuCung
+    WHERE ctdb.maDonBan = @MaDonBan;
+
+    -- Delete the related records in ChiTietDonBan
+    DELETE FROM ChiTietDonBan WHERE maDonBan = @MaDonBan;
+
+    -- Delete the DonBan record
     DELETE FROM DonBan WHERE MaDonBan = @MaDonBan;
     
-    IF @@ROWCOUNT > 0
-        SELECT 1; -- Deletion successful
+    IF @@ERROR <> 0
+    BEGIN
+        ROLLBACK;
+        SELECT 0 AS Result; -- Deletion failed
+    END
     ELSE
-        SELECT 0; -- No record found to delete
+    BEGIN
+        COMMIT;
+        SELECT 1 AS Result; -- Deletion successful
+    END
 END;
 go
 go
@@ -638,7 +670,7 @@ FROM
 WHERE 
     db.maKhachHang = @MaKhachHang
 ORDER BY 
-    db.ngayBan DESC
+    db.maDonBan DESC
 END;
 go
 CREATE PROCEDURE Get_All_ChiTietDonNhap
@@ -1092,5 +1124,25 @@ CREATE PROC DELETE_GH_TK
     ELSE
         SELECT 0;
 		END
-		SELECT*FROM DonBan
-		SELECT*FROM ChiTietDonBan
+		GO
+	CREATE PROC GetAllTk 
+	AS
+	BEGIN
+		SELECT*FROM TaiKhoan
+	END
+	GO
+	CREATE  PROC GetAllByTk
+		@TaiKhoan nvarchar(50)
+		AS 
+			BEGIN	
+				SELECT *FROM TaiKhoan WHERE taiKhoan=@TaiKhoan
+			END
+	GO
+	CREATE PROC DELETE_TK
+		@TaiKhoan nvarchar(50) 
+		AS
+			BEGIN 
+				DELETE FROM TaiKhoan WHERE taiKhoan=@TaiKhoan
+			END
+
+			select*from TaiKhoan

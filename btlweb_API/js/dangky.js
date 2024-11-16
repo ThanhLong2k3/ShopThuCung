@@ -16,18 +16,17 @@ async function SIGN_UP() {
         const tk = {
             taiKhoan: ten,
             matKhau: mk,
-            vaiTro: 0
+            vaiTro: 2
         }
-
-        await addData(apiEndpoints.TAIKHOAN.DANGKY, tk);
-        alert("Đăng ký tài khoản thành công");
+        
+     let result= await addDonHang(apiEndpoints.TAIKHOAN.DANGKY, tk);
+     alert(result);
     }
 
     document.getElementById('ten').value = "";
     document.getElementById('mk').value = "";
     document.getElementById('confirm-mk').value = "";
 
-    alert("Đăng ký thành công!");
 
 }
 
@@ -53,6 +52,8 @@ async function dangnhap() {
             else {
                 window.location.href = "http://127.0.0.1:5501/html/Home.html";
                 localStorage.setItem('thongtindangnhap', JSON.stringify(tk));
+                localStorage.setItem('MatKhau', JSON.stringify(mk));
+
             }
 
 

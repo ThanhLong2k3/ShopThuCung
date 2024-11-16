@@ -56,13 +56,7 @@ public class DonBan_CTRL : ControllerBase
     [HttpDelete]
     public IActionResult DeleteItem(int id)
     {
-        var existingItem = _donBanBLL.GetById(id);
-        if (existingItem == null || existingItem.Count == 0)
-        {
-            return NotFound($"Không tìm thấy đơn bán với ID: {id}");
-        }
-
-        _donBanBLL.Delete(id);
-        return NoContent();
+        bool kq= _donBanBLL.Delete(id);
+        return Ok(kq);
     }
 }
