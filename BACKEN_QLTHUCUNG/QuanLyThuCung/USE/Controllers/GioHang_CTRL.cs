@@ -67,6 +67,16 @@ namespace QuanLyThuCung.Controllers
             return Ok(kq);
 
         }
+        [Route("delete_TK")]
+        [HttpDelete]
+        public IActionResult DeleteItem_TK(string tk)
+        {
+
+            bool kq = _gioHangBLL.Delete_TK(tk);
+
+            return Ok(kq);
+
+        }
 
     }
 }

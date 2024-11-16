@@ -16,7 +16,7 @@ public class DonBan_CTRL : ControllerBase
 
     [Route("get_by_id")]
     [HttpGet]
-    public ActionResult<List<DonBan_DTO>> GetById(int id)
+    public ActionResult<List<V_DonBan_DTO>> GetById(int id)
     {
         var result = _donBanBLL.GetById(id);
         if (result == null || result.Count == 0)

@@ -33,15 +33,15 @@ namespace DAL
             }
         }
 
-        public List<DonBan_DTO> GetById(int id)
+        public List<V_DonBan_DTO> GetById(int id)
         {
             string msgError = "";
             try
             {
-                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_DonBan_ById", "@MaDonBan", id);
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_DonBan_ByMaKH", "@MaKhachHang", id);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
-                return dt.ConvertTo<DonBan_DTO>().ToList();
+                return dt.ConvertTo<V_DonBan_DTO>().ToList();
             }
             catch (Exception ex)
             {
@@ -71,15 +71,23 @@ namespace DAL
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "Them_DonBan",
                     "@NgayBan", model.ngayBan,
-                    "@taiKhoan_KH", model.taiKhoan_kh,
-                    "@taiKhoan_NV", model.taiKhoan_nv,
+                    "@MaKhachHang", model.maKhachHang,
+                    "@MaNhanVien", model.maNhanVien,
                     "@TongTien", model.tongTien
                 );
-                if (!string.IsNullOrEmpty(result?.ToString()) || !string.IsNullOrEmpty(msgError))
+                if (!string.IsNullOrEmpty(msgError))
                 {
-                    throw new Exception(Convert.ToString(result) + msgError);
+                    throw new Exception("Database error: " + msgError);
                 }
-                return Convert.ToInt32(result);
+
+                if (result != null)
+                {
+                    return Convert.ToInt32(result);
+                }
+                else
+                {
+                    throw new Exception("Thủ tục SQL không trả về mã đơn nhập.");
+                }
             }
             catch (Exception ex)
             {
@@ -95,8 +103,8 @@ namespace DAL
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "Sua_DonBan",
                     "@MaDonBan", model.maDonBan,
                     "@NgayBan", model.ngayBan,
-                    "@taiKhoan_KH", model.taiKhoan_kh,
-                    "@taiKhoan_NV", model.taiKhoan_nv,
+                    "@MaKhachHang", model.maKhachHang,
+                    "@MaNhanVien", model.maNhanVien,
                     "@TongTien", model.tongTien,
                     "@TrangThai", model.trangThai
                 );

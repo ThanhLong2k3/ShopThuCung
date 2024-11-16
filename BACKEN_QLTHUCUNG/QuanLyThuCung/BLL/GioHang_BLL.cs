@@ -44,5 +44,9 @@ namespace BLL
         {
             return _res.Delete(tk,mathucung);
         }
+        public bool Delete_TK(string tk)
+        {
+            return _res.Delete_TK(tk);
+        }
     }
 }

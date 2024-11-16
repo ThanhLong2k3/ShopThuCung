@@ -19,7 +19,7 @@ namespace BLL
             return _res.GetAll();
         }
 
-        public List<DonBan_DTO> GetById(int id)
+        public List<V_DonBan_DTO> GetById(int id)
         {
             return _res.GetById(id);
         }

@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using BLL.Interface; // Đảm bảo rằng đường dẫn đúng
-using DTO; // Đảm bảo rằng đường dẫn đúng
+using DTO;
+using System.Net; // Đảm bảo rằng đường dẫn đúng
 
 [ApiController]
 [Route("api/[controller]")]
@@ -16,7 +17,7 @@ public class DonBan_CTRL : ControllerBase
 
     [Route("get_by_id")]
     [HttpGet]
-    public ActionResult<List<DonBan_DTO>> GetById(int id)
+    public ActionResult<List<V_DonBan_DTO>> GetById(int id)
     {
         var result = _donBanBLL.GetById(id);
         if (result == null || result.Count == 0)
@@ -46,8 +47,8 @@ public class DonBan_CTRL : ControllerBase
             return BadRequest("Dữ liệu đầu vào không hợp lệ.");
         }
 
-        _donBanBLL.Create(model);
-        return CreatedAtAction(nameof(GetById), new { id = model.maDonBan }, model);
+      int ma=  _donBanBLL.Create(model);
+        return Ok(ma);
     }
 
 

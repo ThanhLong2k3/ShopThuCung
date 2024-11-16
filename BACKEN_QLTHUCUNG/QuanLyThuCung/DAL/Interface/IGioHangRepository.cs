@@ -17,5 +17,7 @@ namespace DAL.Interface
         bool Update_gh(GioHang_DTO model);
 
         bool Delete(string tk,int mathucung);
+        bool Delete_TK(string tk);
+
     }
 }

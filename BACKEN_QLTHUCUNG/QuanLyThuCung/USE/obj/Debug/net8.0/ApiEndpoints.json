@@ -9,13 +9,13 @@
     "Parameters": [
       {
         "Name": "model",
-        "Type": "DTO.DonBan_DTO",
+        "Type": "DTO.ChiTietDonBan_DTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "DTO.DonBan_DTO",
+        "Type": "DTO.ChiTietDonBan_DTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -41,33 +41,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[DTO.ChiTietDonNhap_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "QuanLyThuCung.Controllers.CTDonBan_CTRL",
-    "Method": "GetByTK",
-    "RelativePath": "api/CTDonBan_CTRL/get_by_tk",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[DTO.ChiTietDonNhap_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DTO.ChiTietDonBan_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -119,7 +93,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[DTO.DonBan_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DTO.V_DonBan_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -213,6 +187,22 @@
       {
         "Name": "mathucung",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLyThuCung.Controllers.GioHang_CTRL",
+    "Method": "DeleteItem_TK",
+    "RelativePath": "api/GioHang_CTRL/delete_TK",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tk",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

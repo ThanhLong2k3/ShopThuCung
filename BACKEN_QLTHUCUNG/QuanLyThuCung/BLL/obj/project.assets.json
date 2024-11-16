@@ -9313,11 +9313,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\BLL.csproj",
+      "projectPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\Plinhh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\obj\\",
+      "outputPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Plinhh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9334,11 +9334,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj"
+            "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj": {
-              "projectPath": "C:\\Users\\Plinhh\\Desktop\\DOAN2_PLINH\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj"
+            "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj": {
+              "projectPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DTO.csproj"
             }
           }
         }
