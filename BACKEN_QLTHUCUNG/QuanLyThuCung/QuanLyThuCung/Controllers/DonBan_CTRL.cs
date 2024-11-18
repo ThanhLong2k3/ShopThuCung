@@ -21,7 +21,7 @@ public class DonBan_CTRL : ControllerBase
         var result = _donBanBLL.GetById(id);
         if (result == null || result.Count == 0)
         {
-            return NotFound($"Không tìm thấy đơn bán với ID: {id}");
+            return Ok(1);
         }
         return Ok(result);
     }
@@ -29,13 +29,23 @@ public class DonBan_CTRL : ControllerBase
 
     [Route("get_all")]
     [HttpGet]
-    public ActionResult<List<DonBan_DTO>> GetAll()
+    public ActionResult<List<V_DonBan_DTO>> GetAll()
     {
         var result = _donBanBLL.GetAll();
         return Ok(result);
     }
+    [Route("GetByMaDonBan")]
+    [HttpGet]
+    public ActionResult<List<V_DonBan_DTO>> GetByMaDonBan(int id)
+    {
+        var result = _donBanBLL.GetByMaDonBan(id);
+        if (result == null || result.Count == 0)
+        {
+            return NotFound($"Không tìm thấy đơn bán với ID: {id}");
+        }
+        return Ok(result);
+    }
 
-    
 
     [Route("delete/{id}")]
     [HttpDelete]

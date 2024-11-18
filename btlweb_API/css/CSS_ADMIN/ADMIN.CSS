@@ -11,19 +11,21 @@ body {
     min-height: 720px;
 }
 
+/* Add this to your existing CSS */
 .ben_trai {
     width: 200px;
     background-color: rgb(252, 137, 175);
 }
-.logo{
+
+.logo {
     height: 70px;
     width: 100%;
     text-align: center;
     border: 1px solid #f8f5f5;
     margin-bottom: 20px;
-
 }
-.logo h2{
+
+.logo h2 {
     color: white;
 }
 
@@ -34,23 +36,7 @@ nav ul {
     border: 1px solid #ffffff;
     margin-top: -20px;
 }
-ul ul{
-    list-style-type: none;
-    padding: 0;
-    background-color: rgb(252, 137, 175);
-    border: 1px solid #ffffff;
-    margin-top: -20px;
-}
-ul ul li {
-    margin: 10px 0;
-}
-ul ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    padding: 10px;
-    border-radius: 4px;
-}
+
 nav ul li {
     margin: 10px 0;
 }
@@ -61,12 +47,44 @@ nav ul li a {
     display: block;
     padding: 10px;
     border-radius: 4px;
+    transition: background-color 0.3s;
 }
-#ul_item{
-    margin-top: 10px;color: white;display: none;
+
+/* Add styles for nested menu items */
+ul ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: rgb(252, 137, 175);
+    border: 1px solid #ffffff;
+    margin-top: -20px;
 }
+
+ul ul li {
+    margin: 10px 0;
+}
+
+ul ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+#ul_item {
+    margin-top: 10px;
+    color: white;
+    display: none;
+}
+
+/* Add this new class for active state */
+nav ul li a.active {
+    background-color: pink;
+}
+
+/* Keep hover effect */
 nav ul li a:hover {
-    background-color:pink;
+    background-color: pink;
 }
 
 .noi_dung {

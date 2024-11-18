@@ -10,7 +10,7 @@ namespace DAL.Interface
     public partial interface IChiTietDonNhapRepository
     {
         public List<ChiTietDonNhap_DTO> GetAll();
-        public List<ChiTietDonNhap_DTO> GetById(int id);
+        public List<V_ChiTietDonNhap_DTO> GetById(int id);
         int Create(ChiTietDonNhap_DTO model);
         bool Update(ChiTietDonNhap_DTO model);
         bool Delete(int id);

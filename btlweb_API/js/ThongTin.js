@@ -8,6 +8,10 @@ async function Get_DonHang() {
         let ma = TT_KhachHang.length > 0 ? TT_KhachHang[0].maKhachHang : null;
         if (ma) {
             duLieuMoi = await getDaTa(apiEndpoints.DONBAN.getById(ma));
+            if(duLieuMoi===1)
+            {
+                $('#orderList').html('<tr><td colspan="9">Bạn chưa có đơn hàng nào !</td></tr>');
+            }
         }
     } catch (error) {
         console.error("Lỗi khi lấy dữ liệu đơn hàng:", error);
@@ -59,6 +63,10 @@ async function themThongTin() {
         soDienThoai_KH: sdt
     };
     await addData(apiEndpoints.KHACHHANG.add,thongtin,dienThongTinNguoiDung);
+    document.getElementById('add').style.display = 'none';
+    document.getElementById('update').style.display = 'block';
+
+
 }
 function renderOrders(orderData) {
     const orderListContainer = document.getElementById("orderList");
@@ -127,29 +135,32 @@ function toggleOrderDetails(orderId) {
 async function main() {
     await dienThongTinNguoiDung();
     await Get_DonHang();   
-    let duLieuDonHang =await duLieuMoi.reduce((acc, item) => {
-        let donHang = acc.find(dh => dh.maDonBan === item.maDonBan);
-        if (!donHang) {
-            donHang = {
-                maDonBan: item.maDonBan,
-                ngayBan: item.ngayBan,
-                tongTien: item.tongTien,
-                trangThai: item.trangThai,
-                tenKhachHang: item.tenKhachHang,
-                diaChi_KH: item.diaChi_KH,
-                soDienThoai_KH: item.soDienThoai_KH,
-                chiTiet: []
-            };
-            acc.push(donHang);
-        }
-        donHang.chiTiet.push({
-            tenThuCung: item.tenThuCung,
-            soLuong: item.soLuong,
-            giaBan: item.giaBan
-        });
-        return acc;
-    }, []);
-    await renderOrders(duLieuDonHang);
+    if(duLieuMoi!=1)
+    {
+        let duLieuDonHang =await duLieuMoi.reduce((acc, item) => {
+            let donHang = acc.find(dh => dh.maDonBan === item.maDonBan);
+            if (!donHang) {
+                donHang = {
+                    maDonBan: item.maDonBan,
+                    ngayBan: item.ngayBan,
+                    tongTien: item.tongTien,
+                    trangThai: item.trangThai,
+                    tenKhachHang: item.tenKhachHang,
+                    diaChi_KH: item.diaChi_KH,
+                    soDienThoai_KH: item.soDienThoai_KH,
+                    chiTiet: []
+                };
+                acc.push(donHang);
+            }
+            donHang.chiTiet.push({
+                tenThuCung: item.tenThuCung,
+                soLuong: item.soLuong,
+                giaBan: item.giaBan
+            });
+            return acc;
+        }, []);
+        await renderOrders(duLieuDonHang);
+    }
  
 }
 main();

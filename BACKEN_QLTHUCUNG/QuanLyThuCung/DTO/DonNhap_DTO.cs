@@ -24,7 +24,8 @@ namespace DTO
         public string trangThai { get; set; }
         public decimal tongTien { get; set; }
         public string tenNhaCungCap { get; set; }
-
+        public int maNhanVien { get; set; }
+        public int maNhaCungCap { get; set; }
         public string diaChi { get; set; }
         public string soDienThoai { get; set; }
     }

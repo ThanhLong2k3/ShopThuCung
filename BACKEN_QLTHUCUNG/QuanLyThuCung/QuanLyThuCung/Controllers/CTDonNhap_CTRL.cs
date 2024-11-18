@@ -8,16 +8,16 @@ namespace QuanLyThuCung.Controllers
     [Route("api/[controller]")]
     public class CTDonNhap_CTRL : Controller
     {
-        private readonly IBLL<ChiTietDonNhap_DTO> _donNhapBLL;
+        private readonly ICTDonNhap_BLL _donNhapBLL;
 
-        public CTDonNhap_CTRL(IBLL<ChiTietDonNhap_DTO> donNhapBLL)
+        public CTDonNhap_CTRL(ICTDonNhap_BLL donNhapBLL)
         {
             _donNhapBLL = donNhapBLL;
         }
 
         [Route("get_by_id")]
         [HttpGet]
-        public ActionResult<List<ChiTietDonNhap_DTO>> GetById(int id)
+        public ActionResult<List<V_ChiTietDonNhap_DTO>> GetById(int id)
         {
             var result = _donNhapBLL.GetById(id);
             if (result == null || result.Count == 0)

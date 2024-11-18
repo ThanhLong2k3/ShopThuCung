@@ -82,7 +82,7 @@ CREATE TABLE ChiTietDonNhap (
 CREATE TABLE DonBan (
     maDonBan INT PRIMARY KEY IDENTITY(1,1), 
     ngayBan DATE,
-    maNhanVien int,
+    maNhanVien int null,
     maKhachHang int,
     tongTien DECIMAL(18, 2),
 	trangThai nvarchar(50),
@@ -476,7 +476,7 @@ GO
 CREATE PROCEDURE Get_All_DonNhap
 AS
 BEGIN
-	select dn.trangThai,nv.tenNhanVien,dn.ngayNhap,ncc.tenNhaCungCap,ncc.soDienThoai,ncc.diaChi,dn.tongTien,dn.maDonNhap from DonNhap dn inner join NhaCungCap ncc on dn.maNhaCungCap=ncc.MaNhaCungCap inner join NhanVien nv on dn.maNhanVien=nv.maNhanVien
+	select  dn.trangThai,nv.tenNhanVien,dn.ngayNhap,ncc.tenNhaCungCap,ncc.soDienThoai,ncc.diaChi,dn.tongTien,dn.maDonNhap from DonNhap dn inner join NhaCungCap ncc on dn.maNhaCungCap=ncc.MaNhaCungCap inner join NhanVien nv on dn.maNhanVien=nv.maNhanVien ORDER BY dn.maDonNhap DESC
 END;
 GO
 
@@ -484,8 +484,8 @@ CREATE PROCEDURE Get_DonNhap_ById
     @MaDonNhap INT
 AS
 BEGIN
-    SELECT * FROM DonNhap
-    WHERE MaDonNhap = @MaDonNhap;
+	select dn.trangThai,nv.tenNhanVien,dn.ngayNhap,ncc.tenNhaCungCap,ncc.soDienThoai,ncc.diaChi,dn.tongTien,dn.maDonNhap,dn.maNhaCungCap,dn.maNhanVien from DonNhap dn inner join NhaCungCap ncc on dn.maNhaCungCap=ncc.MaNhaCungCap inner join NhanVien nv on dn.maNhanVien=nv.maNhanVien
+    WHERE dn.maDonNhap = @MaDonNhap;
 END;
 GO
 
@@ -565,21 +565,22 @@ BEGIN
 END;
 go
 --===============================Don Ban ===================
+
 CREATE PROCEDURE Get_All_DonBan
 AS
 BEGIN
-    SELECT * FROM DonBan;
+    SELECT db.maDonBan,db.ngayBan,db.maNhanVien,db.maKhachHang,db.tongTien,db.trangThai,nv.tenNhanVien,kh.tenKhachHang,kh.soDienThoai_KH,kh.diaChi_KH FROM DonBan db inner join NhanVien nv on db.maNhanVien=nv.maNhanVien inner join KhachHang kh on db.maKhachHang=KH.maKhachHang order by db.ngayBan DESC;
 END;
 go
+drop proc Get_DonBan_ById
 CREATE PROCEDURE Get_DonBan_ById
     @MaDonBan INT
 AS
 BEGIN
-    SELECT * FROM DonBan
-    WHERE MaDonBan = @MaDonBan;
+    SELECT db.maDonBan,db.ngayBan,db.maNhanVien,db.maKhachHang,db.tongTien,db.trangThai,nv.tenNhanVien,kh.tenKhachHang,kh.soDienThoai_KH,kh.diaChi_KH FROM DonBan db inner join NhanVien nv on db.maNhanVien=nv.maNhanVien inner join KhachHang kh on db.maKhachHang=KH.maKhachHang 
+    WHERE db.maDonBan = @MaDonBan;
 END;
 go
-ALTER TABLE DonBan ALTER COLUMN MaNhanVien INT NULL;
 go
 CREATE PROCEDURE Them_DonBan
     @NgayBan DATE,
@@ -686,11 +687,12 @@ BEGIN
     SELECT * FROM ChiTietDonNhap;
 END;
 GO
+
 CREATE PROCEDURE Get_ChiTietDonNhap_ById
     @MaDonNhap INT
 AS
 BEGIN
-    SELECT * FROM ChiTietDonNhap
+    SELECT ct.maDonNhap,ct.maThuCung,ct.giaNhap,ct.soLuong,tc.tenThuCung FROM ChiTietDonNhap ct inner join ThuCung tc on ct.maThuCung=tc.maThuCung
     WHERE maDonNhap = @MaDonNhap;
 END;
 GO
@@ -1145,4 +1147,7 @@ CREATE PROC DELETE_GH_TK
 				DELETE FROM TaiKhoan WHERE taiKhoan=@TaiKhoan
 			END
 
-			select*from TaiKhoan
+			
+
+			select*from DonBan
+			exec Get_DonBan_ById @MaDonBan=10

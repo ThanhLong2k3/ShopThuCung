@@ -28,7 +28,7 @@ builder.Services.AddTransient<IDonNhap_BLL, DonNhap_BLL>();
 builder.Services.AddTransient<IDonBanRepository, DonBanRepository>();
 builder.Services.AddTransient<IDonBan_BLL, DonBan_BLL>();
 builder.Services.AddTransient<IChiTietDonNhapRepository, ChiTietDonNhapRepository>();
-builder.Services.AddTransient<IBLL<ChiTietDonNhap_DTO>, ChiTietDonNhap_BLL>();
+builder.Services.AddTransient<ICTDonNhap_BLL, ChiTietDonNhap_BLL>();
 builder.Services.AddTransient<IChiTietDonBanRepository, ChiTietDonBanRepository>();
 builder.Services.AddTransient<IBLL<ChiTietDonBan_DTO>, ChiTietDonBan_BLL>();
 builder.Services.AddTransient<ITaiKhoanRepository, TaiKhoanRepository>();
