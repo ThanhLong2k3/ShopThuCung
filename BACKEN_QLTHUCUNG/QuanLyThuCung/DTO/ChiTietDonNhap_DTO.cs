@@ -13,5 +13,16 @@ namespace DTO
         public int soLuong { get; set; }
         public decimal giaNhap { get; set; }
     }
+    public class V_ChiTietDonNhap_DTO
+    {
+        public string tenThuCung { get; set; }
+        public int maDonNhap { get; set; }
+    
+
+
+        public int maThuCung { get; set; }
+        public int soLuong { get; set; }
+        public decimal giaNhap { get; set; }
+    }
 
 }

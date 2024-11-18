@@ -14,7 +14,7 @@ namespace BLL
             _res = res;
         }
 
-        public List<DonBan_DTO> GetAll()
+        public List<V_DonBan_DTO> GetAll()
         {
             return _res.GetAll();
         }
@@ -22,6 +22,10 @@ namespace BLL
         public List<V_DonBan_DTO> GetById(int id)
         {
             return _res.GetById(id);
+        }
+        public List<V_DonBan_DTO> GetByMaDonBan(int id)
+        {
+            return _res.GetByMaDonBan(id);
         }
         public List<DonBan_DTO> GetByTK(string id)
         {

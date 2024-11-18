@@ -32,6 +32,7 @@
                             <li onclick="Show_List_DN()"><a >Danh sách đơn nhập</a></li>
                         </ul>
                     </li>
+                    <li><a href="#" onclick="show_DonBan()">Quản lý đơn bán</a></li>
                     <li><a href="#" onclick="showdangxuat()">CÀI ĐẶT</a>
                         <ul id="ul_item">
                             <li><a>Đổi Mật Khẩu</a></li>
@@ -438,31 +439,15 @@
                 </section>
 
                 <section id="List_DonNhap" class="content-section">
-                    <h2 style="color: rgb(248, 31, 103);">DANH SÁCH ĐƠN NHẬP</h2>
+                    <h2 style="color: rgb(248, 31, 103); ">DANH SÁCH ĐƠN NHẬP</h2>
                     <div id="Modal_CT_DonNhap" class="modal">
                         <div class="modal-content">
                             <div onclick="closemodal_CT_DN()" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
                                 <span>&times;</span>
                             </div>
                 
-                            <div style="display: flex; width: 1000px; justify-content: space-between;">
-                                <div style="flex: 1;">
-                                    <label>Mã Khách Hàng:</label>
-                                    <input id="makhachhang" type="text">
-                                    <label>Tên Khách Hàng:</label>
-                                    <input id="tenkhachhang" type="text">
-                                </div>
-                                <div style="flex: 1; margin-left: 10px; margin-right: 10px;">
-                                    <label>Địa Chỉ:</label>
-                                    <input id="diachi_KH" type="text">
-                                    <label>Số Điện Thoại:</label>
-                                    <input id="sodienthoai_KH" type="text">
-                                </div>
-                            </div>
-                
-                            <div>
-                                <button id="btnupdate_KH" style="display:none;" onclick="capnhatkhachhang()">Cập nhật khách hàng</button>
-                                <button id="btnadd_KH" onclick="themkhachhang()">Thêm khách hàng</button>
+                            <div class="CTDN">
+
                             </div>
                         </div>
                     </div>
@@ -504,6 +489,57 @@
                         </table>
                     </div>
                 </section>
+
+
+                <section id="List_DonBan" class="content-section">
+                    <h2 style="color: rgb(248, 31, 103); ">DANH SÁCH ĐƠN BÁN</h2>
+                    <div id="Modal_CT_DonBan" class="modal">
+                        <div class="modal-content">
+                            <div onclick="closemodal_CT_DB()" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
+                                <span>&times;</span>
+                            </div>
+                
+                            <div class="CTDB">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-loai">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tên Nhà Khách Hàng</th>
+                                    <th>Ngày Đặt</th>
+                                    <th>Địa Chỉ</th>
+                                    <th>Số Điện Thoại</th>
+                                    <th>Tổng Tiền</th>
+                                    <th colspan="2">Chức Năng</th>
+                                </tr>
+                            </thead>
+                            <tbody class="DsDonBan">
+                                <tr>
+                                    <td>Ngày Đặt</td>
+                                    <td>Tên Nhà Cung Cấp</td>
+                                    <td>Địa Chỉ</td>
+                                    <td>Số Điện Thoại</td>
+                                    <td>Tổng Tiền</td>
+                                    <td >
+                                        <select >
+                                            <option>Chờ xử lý</option>
+                                            <option>Đang xử lý</option>
+                                            <option>Hoàn Thành</option>
+                                        </select>
+                                    </td>
+                                    <td colspan="2">
+                                        <button>Chi Tiết</button>
+                                        <button>Hủy</button>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
                 
                 
             </section>
@@ -518,6 +554,7 @@
     <script src="/js/JS_ADMIN/QL_NhanVien.js  "defer></script>
     <script src="/js/JS_ADMIN/QL_NhaCC.JS  "></script>
     <script src="/js/JS_ADMIN/QL_KhachHang.js     "defer></script>
+    <script src="/js/JS_ADMIN/QL_DonBan.js     "defer></script>
 
 
 

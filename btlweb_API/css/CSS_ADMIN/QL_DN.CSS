@@ -83,7 +83,7 @@ input, select {
 }
 
 .add-to-cart {
-    background-color: #3b82f6;
+    background-color:  rgb(253, 100, 151);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -93,7 +93,7 @@ input, select {
 }
 
 .add-to-cart:hover {
-    background-color: #2563eb;
+    background-color: pink;
 }
 
 .cart {
@@ -146,10 +146,113 @@ input, select {
     border-top: 1px solid #e5e7eb;
 }
 .buy-button {
-    background-color: #007bff;
+    background-color: rgb(253, 100, 151);;
     color: white;
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
+}
+
+
+
+
+/* Styles for order details */
+.order-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+}
+
+.order-id {
+    font-weight: bold;
+    color: #333;
+}
+
+.order-date {
+    color: #666;
+}
+
+.order-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Status colors */
+.order-status.cho-xu-ly { background-color: #fff3cd; color: #856404; }
+.order-status.dang-xu-ly { background-color: #cce5ff; color: #004085; }
+.order-status.da-nhap { background-color: #d4edda; color: #155724; }
+.order-status.da-huy { background-color: #f8d7da; color: #721c24; }
+
+.order-details {
+    padding: 15px;
+}
+
+.details-table {
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+}
+
+.details-table th,
+.details-table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.details-table th {
+    background-color: rgb(248, 31, 103);
+    color: white;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+.detail-label {
+    font-weight: 500;
+    min-width: 150px;
+    color: #666;
+}
+
+.detail-value {
+    flex: 1;
+    max-width: calc(100% - 150px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.order-total {
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
+    font-weight: bold;
+    text-align: right;
+    color: rgb(248, 31, 103);
+}
+
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

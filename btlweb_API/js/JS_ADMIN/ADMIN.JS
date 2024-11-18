@@ -1,20 +1,29 @@
+
+checkmenu();
+function checkmenu()
+{
+    const menuLinks = document.querySelectorAll('nav ul li a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            menuLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+            
+        });
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Ẩn tất cả các section khi tải trang
     let sections = document.querySelectorAll(".content-section");
     sections.forEach(section => section.style.display = "none");
-
-    // Hiển thị section đầu tiên (hoặc bất kỳ section nào bạn muốn mặc định hiển thị)
     if (sections.length > 0) {
         sections[0].style.display = "block";
     }
 });
 
 function showSection(sectionId) {
-    // Ẩn tất cả các section
     let sections = document.querySelectorAll(".content-section");
     sections.forEach(section => section.style.display = "none");
     
-    // Hiển thị section được chọn
     let sectionToShow = document.getElementById(sectionId);
     if (sectionToShow) {
         sectionToShow.style.display = "block";

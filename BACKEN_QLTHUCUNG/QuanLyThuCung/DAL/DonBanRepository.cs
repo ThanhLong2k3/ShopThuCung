@@ -17,7 +17,7 @@ namespace DAL
             _dbHelper = dbHelper;
         }
 
-        public List<DonBan_DTO> GetAll()
+        public List<V_DonBan_DTO> GetAll()
         {
             string msgError = "";
             try
@@ -25,7 +25,7 @@ namespace DAL
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_All_DonBan");
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
-                return dt.ConvertTo<DonBan_DTO>().ToList();
+                return dt.ConvertTo<V_DonBan_DTO>().ToList();
             }
             catch (Exception ex)
             {
@@ -39,6 +39,21 @@ namespace DAL
             try
             {
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_DonBan_ByMaKH", "@MaKhachHang", id);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<V_DonBan_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public List<V_DonBan_DTO> GetByMaDonBan(int id)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_DonBan_ById", "@MaDonBan", id);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 return dt.ConvertTo<V_DonBan_DTO>().ToList();

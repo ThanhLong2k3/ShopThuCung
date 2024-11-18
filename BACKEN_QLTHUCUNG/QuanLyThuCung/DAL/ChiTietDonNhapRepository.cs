@@ -31,7 +31,7 @@ namespace DAL
             }
         }
 
-        public List<ChiTietDonNhap_DTO> GetById(int id)
+        public List<V_ChiTietDonNhap_DTO> GetById(int id)
         {
             string msgError = "";
             try
@@ -39,7 +39,7 @@ namespace DAL
                 var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_ChiTietDonNhap_ById", "@MaDonNhap", id);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
-                return dt.ConvertTo<ChiTietDonNhap_DTO>().ToList();
+                return dt.ConvertTo<V_ChiTietDonNhap_DTO>().ToList();
             }
             catch (Exception ex)
             {

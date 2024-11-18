@@ -2,14 +2,25 @@
 async function checkLogin() {
     try {
         let tt = JSON.parse(localStorage.getItem('thongtindangnhap'));
-
+        let MatKhau=JSON.parse(localStorage.getItem('MatKhau'));
+        debugger;
         if (tt) {
-            let data = await getDaTa(apiEndpoints.KHACHHANG.getByTK(tt));
-            if (data && data.length > 0) {
-                localStorage.setItem('username', data[0].tenKhachHang);
+            let data_KH = await getDaTa(apiEndpoints.KHACHHANG.getByTK(tt));
+            if(data_KH===1)
+            {
+                let data = await getDaTa(apiEndpoints.TAIKHOAN.DANGNHAP(tt, MatKhau));
+                 if (data ) {
+                localStorage.setItem('username', data.taiKhoan);
                 localStorage.setItem('isLoggedIn', "true");
-                updateHeader('true', data[0].tenKhachHang);
-            } else {
+                updateHeader('true', data.taiKhoan);
+                }    
+            }
+            else if(data_KH && data_KH.length > 0) {
+                localStorage.setItem('username', data_KH[0].tenKhachHang);
+                localStorage.setItem('isLoggedIn', "true");
+                updateHeader('true', data_KH[0].tenKhachHang);
+            } 
+            else {
                 localStorage.removeItem('isLoggedIn');
                 localStorage.removeItem('username');
                 localStorage.removeItem('thongtindangnhap');
