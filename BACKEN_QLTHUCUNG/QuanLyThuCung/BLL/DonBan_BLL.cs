@@ -18,7 +18,10 @@ namespace BLL
         {
             return _res.GetAll();
         }
-
+        public List<V_DonBan_DTO> Search_DonBan(string? trangthai, string? tenkh, DateTime? ngayban)
+        {
+            return _res.Search_DonBan(trangthai,tenkh,ngayban);
+        }
         public List<V_DonBan_DTO> GetById(int id)
         {
             return _res.GetById(id);

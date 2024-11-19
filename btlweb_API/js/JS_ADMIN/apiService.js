@@ -52,11 +52,13 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/DonNhap_CTRL/delete/${MA}`,
     },
     DONBAN:{
+        Search_DonBan:`${localHot_AD}'api/DonBan_CTRL/SEARCH_DONBAN'`,
         create:`${localHot_ND}/api/DonBan_CTRL/create`,
         getAll: `${localHot_AD}api/DonBan_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/DonBan_CTRL/get_by_id?id=${MA}`,
         getByID_DonBan:(MA)=>`${localHot_AD}api/DonBan_CTRL/GetByMaDonBan?id=${MA}`,
         delete: (MA) => `${localHot_AD}api/DonBan_CTRL/delete/${MA}`,    
+        update:`${localHot_AD}api/DonBan_CTRL/update`,
     },
     CTDONNHAP:{
         getAll: `${localHot_AD}api/CTDonNhap_CTRL/get_all`,
@@ -68,7 +70,7 @@ const apiEndpoints = {
     CTDONBAN:{
         create:`${localHot_ND}/api/CTDonBan_CTRL/create`,
         getAll: `${localHot_AD}api/CTDonBan_CTRL/get_all`,
-        getById: (MA) => `${localHot_AD}api/CTDonBan_CTRL/get_by_id=${MA}`,
+        getById: (MA) => `${localHot_AD}api/CTDonBan_CTRL/get_by_id?id=${MA}`,
         delete: (MA) => `${localHot_AD}api/CTDonBan_CTRL/delete/${MA}`,    
     },
     TAIKHOAN:{
@@ -98,6 +100,7 @@ const apiEndpoints = {
 
 const getDaTa = async (url) => {
     const data = await apiEndpoints.fetchWithError(url);
+    debugger
     return data;
 }
 const addData = async (url, data = {}, callBack) => {

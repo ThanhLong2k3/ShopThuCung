@@ -565,11 +565,10 @@ BEGIN
 END;
 go
 --===============================Don Ban ===================
-
 CREATE PROCEDURE Get_All_DonBan
 AS
 BEGIN
-    SELECT db.maDonBan,db.ngayBan,db.maNhanVien,db.maKhachHang,db.tongTien,db.trangThai,nv.tenNhanVien,kh.tenKhachHang,kh.soDienThoai_KH,kh.diaChi_KH FROM DonBan db inner join NhanVien nv on db.maNhanVien=nv.maNhanVien inner join KhachHang kh on db.maKhachHang=KH.maKhachHang order by db.ngayBan DESC;
+    SELECT db.maDonBan,db.ngayBan,db.maNhanVien,db.maKhachHang,db.tongTien,db.trangThai,nv.tenNhanVien,kh.tenKhachHang,kh.soDienThoai_KH,kh.diaChi_KH FROM DonBan db full join NhanVien nv on db.maNhanVien=nv.maNhanVien inner join KhachHang kh on db.maKhachHang=KH.maKhachHang order by db.ngayBan DESC;
 END;
 go
 drop proc Get_DonBan_ById
@@ -577,11 +576,28 @@ CREATE PROCEDURE Get_DonBan_ById
     @MaDonBan INT
 AS
 BEGIN
-    SELECT db.maDonBan,db.ngayBan,db.maNhanVien,db.maKhachHang,db.tongTien,db.trangThai,nv.tenNhanVien,kh.tenKhachHang,kh.soDienThoai_KH,kh.diaChi_KH FROM DonBan db inner join NhanVien nv on db.maNhanVien=nv.maNhanVien inner join KhachHang kh on db.maKhachHang=KH.maKhachHang 
-    WHERE db.maDonBan = @MaDonBan;
+    SELECT 
+        db.maDonBan,
+        db.ngayBan,
+        db.maNhanVien,
+        db.maKhachHang,
+        db.tongTien,
+        db.trangThai,
+        nv.tenNhanVien,
+        kh.tenKhachHang,
+        kh.soDienThoai_KH,
+        kh.diaChi_KH
+    FROM 
+        DonBan db
+    LEFT JOIN 
+        NhanVien nv ON db.maNhanVien = nv.maNhanVien
+    INNER JOIN 
+        KhachHang kh ON db.maKhachHang = kh.maKhachHang
+    WHERE 
+        db.maDonBan = @MaDonBan;
 END;
-go
-go
+GO
+
 CREATE PROCEDURE Them_DonBan
     @NgayBan DATE,
     @MaNhanVien int = null,
@@ -737,11 +753,12 @@ BEGIN
     SELECT * FROM ChiTietDonBan;
 END;
 go
+
 CREATE PROCEDURE Get_ChiTietDonBan_ById
     @MaDonBan INT
 AS
 BEGIN
-    SELECT * FROM ChiTietDonBan
+    SELECT ct.maThuCung,tc.tenThuCung,ct.maDonBan,ct.soLuong,ct.giaBan FROM ChiTietDonBan ct inner join ThuCung tc on ct.maThuCung=tc.maThuCung
     WHERE MaDonBan = @MaDonBan;
 END;
 go
@@ -1147,7 +1164,35 @@ CREATE PROC DELETE_GH_TK
 				DELETE FROM TaiKhoan WHERE taiKhoan=@TaiKhoan
 			END
 
-			
+			go
 
-			select*from DonBan
-			exec Get_DonBan_ById @MaDonBan=10
+CREATE PROCEDURE Search_DonBan
+    @TrangThai NVARCHAR(50) = NULL,
+    @TenKhachHang NVARCHAR(50) = NULL,
+    @NgayBan DATE = NULL
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        db.maDonBan,
+        db.ngayBan,
+        db.maNhanVien,
+        db.maKhachHang,
+        db.tongTien,
+        db.trangThai,
+        nv.tenNhanVien,
+        kh.tenKhachHang,
+        kh.soDienThoai_KH,
+        kh.diaChi_KH 
+    FROM 
+        DonBan db 
+        LEFT JOIN NhanVien nv ON db.maNhanVien = nv.maNhanVien 
+        INNER JOIN KhachHang kh ON db.maKhachHang = kh.maKhachHang
+    WHERE 
+        (@TrangThai IS NULL OR db.trangThai LIKE N'%' + @TrangThai + N'%')
+        AND (@TenKhachHang IS NULL OR kh.tenKhachHang LIKE N'%' + @TenKhachHang + N'%')
+        AND (@NgayBan IS NULL OR CAST(db.ngayBan AS DATE) = @NgayBan)
+    ORDER BY 
+        db.ngayBan DESC
+END
