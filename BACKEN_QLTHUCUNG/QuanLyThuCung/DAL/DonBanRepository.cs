@@ -48,6 +48,25 @@ namespace DAL
                 throw ex;
             }
         }
+        public List<V_DonBan_DTO> Search_DonBan(string?trangthai, string?tenkh, DateTime?ngayban)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Search_DonBan",
+                    "@TrangThai", trangthai,
+                    "@TenKhachHang", tenkh,
+                    "@NgayBan",ngayban);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<V_DonBan_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<V_DonBan_DTO> GetByMaDonBan(int id)
         {
             string msgError = "";

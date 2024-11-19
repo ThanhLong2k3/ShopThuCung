@@ -45,6 +45,35 @@ public class DonBan_CTRL : ControllerBase
         }
         return Ok(result);
     }
+    [Route("SEARCH_DONBAN")]
+    [HttpGet]
+    public ActionResult<List<V_DonBan_DTO>> Search_DonBan(string?trangthai,string?tenkh,DateTime? ngayban)
+    {
+        var result = _donBanBLL.Search_DonBan(trangthai, tenkh, ngayban);   
+        if (result == null || result.Count == 0)
+        {
+            return NotFound($"Không tìm thấy đon hàng !");
+        }
+        return Ok(result);
+    }
+    [Route("update")]
+    [HttpPut]
+    public ActionResult<DonBan_DTO> UpdateItem([FromBody] DonBan_DTO model)
+    {
+        if (model == null)
+        {
+            return BadRequest("Dữ liệu đầu vào không hợp lệ.");
+        }
+
+        var existingItem = _donBanBLL.GetByMaDonBan(model.maDonBan);
+        if (existingItem == null || existingItem.Count == 0)
+        {
+            return NotFound($"Không tìm thấy đơn bán với ID: {model.maDonBan}");
+        }
+
+        _donBanBLL.Update(model);
+        return Ok(model);
+    }
 
 
     [Route("delete/{id}")]

@@ -264,6 +264,68 @@
     ]
   },
   {
+    "ContainingType": "DonBan_CTRL",
+    "Method": "Search_DonBan",
+    "RelativePath": "api/DonBan_CTRL/SEARCH_DONBAN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trangthai",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tenkh",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ngayban",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DTO.V_DonBan_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DonBan_CTRL",
+    "Method": "UpdateItem",
+    "RelativePath": "api/DonBan_CTRL/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "DTO.DonBan_DTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DTO.DonBan_DTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "DonNhap_CTRL",
     "Method": "CreateItem",
     "RelativePath": "api/DonNhap_CTRL/create",

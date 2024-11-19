@@ -13,6 +13,7 @@ namespace BLL.Interface
         public List<V_DonBan_DTO> GetById(int id);
         public List<DonBan_DTO> GetByTK(string tk);
         public List<V_DonBan_DTO> GetByMaDonBan(int id);
+        public List<V_DonBan_DTO> Search_DonBan(string? trangthai, string? tenkh, DateTime? ngayban);
 
         int Create(DonBan_DTO model);
         bool Update(DonBan_DTO model);

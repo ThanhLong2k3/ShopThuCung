@@ -493,6 +493,17 @@
 
                 <section id="List_DonBan" class="content-section">
                     <h2 style="color: rgb(248, 31, 103); ">DANH SÁCH ĐƠN BÁN</h2>
+                    <div class="search-container">
+                        <select id="statusSearch">
+                          <option value="">Tất cả trạng thái</option>
+                          <option value="Chờ xác nhận">Chờ xác nhận</option>
+                          <option value="Đang xử lý">Đang xử lý</option>
+                          <option value="Đang giao hàng">Đang giao hàng</option>
+                          <option value="Đã giao">Đã giao</option>
+                        </select>
+                        <input type="date" id="dateSearch">
+                        <input type="text" id="customerNameSearch" placeholder="Tên khách hàng">
+                      </div>
                     <div id="Modal_CT_DonBan" class="modal">
                         <div class="modal-content">
                             <div onclick="closemodal_CT_DB()" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
@@ -513,6 +524,7 @@
                                     <th>Địa Chỉ</th>
                                     <th>Số Điện Thoại</th>
                                     <th>Tổng Tiền</th>
+                                    <th>Trạng thái</th>
                                     <th colspan="2">Chức Năng</th>
                                 </tr>
                             </thead>
