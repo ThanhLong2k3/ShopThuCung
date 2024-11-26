@@ -113,7 +113,7 @@ function show_DonNhap() {
     showSection('QL_DonNhap');
 
 }
-function getStatusDropdown(selectedStatus) {
+function getStatusDropdown_DN(selectedStatus) {
     const statuses = ['Chờ xử lý', 'Đang xử lý', 'Đã nhập'];
     let options = statuses.map(status => {
         let selected = (status === selectedStatus) ? 'selected' : '';
@@ -153,6 +153,11 @@ async function Show_List_DN() {
                    
                     <td colspan="2">
                         <button class="add-to-cart" onClick="openmodal_CT_DN(${List_DonNhap[i].maDonNhap})">Chi Tiết</button>
+                        
+                        <button  class=" add-to-cart" 
+                             onclick="HuyDonNhap(${List_DonNhap[i].maDonNhap},'${List_DonNhap[i].trangThai}','${List_DonNhap[i].soDienThoai}')">
+                            Hủy
+                        </button>
                     </td>
                 </tr>
             `);
@@ -274,8 +279,8 @@ async function Get_DonNhap_ID(id) {
                         <span class="detail-label">Tên Nhà Cung Cấp:</span>
                         <span class="detail-value" title="${DN_ID[0].tenNhaCungCap}">${DN_ID[0].tenNhaCungCap}</span>
                     </div>
-                   <select onchange="UpTrangThai()" style="color: rgb(248, 31, 103);border: 1px solid rgb(248, 31, 103);">
-    ${getStatusDropdown(DN_ID[0].trangThai)}
+                   <select onchange="UpTrangThai_DN()" style="color: rgb(248, 31, 103);border: 1px solid rgb(248, 31, 103);">
+    ${getStatusDropdown_DN(DN_ID[0].trangThai)}
 </select>
 
                 </div>
@@ -328,7 +333,7 @@ async function Get_DonNhap_ID(id) {
 }
 
 async function HuyDonNhap(id, tt, sdt) {
-    if (tt == "Chờ xử lý") {
+    if (tt == "Chờ xử lý"|| tt=='Đang xử lý') {
         await deleteData(apiEndpoints.DONNHAP.delete(id), Show_List_DN);
         closemodal_CT_DN();
     }
@@ -336,7 +341,7 @@ async function HuyDonNhap(id, tt, sdt) {
         alert(`Đơn hàng ${tt}, Vui lòng liên hệ: ${sdt}`);
     }
 }
-async function UpTrangThai() {
+async function UpTrangThai_DN() {
     if(DN_ID[0].trangThai==="Đã nhập")
     {
         Show_List_DN();

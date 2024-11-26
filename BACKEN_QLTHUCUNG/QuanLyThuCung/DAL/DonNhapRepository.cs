@@ -88,7 +88,7 @@ namespace DAL
             {
                 var result = _dbHelper.ExecuteScalarSProcedureWithTransaction(out msgError, "Sua_DonNhap",
                     "@MaDonNhap", model.maDonNhap,
-                     "@NgayNhap", model.ngayNhap,
+                    "@NgayNhap", model.ngayNhap,
                     "@MaNhaCungCap", model.maNhaCungCap,
                     "@MaNhanVien", model.maNhanVien,
                     "@TongTien", model.tongTien,

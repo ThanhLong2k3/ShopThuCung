@@ -1,3 +1,4 @@
+let Count=0;
 async function tang(index) {
     let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
     const gioHangData = await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
@@ -36,12 +37,11 @@ async function getdl() {
     let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
     const data =await getDaTa(apiEndpoints.GIOHANG.GETBYTK(taiKhoan));
     console.log(data);
-    debugger;
     const htmlarr = [];
     let tongtien = 0;
-    if (data) {
+    if (data.length>=0) {
+        Count=1;
         const data1 = data;
-        
         data1.forEach((sp, index) => {
             tongtien += parseFloat(sp.giaBan) * parseFloat(sp.soLuong);
             htmlarr.push(`
@@ -89,4 +89,14 @@ async function Xoagiohang(ma)
     let taiKhoan = JSON.parse(localStorage.getItem('thongtindangnhap'));
     await deleteData(apiEndpoints.GIOHANG.DELETE(taiKhoan,ma),getdl);
     TongTien();
+}
+let TT= ()=>{
+    debugger;
+    if(Count==0)
+    {
+        alert("giỏ hàng của bạn đang rỗng!!");
+    }
+    else{
+        window.location.href="./ThanhToan.html";
+    }
 }

@@ -10,6 +10,14 @@ namespace DTO
     {
         public int maDonBan { get; set; }
         public int maThuCung { get; set; }  
+
+        public int soLuong { get; set; }
+        public decimal giaBan { get; set; }
+    }
+    public class V_ChiTietDonBan_DTO
+    {
+        public int maDonBan { get; set; }
+        public int maThuCung { get; set; }
         public string tenThuCung { get; set; }
 
         public int soLuong { get; set; }

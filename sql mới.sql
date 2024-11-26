@@ -565,10 +565,11 @@ BEGIN
 END;
 go
 --===============================Don Ban ===================
+
 CREATE PROCEDURE Get_All_DonBan
 AS
 BEGIN
-    SELECT db.maDonBan,db.ngayBan,db.maNhanVien,db.maKhachHang,db.tongTien,db.trangThai,nv.tenNhanVien,kh.tenKhachHang,kh.soDienThoai_KH,kh.diaChi_KH FROM DonBan db full join NhanVien nv on db.maNhanVien=nv.maNhanVien inner join KhachHang kh on db.maKhachHang=KH.maKhachHang order by db.ngayBan DESC;
+    SELECT db.maDonBan,db.ngayBan,db.maNhanVien,db.maKhachHang,db.tongTien,db.trangThai,nv.tenNhanVien,kh.tenKhachHang,kh.soDienThoai_KH,kh.diaChi_KH FROM DonBan db full join NhanVien nv on db.maNhanVien=nv.maNhanVien inner join KhachHang kh on db.maKhachHang=KH.maKhachHang order by db.maDonBan DESC;
 END;
 go
 drop proc Get_DonBan_ById
@@ -1196,3 +1197,87 @@ BEGIN
     ORDER BY 
         db.ngayBan DESC
 END
+
+
+
+GO
+CREATE PROCEDURE ThongKeDoanhThu
+AS
+BEGIN
+    -- Tổng tiền nhập
+    DECLARE @TongTienNhap DECIMAL(18, 2);
+    SELECT 
+        @TongTienNhap = SUM(cdn.soLuong * cdn.giaNhap)
+    FROM ChiTietDonNhap cdn
+    INNER JOIN DonNhap dn ON cdn.maDonNhap = dn.maDonNhap
+    WHERE dn.trangThai = N'Đã nhập'; -- Chỉ tính đơn nhập đã hoàn tất
+
+    -- Tổng tiền bán
+    DECLARE @TongTienBan DECIMAL(18, 2);
+    SELECT 
+        @TongTienBan = SUM(cdb.soLuong * cdb.giaBan)
+    FROM ChiTietDonBan cdb
+    INNER JOIN DonBan db ON cdb.maDonBan = db.maDonBan
+    WHERE db.trangThai = N'Đã giao hàng'; -- Chỉ tính đơn bán đã hoàn tất
+
+    -- Doanh thu = Tổng tiền bán - Tổng tiền nhập
+    DECLARE @DoanhThu DECIMAL(18, 2);
+    SET @DoanhThu = @TongTienBan - @TongTienNhap;
+
+    -- Kết quả trả về
+    SELECT 
+        @TongTienNhap AS TongTienNhap,
+        @TongTienBan AS TongTienBan,
+        @DoanhThu AS DoanhThu,
+        CASE 
+            WHEN @TongTienNhap = 0 THEN 0 -- Tránh chia cho 0
+            ELSE (@DoanhThu * 100.0 / @TongTienNhap) 
+        END AS LaiXuat; -- Lãi xuất tính theo phần trăm
+END;
+GO
+EXEC ThongKeDoanhThu
+
+
+GO
+
+CREATE PROCEDURE ThongKeDoanhThu_ThangHienTai
+AS
+BEGIN
+    -- Tổng tiền nhập trong tháng hiện tại
+    DECLARE @TongTienNhap DECIMAL(18, 2);
+    SELECT 
+        @TongTienNhap = SUM(cdn.soLuong * cdn.giaNhap)
+    FROM ChiTietDonNhap cdn
+    INNER JOIN DonNhap dn ON cdn.maDonNhap = dn.maDonNhap
+    WHERE dn.trangThai = N'Đã nhập'
+      AND MONTH(dn.ngayNhap) = MONTH(GETDATE())
+      AND YEAR(dn.ngayNhap) = YEAR(GETDATE()); -- Lọc tháng và năm hiện tại
+
+    -- Tổng tiền bán trong tháng hiện tại
+    DECLARE @TongTienBan DECIMAL(18, 2);
+    SELECT 
+        @TongTienBan = SUM(cdb.soLuong * cdb.giaBan)
+    FROM ChiTietDonBan cdb
+    INNER JOIN DonBan db ON cdb.maDonBan = db.maDonBan
+    WHERE db.trangThai = N'Đã giao hàng'
+      AND MONTH(db.ngayBan) = MONTH(GETDATE())
+      AND YEAR(db.ngayBan) = YEAR(GETDATE()); -- Lọc tháng và năm hiện tại
+
+    -- Doanh thu = Tổng tiền bán - Tổng tiền nhập
+    DECLARE @DoanhThu DECIMAL(18, 2);
+    SET @DoanhThu = @TongTienBan - @TongTienNhap;
+
+    -- Kết quả trả về
+    SELECT 
+        ISNULL(@TongTienNhap, 0) AS TongTienNhap,
+        ISNULL(@TongTienBan, 0) AS TongTienBan,
+        ISNULL(@DoanhThu, 0) AS DoanhThu,
+        CASE 
+            WHEN ISNULL(@TongTienNhap, 0) = 0 THEN 0 -- Tránh chia cho 0
+            ELSE (@DoanhThu * 100.0 / @TongTienNhap) 
+        END AS LaiXuat; -- Lãi suất tính theo phần trăm
+END;
+GO
+
+
+EXEC ThongKeDoanhThu_ThangHienTai

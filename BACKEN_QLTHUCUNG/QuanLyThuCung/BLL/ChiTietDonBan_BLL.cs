@@ -5,7 +5,7 @@ using DTO;
 
 namespace BLL
 {
-    public class ChiTietDonBan_BLL : IBLL<ChiTietDonBan_DTO>
+    public class ChiTietDonBan_BLL : ICTDonBan_BLL
     {
         private IChiTietDonBanRepository _res;
 
@@ -19,7 +19,7 @@ namespace BLL
             return _res.GetAll();
         }
 
-        public List<ChiTietDonBan_DTO> GetById(int id)
+        public List<V_ChiTietDonBan_DTO> GetById(int id)
         {
             return _res.GetById(id);
         }

@@ -44,11 +44,7 @@ async function displayProductList() {
     }
 }
 checkLogin();
-async function getdata_dh() {
-await displayProductList();
-    
-}
-getdata_dh();
+
 async function dataKhachHang() {
     try{
         TT_KhachHang= await getDaTa(apiEndpoints.KHACHHANG.getByTK(tt));
@@ -58,6 +54,14 @@ async function dataKhachHang() {
             document.getElementById('phone').value=TT_KhachHang[0].soDienThoai_KH;
             document.getElementById('address').value=TT_KhachHang[0].diaChi_KH;
         }
+        else{
+            await displayProductList();
+           let cf=  confirm("Bạn chưa điền thông tin cá nhân! vui lòng điền thông tin cá nhân!");
+            if(cf)
+            {
+                window.location.href = "./ThongTin.html";
+            }
+        }
     }
     catch{
 
@@ -65,6 +69,7 @@ async function dataKhachHang() {
 }
 
 async function Add_DonHang() {
+    debugger;
     let ngayban = new Date().toISOString().split('T')[0];
     let DonHang = {
         ngayBan: ngayban,
@@ -79,7 +84,7 @@ async function Add_DonHang() {
     let promises = Listsp.map(item => {
         let CT_DonHang = {
             maDonBan: Ma,
-            maThuCung: item.maThuCung,
+            maThuCung:Number(item.maThuCung),
             soLuong: item.soLuong,
             giaBan: item.giaBan
         };
@@ -96,6 +101,9 @@ debugger;
     window.location.href = "./Home.html"; 
 }
 
-
-document.addEventListener('DOMContentLoaded', displayProductList);
-document.addEventListener('DOMContentLoaded', dataKhachHang);
+async function Main() {
+    await checkLogin();   
+    await displayProductList();
+    await dataKhachHang();
+}
+Main();
