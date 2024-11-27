@@ -35,6 +35,8 @@ builder.Services.AddTransient<ITaiKhoanRepository, TaiKhoanRepository>();
 builder.Services.AddTransient<ITaiKhoanBLL, TaiKhoan_BLL>();
 builder.Services.AddTransient<IGioHangRepository, GioHangRepository>();
 builder.Services.AddTransient<IGioHang_BLL, GioHang_BLL>();
+builder.Services.AddTransient<IThongKeReponsitory, ThongKe_DAL>();
+builder.Services.AddTransient<IThongKe_BLL, ThongKe_BLL>();
 
 
 

@@ -58,8 +58,25 @@ function dangxuat() {
     alert("Đăng xuất thành công!");
     window.location.href = 'http://127.0.0.1:5501/html/Home.html'; 
 }
-
-
-
+let ThongKe = async () => {
+    let data = await getDaTa(apiEndpoints.THONGKE.getDaTa);
+    let top5 = await getDaTa(apiEndpoints.ThuCung.get_Top5_ThuCung);
+    let htmlArray = top5.map(sp => `
+        <div class="san_pham_da_ban_item">
+            <h3>${sp.tenThuCung}</h3>
+            <span>Số lượng: <strong>${sp.soLuong}</strong></span>
+        </div>
+    `).join('');
+    
+    document.getElementsByClassName('san_pham_da_ban')[0].innerHTML = htmlArray;
+    
+    if(data) {
+        document.getElementById('DoanhThu').innerText = data.doanhThu.toLocaleString('vi-VN') + " Vnđ";
+        document.getElementById('LaiXuat').innerText = data.laiXuat.toLocaleString('vi-VN') + "%";
+        document.getElementById('TienNhap').innerText = data.tongTienNhap.toLocaleString('vi-VN') + " Vnđ";
+        document.getElementById('TienBan').innerText = data.tongTienBan.toLocaleString('vi-VN') + " Vnđ";
+    }
+}
+ThongKe();
 window.showSection=showSection;
 

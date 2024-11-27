@@ -713,6 +713,7 @@ BEGIN
     WHERE maDonNhap = @MaDonNhap;
 END;
 GO
+
 CREATE PROCEDURE Them_ChiTietDonNhap
     @MaDonNhap INT,
     @MaThuCung INT,
@@ -720,7 +721,7 @@ CREATE PROCEDURE Them_ChiTietDonNhap
     @GiaNhap DECIMAL(18, 2)
 AS
 BEGIN
-	update ThuCung set soLuong+= @SoLuong;
+	update ThuCung set soLuong+= @SoLuong where maThuCung= @MaThuCung;
     INSERT INTO ChiTietDonNhap (MaDonNhap, MaThuCung, SoLuong, GiaNhap)
     VALUES (@MaDonNhap, @MaThuCung, @SoLuong, @GiaNhap);
 END;
@@ -763,6 +764,7 @@ BEGIN
     WHERE MaDonBan = @MaDonBan;
 END;
 go
+
 CREATE PROCEDURE Them_ChiTietDonBan
     @MaDonBan INT,
     @MaThuCung INT,
@@ -770,7 +772,7 @@ CREATE PROCEDURE Them_ChiTietDonBan
     @GiaBan DECIMAL(18, 2)
 AS
 BEGIN
-	update ThuCung set soLuong-= @SoLuong;
+	update ThuCung set soLuong-= @SoLuong where maThuCung=@MaThuCung;
     INSERT INTO ChiTietDonBan (MaDonBan, MaThuCung, SoLuong, GiaBan)
     VALUES (@MaDonBan, @MaThuCung, @SoLuong, @GiaBan);
 END;

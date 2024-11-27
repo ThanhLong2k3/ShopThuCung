@@ -87,6 +87,9 @@ const apiEndpoints = {
         DELETE_TK:(TK)=> `${localHot_ND}/api/GioHang_CTRL/delete_TK?tk=${TK}`,
 
     },
+    THONGKE:{
+        getDaTa:`${localHot_AD}api/ThongKe_CTRL/getThongKe`,
+    },
     async fetchWithError(url, options = {}) {
         const response = await fetch(url, options);
         if (!response.ok) {
