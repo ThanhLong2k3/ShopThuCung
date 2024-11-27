@@ -158,7 +158,7 @@ async function Get_DonBan_ID(id) {
 }
 async function HuyDonBan_QL(maDonBan, trangThai) {
     try{
-        if(trangThai==="Chờ xử lý" || trangThai==="Đang xử lý")
+        if(trangThai==="Chờ xử lý" || trangThai==="Đang xử lý" || trangThai==="Chờ xác nhận")
         {
             await deleteData(apiEndpoints.DONBAN.delete(maDonBan), Show_List_DB);
             closemodal_CT_DB();
@@ -173,11 +173,11 @@ async function HuyDonBan_QL(maDonBan, trangThai) {
     }
 }
 async function UpTrangThai() {
-    if(DonBan[0].trangThai==="Đang giao hàng" || DonBan[0].trangThai==="Đã giao hàng")
+    if( DonBan[0].trangThai==="Đã giao hàng")
     {
         Show_List_DB();
         closemodal_CT_DB();
-        alert("Đơn hàng không thể hủy!");
+        alert("Đơn hàng đã thành công không thể thay đổi trạng thái!");
     }
     else{
         const newStatus = event.target.value;

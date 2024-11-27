@@ -30,11 +30,13 @@ builder.Services.AddTransient<IDonBan_BLL, DonBan_BLL>();
 builder.Services.AddTransient<IChiTietDonNhapRepository, ChiTietDonNhapRepository>();
 builder.Services.AddTransient<ICTDonNhap_BLL, ChiTietDonNhap_BLL>();
 builder.Services.AddTransient<IChiTietDonBanRepository, ChiTietDonBanRepository>();
-builder.Services.AddTransient<IBLL<ChiTietDonBan_DTO>, ChiTietDonBan_BLL>();
+builder.Services.AddTransient<ICTDonBan_BLL, ChiTietDonBan_BLL>();
 builder.Services.AddTransient<ITaiKhoanRepository, TaiKhoanRepository>();
 builder.Services.AddTransient<ITaiKhoanBLL, TaiKhoan_BLL>();
 builder.Services.AddTransient<IGioHangRepository, GioHangRepository>();
 builder.Services.AddTransient<IGioHang_BLL, GioHang_BLL>();
+builder.Services.AddTransient<IThongKeReponsitory, ThongKe_DAL>();
+builder.Services.AddTransient<IThongKe_BLL, ThongKe_BLL>();
 
 
 

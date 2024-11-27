@@ -51,7 +51,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[DTO.ChiTietDonNhap_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[DTO.V_ChiTietDonNhap_DTO, DTO, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -1054,6 +1054,26 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QuanLyThuCung.Controllers.ThongKe_CTRL",
+    "Method": "getThongKe",
+    "RelativePath": "api/ThongKe_CTRL/getThongKe",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DTO.ThongKe_DTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "ThuCung_CTRL",

@@ -45,6 +45,7 @@ async function addgh() {
     const maThuCung=parseInt(localStorage.getItem('masp'));
     let soluong = parseInt(document.getElementById('soluong').value); 
     let giohang_ID =await  getDaTa(apiEndpoints.GIOHANG.GETBYID_TK(maThuCung,taiKhoan));
+    console.log(giohang_ID);
     debugger;
     if(giohang_ID.length>0)
     {
