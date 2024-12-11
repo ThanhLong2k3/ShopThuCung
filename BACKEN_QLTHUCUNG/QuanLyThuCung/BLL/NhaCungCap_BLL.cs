@@ -18,6 +18,7 @@ namespace BLL
         {
             return _res.GetAll();
         }
+    
 
         public List<NhaCungCap_DTO> GetById(int id)
         {
@@ -37,6 +38,13 @@ namespace BLL
         public bool Delete(int id)
         {
             return _res.Delete(id);
+        }
+
+        public List<NhaCungCap_DTO> Search(string? ten, string? sdt)
+        {
+           
+                return _res.Search_NCC(ten, sdt);
+            
         }
     }
 }

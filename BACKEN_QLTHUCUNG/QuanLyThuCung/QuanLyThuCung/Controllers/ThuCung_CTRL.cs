@@ -44,6 +44,16 @@ public class ThuCung_CTRL : ControllerBase
         var result = _thuCungBLL.GetAll();
         return Ok(result);
     }
+
+    [Route("Search_ThuCung")]
+    [HttpGet]
+    public ActionResult<List<V_ThuCung_DTO>> Search_ThuCung(string? ten, int ? ma, decimal? giamin, decimal? giamax)
+    {
+        var result = _thuCungBLL.Search_ThuCung(ten, ma, giamin, giamax);
+        return Ok(result);
+    }
+
+
     [Route("get_top5_thucung")]
     [HttpGet]
     public ActionResult<List<V_ThuCung_DTO>> Get_Top5_ThuCung()

@@ -18,6 +18,10 @@ namespace BLL
         {
             return _res.GetAll();
         }
+        public List<V_DonNhap_DTO> Search_DonNhap(DateTime? ngaynhapstar, DateTime? ngayNhapEnd, int? maNhaCungCap, string? trangThai)
+        {
+            return _res.Search_DonNhap(ngaynhapstar, ngayNhapEnd, maNhaCungCap, trangThai);
+        }
 
         public List<V_DonNhap_DTO> GetById(int id)
         {

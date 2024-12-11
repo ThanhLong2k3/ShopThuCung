@@ -8,6 +8,8 @@ async function Get_DonHang() {
         let ma = TT_KhachHang.length > 0 ? TT_KhachHang[0].maKhachHang : null;
         if (ma) {
             duLieuMoi = await getDaTa(apiEndpoints.DONBAN.getById(ma));
+            console.log(duLieuMoi);
+            debugger;
             if(duLieuMoi===1)
             {
                 $('#orderList').html('<tr><td colspan="9">Bạn chưa có đơn hàng nào !</td></tr>');
@@ -72,12 +74,13 @@ function renderOrders(orderData) {
     const orderListContainer = document.getElementById("orderList");
     orderListContainer.innerHTML = ""; 
     orderData.forEach((order, index) => {
+        const formattedDate = new Date(order.ngayBan).toLocaleDateString('vi-VN');
         const orderHTML = `
             <div class="order-item">
                 <div class="order-header" onclick="toggleOrderDetails(${index + 1})">
                     <span class="order-id">Đơn hàng #${order.maDonBan}</span>
 
-                    <span class="order-date">${new Date(order.ngayBan).toISOString().split('T')[0]}</span>
+                    <span class="order-date">${formattedDate}</span>
                 <div class="order-status" style="margin-top: -5px;" onclick="HuyDonBan('${order.maDonBan}', '${order.trangThai}')">Hủy</div>
 
                 </div>

@@ -11,6 +11,8 @@ namespace DAL.Interface
     {
         public List<NhanVien_DTO> GetAll();
         public List<NhanVien_DTO> GetById(int id);
+        public List<NhanVien_DTO> Search_NV(string ? tennv,string ? chucvu);
+
         public List<NhanVien_DTO> GetByTK(string id);
         int Create(NhanVien_DTO model);
         bool Update(NhanVien_DTO model);

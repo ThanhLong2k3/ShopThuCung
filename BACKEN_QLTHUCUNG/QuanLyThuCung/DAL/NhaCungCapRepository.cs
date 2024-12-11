@@ -31,7 +31,21 @@ namespace DAL
                 throw ex;
             }
         }
-
+        public List<NhaCungCap_DTO> Search_NCC(string? ten, string ?sdt)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "SearchNhaCungCap", "@TenNhaCungCap",ten, "@SoDienThoai",sdt);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<NhaCungCap_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<NhaCungCap_DTO> GetById(int id)
         {
             string msgError = "";

@@ -18,6 +18,11 @@ namespace BLL
         {
             return _res.GetAll();
         }
+
+        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax)
+        {
+            return _res.Search_ThuCung(tenthucung, maloai, giabanmin,giabanmax);
+        }
         public List<V_ThuCung_DTO> Get_Top5_ThuCung()
         {
             return _res.Get_Top5_ThuCung();

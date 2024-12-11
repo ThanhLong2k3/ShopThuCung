@@ -18,6 +18,11 @@ namespace BLL
         {
             return _res.GetAll();
         }
+        public List<V_DonBan_DTO> Search_DonBan2(DateTime? ngaynhapstar, DateTime? ngayNhapEnd, string? Tenkhachhang, string? trangThai)
+        {
+            return _res.Search_DonBan2(ngaynhapstar,ngayNhapEnd, Tenkhachhang, trangThai);
+        }
+
         public List<V_DonBan_DTO> Search_DonBan(string? trangthai, string? tenkh, DateTime? ngayban)
         {
             return _res.Search_DonBan(trangthai,tenkh,ngayban);

@@ -12,7 +12,7 @@ namespace DAL.Interface
         public List<V_ThuCung_DTO> GetAll();
         public List<V_ThuCung_DTO> Get_MaLoai(int ma);
         public List<V_ThuCung_DTO> Get_Top5_ThuCung();
-
+        public List<V_ThuCung_DTO> Search_ThuCung(string?tenthucung,int? maloai, decimal? giabanmin, decimal? giabanmax);
 
         public List<ThuCung_DTO> GetById(int id);
 

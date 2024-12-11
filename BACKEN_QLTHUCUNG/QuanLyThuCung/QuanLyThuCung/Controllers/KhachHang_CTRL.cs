@@ -36,6 +36,15 @@ public class KhachHang_CTRL : ControllerBase
         }
         return Ok(result);
     }
+    [Route("Search_KH")]
+    [HttpGet]
+    
+    public ActionResult<List<KhachHang_DTO>> Search_KH(string? tenkh, string? sdt)
+    {
+        var result = _khachHangBLL.Search_KH(tenkh,sdt);
+        return Ok(result);
+    }
+
     [Route("get_all")]
     [HttpGet]
     public ActionResult<List<KhachHang_DTO>> GetAll()

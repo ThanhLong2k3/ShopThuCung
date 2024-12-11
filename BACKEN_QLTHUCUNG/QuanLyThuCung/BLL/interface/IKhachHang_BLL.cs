@@ -12,7 +12,7 @@ namespace BLL.Interface
         List<KhachHang_DTO> GetAll();
         List<KhachHang_DTO> GetById(int id);
         List<KhachHang_DTO> GetByTK(string id);
-
+        public List<KhachHang_DTO> Search_KH(string? tenkh, string? sdt);
         int Create(KhachHang_DTO model);
         bool Update(KhachHang_DTO model);
         bool Delete(int id);

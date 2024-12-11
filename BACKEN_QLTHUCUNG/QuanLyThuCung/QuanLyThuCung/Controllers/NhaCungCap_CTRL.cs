@@ -33,7 +33,13 @@ public class NhaCungCap_CTRL : ControllerBase
         var result = _nhaCungCapBLL.GetAll();
         return Ok(result);
     }
-
+    [Route("Search_NCC")]
+    [HttpGet]
+    public ActionResult<List<NhaCungCap_DTO>> Search_NCC(string? ten,string? sdt)
+    {
+        var result = _nhaCungCapBLL.Search(ten, sdt);
+        return Ok(result);
+    }
     [Route("create")]
     [HttpPost]
     public ActionResult<NhaCungCap_DTO> CreateItem([FromBody] NhaCungCap_DTO model)

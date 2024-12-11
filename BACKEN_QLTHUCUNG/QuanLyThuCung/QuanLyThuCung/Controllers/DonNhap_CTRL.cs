@@ -34,6 +34,14 @@ public class DonNhap_CTRL : ControllerBase
         return Ok(result);
     }
 
+    [Route("Search_DonNhap")]
+    [HttpGet]
+    public ActionResult <List<V_DonNhap_DTO>> Search_DonNhap(DateTime? ngaynhapstar, DateTime? ngayNhapEnd, int? maNhaCungCap, string? trangThai)
+    { 
+        var result = _donNhapBLL.Search_DonNhap(ngaynhapstar,ngayNhapEnd,maNhaCungCap,trangThai);
+        return Ok(result);
+    }
+
     [Route("create")]
     [HttpPost]
     public ActionResult<DonNhap_DTO> CreateItem([FromBody] DonNhap_DTO model)

@@ -47,6 +47,21 @@ namespace DAL
                 throw ex;
             }
         }
+        public List<KhachHang_DTO> Search_KH(string? tenkh, string? sdt)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "SearchKhachHang", "@TenKhachHang", tenkh, "@SoDienThoai",sdt);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<KhachHang_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         public List<KhachHang_DTO> GetByTK(string id)
         {

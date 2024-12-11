@@ -11,6 +11,7 @@ namespace DAL.Interface
     {
         public List<NhaCungCap_DTO> GetAll();
         public List<NhaCungCap_DTO> GetById(int id);
+        public List<NhaCungCap_DTO> Search_NCC(string? ten,string? sdt);
         int Create(NhaCungCap_DTO model);
         bool Update(NhaCungCap_DTO model);
         bool Delete(int id);
