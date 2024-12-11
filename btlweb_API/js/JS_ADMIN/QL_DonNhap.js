@@ -3,6 +3,51 @@ let products = [];
 let List_DonNhap = [];
 let DN_ID=[];
 let CT_DN_ID=[];
+
+
+let Search_DN = [];
+let searchTimeoutDN;
+
+async function searchDN() {
+    const NgayNhapStart=document.getElementById("Search_NgayNhapStart").value;
+    const NgayNhapEnd=document.getElementById("Search_NgayNhapEnd").value;
+    const MaNCC = document.getElementById("Search_TenNCC_select").value.trim();
+    const TrangThai = document.getElementById("Search_TrangThaiNhap").value;
+
+    let url = apiEndpoints.DONNHAP.Search_DN;
+    if (NgayNhapStart) url += `ngaynhapstar=${encodeURIComponent(NgayNhapStart)}&`;
+    if (NgayNhapEnd) url += `ngayNhapEnd=${encodeURIComponent(NgayNhapEnd)}&`;
+    if (MaNCC) url += `maNhaCungCap=${encodeURIComponent(MaNCC)}&`;
+
+    if (TrangThai) url += `trangThai=${encodeURIComponent(TrangThai)}&`;
+
+    debugger
+    url = url.slice(0, -1);
+
+    try {
+        Search_DN = await getDaTa(url);
+        Show_List_DN();
+    } catch (error) {
+        console.error("Lỗi DNi tìm kiếm:", error);
+        renderError("Lỗi DNi tìm kiếm: " + error.message);
+    }
+}
+
+function handlesearchDN() {
+    if (searchTimeoutDN) {
+        clearTimeout(searchTimeoutDN);
+    }
+    searchTimeoutDN = setTimeout(searchDN, 1000);
+}
+
+document.getElementById("Search_NgayNhapStart").addEventListener("input", handlesearchDN);
+document.getElementById("Search_NgayNhapEnd").addEventListener("input", handlesearchDN);
+document.getElementById("Search_TenNCC_select").addEventListener("change", handlesearchDN);
+document.getElementById("Search_TrangThaiNhap").addEventListener("change", handlesearchDN);
+
+
+
+get_all_ncc();
 function setcart() {
     cartItems = [];
     renderCart();
@@ -13,11 +58,22 @@ async function renderProducts() {
 }
 async function get_all_ncc() {
     try {
+        const htmlArray =[];
         const ncc = await getDaTa(apiEndpoints.NCC.getAll);
-        const htmlArray = ncc.map(ncc =>
-            `<option value="${ncc.maNhaCungCap}">${ncc.tenNhaCungCap}</option>`
-        );
+        htmlArray.push(`
+            <option value="">Chọn nhà cung cấp</option>
+        `);
+    
+        if (ncc) {
+            for (const item of ncc) {
+                htmlArray.push(`
+                    <option value="${item.maNhaCungCap}">${item.tenNhaCungCap}</option>
+                `);
+            }
+        }
+        
         document.getElementById('TenNCC').innerHTML = htmlArray.join('');
+        document.getElementById('Search_TenNCC_select').innerHTML = htmlArray.join('');        
     } catch (error) {
         console.error('Error fetching NCC data:', error);
     }
@@ -132,9 +188,12 @@ function formatDate(date) {
 async function Show_List_DN() {
     try {
         showSection('List_DonNhap');
-
-        List_DonNhap = await getDaTa(apiEndpoints.DONNHAP.getAll);
-
+        if (!Array.isArray(Search_DN) || Search_DN.length === 0) {
+            const get_all_DN = await getDaTa(apiEndpoints.DONNHAP.getAll);
+            List_DonNhap = get_all_DN;
+        } else {
+            List_DonNhap = Search_DN;
+        }
         if (!Array.isArray(List_DonNhap) || List_DonNhap.length === 0) {
             console.log("No data found.");
             $('.DsDonNhap').html("<tr><td colspan='8'>No data available</td></tr>");
@@ -183,6 +242,88 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
+
+async function exportInvoice(donNhap, chiTietDonNhap) {
+    if (typeof window.jspdf === 'undefined') {
+        console.error('jsPDF library not loaded');
+        alert('Không thể xuất hóa đơn. Vui lòng kiểm tra kết nối mạng.');
+        return;
+    }
+
+    const { jsPDF } = window.jspdf;
+
+    try {
+        const doc = new jsPDF();
+
+        doc.addFont('https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/fonts/Roboto/Roboto-Regular.ttf', 'Roboto', 'normal');
+        doc.setFont('Roboto');
+
+        function addText(text, x, y, options = {}) {
+            const defaultOptions = { align: 'left', maxWidth: 180 };
+            doc.text(text, x, y, { ...defaultOptions, ...options });
+        }
+
+        doc.setFontSize(18);
+        addText('HÓA ĐƠN NHẬP HÀNG', 105, 20, { align: 'center' });
+
+        doc.setFontSize(12);
+        addText(`Mã Đơn Nhập: ${donNhap.maDonNhap}`, 20, 40);
+        addText(`Ngày Nhập: ${formatDate(donNhap.ngayNhap)}`, 20, 50);
+        addText(`Nhân Viên: ${donNhap.tenNhanVien}`, 20, 60);
+        addText(`Nhà Cung Cấp: ${donNhap.tenNhaCungCap}`, 20, 70);
+        addText(`Trạng Thái: ${donNhap.trangThai}`, 20, 80);
+
+        const tableColumn = ["STT", "Tên Thú Cưng", "Số Lượng", "Đơn Giá", "Thành Tiền"];
+        const tableRows = chiTietDonNhap.map((item, index) => [
+            (index + 1).toString(),
+            item.tenThuCung,
+            item.soLuong.toString(),
+            `${item.giaNhap.toLocaleString()} ₫`,
+            `${(item.soLuong * item.giaNhap).toLocaleString()} ₫`
+        ]);
+
+        doc.autoTable({
+            startY: 90,
+            head: [tableColumn],
+            body: tableRows,
+            theme: 'grid',
+            styles: { 
+                font: 'Roboto',
+                fontSize: 10,
+                cellPadding: 3,
+                overflow: 'linebreak',
+                halign: 'center'
+            },
+            columnStyles: { 
+                0: { cellWidth: 30 },
+                1: { cellWidth: 80 },
+                2: { cellWidth: 20 },
+                3: { cellWidth: 30 },
+                4: { cellWidth: 30 }
+            }
+        });
+
+        const finalY = doc.lastAutoTable.finalY || 90;
+        addText(`Tổng Tiền: ${donNhap.tongTien.toLocaleString()} ₫`, 150, finalY + 15, { align: 'right' });
+        addText('Cảm ơn quý khách!', 105, finalY + 30, { align: 'center' });
+
+        doc.save(`HoaDonNhap_${donNhap.maDonNhap}_${new Date().toLocaleDateString('vi-VN')}.pdf`);
+    } catch (error) {
+        console.error('Error creating PDF:', error);
+        alert('Có lỗi xảy ra khi tạo file PDF. Vui lòng thử lại sau.');
+    }
+}
+
+function formatDate(dateString) {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit', year: 'numeric' });
+}
+
+
+
+
+
+
 async function muahang() {
     const tenNhanVien = localStorage.getItem('maNhanVien');
     const tenNCC = document.getElementById('TenNCC').value;
@@ -223,6 +364,15 @@ async function muahang() {
         await Promise.all(chiTietPromises);
 
         alert("Thêm đơn nhập thành công!");
+        
+        const xuatHoaDon = confirm("Bạn có muốn xuất hóa đơn không?");
+        if (xuatHoaDon) {
+            const newDonNhap = await getDaTa(apiEndpoints.DONNHAP.getById(maDN));
+            const newChiTietDonNhap = await getDaTa(apiEndpoints.CTDONNHAP.getById(maDN));
+            
+            exportInvoice(newDonNhap[0], newChiTietDonNhap);
+        }
+
         setcart();
 
     } catch (error) {
@@ -231,10 +381,8 @@ async function muahang() {
     }
 }
 
-
 renderProducts();
 renderCart();
-// LIST DN
 function closemodal_CT_DN() {
     var modal = document.getElementById("Modal_CT_DonNhap");
     modal.style.display = "none";
@@ -331,7 +479,6 @@ async function Get_DonNhap_ID(id) {
         $('.CTDN').html('<div class="error-message">Có lỗi xảy ra khi tải chi tiết đơn hàng</div>');
     }
 }
-
 async function HuyDonNhap(id, tt, sdt) {
     if (tt == "Chờ xử lý"|| tt=='Đang xử lý') {
         await deleteData(apiEndpoints.DONNHAP.delete(id), Show_List_DN);

@@ -18,7 +18,10 @@ namespace BLL
         {
             return _res.GetAll();
         }
-
+        public List<NhanVien_DTO> Search_NV(string? tennv, string? chucvu)
+        {
+            return _res.Search_NV(tennv, chucvu);
+        }
         public List<NhanVien_DTO> GetById(int id)
         {
             return _res.GetById(id);

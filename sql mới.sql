@@ -1283,3 +1283,150 @@ GO
 
 
 EXEC ThongKeDoanhThu_ThangHienTai
+
+select *from DonBan
+
+
+go
+
+--==========================================TÌM KIẾM 
+-- 1. Search KhachHang
+CREATE PROCEDURE SearchKhachHang
+    @TenKhachHang NVARCHAR(100) = NULL,
+    @SoDienThoai VARCHAR(20) = NULL
+AS
+BEGIN
+    DECLARE @SQL NVARCHAR(MAX)
+    SET @SQL = 'SELECT * FROM KhachHang WHERE 1=1'
+    
+    IF @TenKhachHang IS NOT NULL
+        SET @SQL = @SQL + ' AND tenKhachHang LIKE ''%'' + @TenKhachHang + ''%'''
+    IF @SoDienThoai IS NOT NULL
+        SET @SQL = @SQL + ' AND soDienThoai_KH LIKE ''%'' + @SoDienThoai + ''%'''
+    
+    EXEC sp_executesql @SQL, N'@TenKhachHang NVARCHAR(100), @SoDienThoai VARCHAR(20)', 
+                       @TenKhachHang, @SoDienThoai
+END
+GO
+
+-- 2. Search NhanVien
+
+CREATE PROCEDURE SearchNhanVien
+    @TenNhanVien NVARCHAR(100) = NULL,
+    @ChucVu NVARCHAR(50) = NULL
+AS
+BEGIN
+    DECLARE @SQL NVARCHAR(MAX)
+    SET @SQL = 'SELECT * FROM NhanVien WHERE 1=1'
+    
+    IF @TenNhanVien IS NOT NULL
+        SET @SQL = @SQL + ' AND tenNhanVien LIKE N''%'' + @TenNhanVien + ''%'''
+    IF @ChucVu IS NOT NULL
+        SET @SQL = @SQL + ' AND chucVu LIKE ''%'' + @ChucVu + ''%'''
+    
+    EXEC sp_executesql @SQL, N'@TenNhanVien NVARCHAR(100), @ChucVu NVARCHAR(50)', 
+                       @TenNhanVien, @ChucVu
+END
+GO
+
+-- 3. Search NhaCungCap
+CREATE PROCEDURE SearchNhaCungCap
+    @TenNhaCungCap NVARCHAR(100) = NULL,
+    @SoDienThoai VARCHAR(20) = NULL
+AS
+BEGIN
+    DECLARE @SQL NVARCHAR(MAX)
+    SET @SQL = 'SELECT * FROM NhaCungCap WHERE 1=1'
+    
+    IF @TenNhaCungCap IS NOT NULL
+        SET @SQL = @SQL + ' AND tenNhaCungCap LIKE ''%'' + @TenNhaCungCap + ''%'''
+    IF @SoDienThoai IS NOT NULL
+        SET @SQL = @SQL + ' AND soDienThoai LIKE ''%'' + @SoDienThoai + ''%'''
+    
+    EXEC sp_executesql @SQL, N'@TenNhaCungCap NVARCHAR(100), @SoDienThoai VARCHAR(20)', 
+                       @TenNhaCungCap, @SoDienThoai
+END
+GO
+
+-- 4. Search ThuCung
+CREATE PROCEDURE SearchThuCung
+    @TenThuCung NVARCHAR(100) = NULL,
+    @MaLoai INT = NULL,
+    @GiaBanMin DECIMAL(18, 2) = NULL,
+    @GiaBanMax DECIMAL(18, 2) = NULL
+AS
+BEGIN
+    DECLARE @SQL NVARCHAR(MAX)
+    SET @SQL = 'SELECT t.*, l.tenLoai FROM ThuCung t JOIN Loai l ON t.maLoai = l.maLoai WHERE 1=1'
+    
+    IF @TenThuCung IS NOT NULL
+        SET @SQL = @SQL + ' AND t.tenThuCung LIKE ''%'' + @TenThuCung + ''%'''
+    IF @MaLoai IS NOT NULL
+        SET @SQL = @SQL + ' AND t.maLoai = @MaLoai'
+    IF @GiaBanMin IS NOT NULL
+        SET @SQL = @SQL + ' AND t.giaBan >= @GiaBanMin'
+    IF @GiaBanMax IS NOT NULL
+        SET @SQL = @SQL + ' AND t.giaBan <= @GiaBanMax'
+    
+    EXEC sp_executesql @SQL, N'@TenThuCung NVARCHAR(100), @MaLoai INT, @GiaBanMin DECIMAL(18, 2), @GiaBanMax DECIMAL(18, 2)', 
+                       @TenThuCung, @MaLoai, @GiaBanMin, @GiaBanMax
+END
+GO
+
+-- 5. Search DonNhap
+
+CREATE PROCEDURE SearchDonNhap
+    @NgayNhapStart DATE = NULL,
+    @NgayNhapEnd DATE = NULL,
+    @MaNhaCungCap INT = NULL,
+    @TrangThai NVARCHAR(50) = NULL
+AS
+BEGIN
+    DECLARE @SQL NVARCHAR(MAX)
+    SET @SQL = 'SELECT dn.*, ncc.tenNhaCungCap, nv.tenNhanVien ,ncc.soDienThoai,ncc.diaChi
+                FROM DonNhap dn 
+                JOIN NhaCungCap ncc ON dn.maNhaCungCap = ncc.MaNhaCungCap 
+                LEFT JOIN NhanVien nv ON dn.maNhanVien = nv.maNhanVien 
+                WHERE 1=1'
+    
+    IF @NgayNhapStart IS NOT NULL
+        SET @SQL = @SQL + ' AND dn.ngayNhap >= @NgayNhapStart'
+    IF @NgayNhapEnd IS NOT NULL
+        SET @SQL = @SQL + ' AND dn.ngayNhap <= @NgayNhapEnd'
+    IF @MaNhaCungCap IS NOT NULL
+        SET @SQL = @SQL + ' AND dn.maNhaCungCap = @MaNhaCungCap'
+    IF @TrangThai IS NOT NULL
+        SET @SQL = @SQL + ' AND dn.trangThai = @TrangThai'
+    
+    EXEC sp_executesql @SQL, N'@NgayNhapStart DATE, @NgayNhapEnd DATE, @MaNhaCungCap INT, @TrangThai NVARCHAR(50)', 
+                       @NgayNhapStart, @NgayNhapEnd, @MaNhaCungCap, @TrangThai
+END
+GO
+-- 6. Search DonBan
+CREATE PROCEDURE SearchDonBan
+    @NgayBanStart DATE = NULL,
+    @NgayBanEnd DATE = NULL,
+    @TenKhachHang NVARCHAR(50) = NULL,
+    @TrangThai NVARCHAR(50) = NULL
+AS
+BEGIN
+    DECLARE @SQL NVARCHAR(MAX)
+    SET @SQL = 'SELECT db.*, kh.tenKhachHang, nv.tenNhanVien,kh.diaChi_KH,kh.soDienThoai_KH 
+                FROM DonBan db 
+                JOIN KhachHang kh ON db.maKhachHang = kh.maKhachHang 
+                LEFT JOIN NhanVien nv ON db.maNhanVien = nv.maNhanVien 
+                WHERE 1=1'
+    IF @NgayBanStart IS NOT NULL
+        SET @SQL = @SQL + ' AND db.ngayBan >= @NgayBanStart'
+    IF @NgayBanEnd IS NOT NULL
+        SET @SQL = @SQL + ' AND db.ngayBan <= @NgayBanEnd'
+    IF @TenKhachHang IS NOT NULL
+		SET @SQL = @SQL + ' AND kh.tenKhachHang LIKE N''%'' + @TenKhachHang + ''%'''
+    IF @TrangThai IS NOT NULL
+        SET @SQL = @SQL + ' AND db.trangThai = @TrangThai'
+    
+    EXEC sp_executesql @SQL, N'@NgayBanStart DATE, @NgayBanEnd DATE,@TenKhachHang NVARCHAR(50), @TrangThai NVARCHAR(50)', 
+                       @NgayBanStart, @NgayBanEnd, @TenKhachHang, @TrangThai
+END
+GO
+

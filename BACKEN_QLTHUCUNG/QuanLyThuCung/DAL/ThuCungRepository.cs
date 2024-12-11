@@ -31,6 +31,22 @@ namespace DAL
                 throw ex;
             }
         }
+       
+        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "SearchThuCung","@TenThuCung",tenthucung,"@MaLoai",maloai,"@GiaBanMin",giabanmin,"@GiaBanMax",giabanmax);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<V_ThuCung_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<V_ThuCung_DTO> Get_Top5_ThuCung()
         {
             string msgError = "";

@@ -32,6 +32,22 @@ namespace DAL
             }
         }
 
+        public List<NhanVien_DTO> Search_NV(string? tennv, string? chucvu)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "SearchNhanVien", "@TenNhanVien",tennv, "@ChucVu",chucvu);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<NhanVien_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<NhanVien_DTO> GetById(int id)
         {
             string msgError = "";

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,13 @@
     <link rel="stylesheet" href="/CSS/CSS_ADMIN/QLloai.css">
     <link rel="stylesheet" href="/CSS/CSS_ADMIN/QL_DN.CSS">
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.15/jspdf.plugin.autotable.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
+
 <body>
     <div class="trang_quan_tri">
         <aside class="ben_trai">
@@ -28,8 +31,8 @@
                     <li><a href="#" onclick="show_KhachHang()">Quản Lý Khách Hàng</a></li>
                     <li><a href="#" onclick="show_ui_item('ui_item_donNhap')">Quản Lý Đơn Nhập</a>
                         <ul id="ui_item_donNhap" style="margin-top: 5px;">
-                            <li onclick="show_DonNhap()"><a >Thêm đơn nhập</a></li>
-                            <li onclick="Show_List_DN()"><a >Danh sách đơn nhập</a></li>
+                            <li onclick="show_DonNhap()"><a>Thêm đơn nhập</a></li>
+                            <li onclick="Show_List_DN()"><a>Danh sách đơn nhập</a></li>
                         </ul>
                     </li>
                     <li><a href="#" onclick="show_DonBan()">Quản lý đơn bán</a></li>
@@ -54,15 +57,18 @@
                 <div class="tai_khoan">
                     <div style="height: 100%;margin-right: 10px;">chuông</div>
                     <div style="height: 100%;margin-right: 10px;">thông báo</div>
-                 <img id="anh_loign" src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/438942840_1517325412181020_7866582693558725071_n.jpg?stp=c0.120.720.720a_dst-jpg_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGcW12VJzkaDQr51LsTQIXkxls2yseWNPjGWzbKx5Y0-MbDiCdIrxLK1r7xc69JmkSSWMxwQwFS6IdTlLLf-Kgx&_nc_ohc=CBgN5u663_cQ7kNvgHXN6Up&_nc_ht=scontent.fhan14-2.fna&oh=00_AYAsCuovXsTc3giKe-B65ETQCD5XySj5qyM2uPQF81EtuA&oe=66CF1596"  style="height: 100%; width: 30px; border-radius: 50%; border: 2px solid #000;margin-right: 5px;" alt="" /> 
-                 <div id="ten_loign">John Doe</div>
+                    <img id="anh_loign"
+                        src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-1/438942840_1517325412181020_7866582693558725071_n.jpg?stp=c0.120.720.720a_dst-jpg_s200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeGcW12VJzkaDQr51LsTQIXkxls2yseWNPjGWzbKx5Y0-MbDiCdIrxLK1r7xc69JmkSSWMxwQwFS6IdTlLLf-Kgx&_nc_ohc=CBgN5u663_cQ7kNvgHXN6Up&_nc_ht=scontent.fhan14-2.fna&oh=00_AYAsCuovXsTc3giKe-B65ETQCD5XySj5qyM2uPQF81EtuA&oe=66CF1596"
+                        style="height: 100%; width: 30px; border-radius: 50%; border: 2px solid #000;margin-right: 5px;"
+                        alt="" />
+                    <div id="ten_loign">John Doe</div>
 
                 </div>
             </header>
-        
+
             <section class="noi_dung_con">
                 <section id="ADMIN" class="content-section">
-                   <div class="thong_ke">
+                    <div class="thong_ke">
                         <div class="thong_ke_item">
                             <span>Doanh Thu</span>
                             <h3 id="DoanhThu">20000000000000000</h3>
@@ -82,35 +88,35 @@
                             <h3 id="TienBan">20000000000000000</h3>
 
                         </div>
-                   </div>
+                    </div>
 
-                   <div class="noidung_sanpham">
+                    <div class="noidung_sanpham">
                         <div class="thoi_tiet">
 
 
                         </div>
                         <div class="san_pham_da_ban">
-                                    <div  class="san_pham_da_ban_item">
-                                        <h3>Tên Loại </h3>
-                                        <span>phần trăm sản phẩm</span>
-                                    </div>
-                                    <div  class="san_pham_da_ban_item">
-                                        <h3>Tên Loại </h3>
-                                        <span>phần trăm sản phẩm</span>
-                                    </div>
-                                    <div  class="san_pham_da_ban_item">
-                                        <h3>Tên Loại </h3>
-                                        <span>phần trăm sản phẩm</span>
-                                    </div>
-                                    <div  class="san_pham_da_ban_item">
-                                        <h3>Tên Loại </h3>
-                                        <span>phần trăm sản phẩm</span>
-                                    </div>
-                                    <div  class="san_pham_da_ban_item">
-                                        <h3>Tên Loại </h3>
-                                        <span>phần trăm sản phẩm</span>
-                                    </div>
-                   </div>
+                            <div class="san_pham_da_ban_item">
+                                <h3>Tên Loại </h3>
+                                <span>phần trăm sản phẩm</span>
+                            </div>
+                            <div class="san_pham_da_ban_item">
+                                <h3>Tên Loại </h3>
+                                <span>phần trăm sản phẩm</span>
+                            </div>
+                            <div class="san_pham_da_ban_item">
+                                <h3>Tên Loại </h3>
+                                <span>phần trăm sản phẩm</span>
+                            </div>
+                            <div class="san_pham_da_ban_item">
+                                <h3>Tên Loại </h3>
+                                <span>phần trăm sản phẩm</span>
+                            </div>
+                            <div class="san_pham_da_ban_item">
+                                <h3>Tên Loại </h3>
+                                <span>phần trăm sản phẩm</span>
+                            </div>
+                        </div>
                 </section>
 
 
@@ -118,29 +124,31 @@
 
                 <section id="Loai" class="content-section">
                     <h2 style="color:  rgb(248, 31, 103);">QUẢN LÝ LOẠI THÚ CƯNG</h2>
-                    
+
 
                     <div id="Modal_Loai" class="modal">
 
                         <div class="modal-content" style="width: 500px;">
-                          <div onclick="close_Modal_Loai('Modal_Loai')" style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;"><span >&times;</span></div>  
-                                <label for="maloai">Mã Loại: </label>
-                                <br>
-                                <input id="maloai" style="width: 500px;" type="number">
-                                <br>
-                                <label for="tenloai">Tên Loại:</label>
-                                <br>
-                                <input id="tenloai" style="width: 500px;" type="text">
-                                <div>
-                                    <button id="btn_up"  style="display:none;" onclick="UpdateL()">Cập nhật thú cưng</button>
-                                    <button id="btn_add"  onclick="setloai()">Thêm thú cưng</button>
-                                </div>
+                            <div onclick="close_Modal_Loai('Modal_Loai')"
+                                style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;">
+                                <span>&times;</span></div>
+                            <label for="maloai">Mã Loại: </label>
+                            <br>
+                            <input id="maloai" style="width: 500px;" type="number">
+                            <br>
+                            <label for="tenloai">Tên Loại:</label>
+                            <br>
+                            <input id="tenloai" style="width: 500px;" type="text">
+                            <div>
+                                <button id="btn_up" style="display:none;" onclick="UpdateL()">Cập nhật thú cưng</button>
+                                <button id="btn_add" onclick="setloai()">Thêm thú cưng</button>
+                            </div>
                         </div>
-                
+
                     </div>
-                    <button class="btn"  onclick="openmodal('Modal_Loai')" >Thêm thú cưng</button>
+                    <button class="btn" onclick="openmodal('Modal_Loai')">Thêm thú cưng</button>
                     <div class="table-loai">
-                        
+
                         <table>
                             <thead>
                                 <tr>
@@ -150,7 +158,7 @@
                                 </tr>
                             </thead>
                             <tbody class="dsloai">
-                              
+
                             </tbody>
                         </table>
                     </div>
@@ -162,44 +170,56 @@
                     <h2 style="color:  rgb(248, 31, 103);">QUẢN LÝ THÚ CƯNG</h2>
                     <div id="Modal_ThuCung" class="modal">
                         <div class="modal-content">
-                        <div onclick="close_Modal_SP()" style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;"><span >&times;</span></div>  
-                        
-                        <div style="display: flex;width: 1000px;justify-content: space-between;">
-                            <div style="flex: 1;">
-                                <label>Mã Thú Cưng:</label>
-                                <input id="mathucung" type="text">
-                                <label>Tên Thú Cưng:</label>
-                                <input id="tenthucung" type="text">
+                            <div onclick="close_Modal_SP()"
+                                style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;">
+                                <span>&times;</span></div>
+
+                            <div style="display: flex;width: 1000px;justify-content: space-between;">
+                                <div style="flex: 1;">
+                                    <label>Mã Thú Cưng:</label>
+                                    <input id="mathucung" type="text">
+                                    <label>Tên Thú Cưng:</label>
+                                    <input id="tenthucung" type="text">
+                                </div>
+                                <div style="flex: 1;margin-left: 10px;margin-right: 10px;">
+                                    <label>Loại Thú Cưng:</label>
+                                    <select id="loai" style="padding: 8px; margin-top: 5px;width: 98%;"></select>
+                                    <label>Số Lượng:</label>
+                                    <input type="number" id="soluong">
+                                </div>
+                                <div style="flex: 1;">
+                                    <label>Giá Nhập:</label>
+                                    <input type="number" id="gianhap">
+                                    <label>Giá Bán:</label>
+                                    <input type="number" id="giaban">
+                                </div>
                             </div>
-                            <div style="flex: 1;margin-left: 10px;margin-right: 10px;">
-                                <label>Loại Thú Cưng:</label>
-                                <select id="loai" style="padding: 8px; margin-top: 5px;width: 98%;"></select>
-                                <label>Số Lượng:</label>
-                                <input type="number" id="soluong">
-                            </div>    
-                            <div style="flex: 1;">
-                                <label>Giá Nhập:</label>
-                                <input type="number" id="gianhap">
-                                <label>Giá Bán:</label>
-                                <input type="number" id="giaban">
+
+                            <label>Ảnh:</label>
+                            <input type="file" style="width: 980px;" id="anh" accept="image/*"
+                                onchange="previewImage(event)">
+                            <div>
+                                <img id="preview" src="#" alt="Preview Image"
+                                    style="display:none; width: 120px;height: 130px; margin-top:10px;">
                             </div>
-                        </div>
-                        
-                        <label>Ảnh:</label>
-                        <input type="file" style="width: 980px;" id="anh" accept="image/*" onchange="previewImage(event)">
-                        <div>
-                            <img id="preview" src="#" alt="Preview Image" style="display:none; width: 120px;height: 130px; margin-top:10px;">
-                        </div>
-                        <label>Mô Tả:</label>
-                        <textarea name="description" id="description"></textarea>
-                        <div>
-                            <button id="btnupdate" style="display:none;" onclick="capnhatthucung()">Cập nhật thú cưng</button>
-                            <button id="btnadd" onclick="themthucung()">Thêm thú cưng</button>
+                            <label>Mô Tả:</label>
+                            <textarea name="description" id="description"></textarea>
+                            <div>
+                                <button id="btnupdate" style="display:none;" onclick="capnhatthucung()">Cập nhật thú
+                                    cưng</button>
+                                <button id="btnadd" onclick="themthucung()">Thêm thú cưng</button>
+                            </div>
                         </div>
                     </div>
+                    <div style="display: flex;justify-content: space-around;">
+
+                        <input type="text" placeholder="Tên thú cưng" id="Search_name">
+                        <select id="Search_Loai" style="padding: 8px; margin-top: 5px;width: 18%;"></select>
+                        <input type="number" id="Search_GiaMin" placeholder="Giá bán nhỏ nhất">
+                        <input type="number" id="Search_GiaMax" placeholder="Giá bán lớn nhât">
+                        <button class="btn" onclick="openmodal('Modal_ThuCung')">Thêm thú cưng</button>
                     </div>
-                    <button class="btn"  onclick="openmodal('Modal_ThuCung')" >Thêm thú cưng</button>
-                    
+
                     <div class="table-loai">
                         <table>
                             <thead>
@@ -226,21 +246,22 @@
                     <h2 style="color:  rgb(248, 31, 103);">QUẢN LÝ NHÂN VIÊN</h2>
                     <div id="Modal_NhanVien" class="modal">
                         <div class="modal-content">
-                            <div onclick="close_Modal_NhanVien('Modal_NhanVien')" style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;">
+                            <div onclick="close_Modal_NhanVien('Modal_NhanVien')"
+                                style="float: right;font-size: 20px;margin-top: -10px;background-color: pink;">
                                 <span>&times;</span>
-                            </div>  
-                
+                            </div>
+
                             <div style="display: flex;width: 1000px;justify-content: space-between;">
                                 <div style="flex: 1;">
                                     <label>Tài Khoản:</label>
                                     <input id="taikhoan" type="text">
-                                
+
                                     <label>Tên Nhân Viên:</label>
                                     <input id="tennhanvien" type="text">
                                 </div>
-                                  
+
                                 <div style="flex: 1;">
-                                    
+
                                     <label>Số Điện Thoại:</label>
                                     <input type="text" id="sodienthoai">
                                     <label>Chức Vụ:</label>
@@ -253,22 +274,36 @@
                                 </div>
                             </div>
                             <label>Địa Chỉ:</label>
-                                    <input id="diachi" type="text">
-                            
+                            <input id="diachi" type="text">
+
                             <label>Ảnh Thẻ:</label>
-                            <input type="file" style="width: 980px;" id="anhthe" accept="image/*" onchange="previewImage(event)">
+                            <input type="file" style="width: 980px;" id="anhthe" accept="image/*"
+                                onchange="previewImage(event)">
                             <div>
-                                <img id="preview" src="#" alt="Preview Image" style="display:none; width: 120px;height: 130px; margin-top:10px;">
+                                <img id="preview" src="#" alt="Preview Image"
+                                    style="display:none; width: 120px;height: 130px; margin-top:10px;">
                             </div>
-                            
+
                             <div>
-                                <button id="btnupdate1" style="display:none;" onclick="capnhatnhanvien()">Cập nhật nhân viên</button>
+                                <button id="btnupdate1" style="display:none;" onclick="capnhatnhanvien()">Cập nhật nhân
+                                    viên</button>
                                 <button id="btnadd1" onclick="themnhanvien()">Thêm nhân viên</button>
                             </div>
                         </div>
                     </div>
-                    <button class="btn" onclick="openmodal('Modal_NhanVien')">Thêm nhân viên</button>
-                    
+
+                    <div style="display: flex;justify-content: space-around;">
+
+                        <input type="text" placeholder="Tên nhân viên" id="Search_nameNV">
+                        <select id="Search_ChucVu" style="padding: 8px; margin-top: 5px;width: 18%;">
+                            <option>Chọn chức vụ</option>
+                            <option value="Quản lý">Quản lý</option>
+                            <option value="Nhân viên bán hàng">Nhân viên bán hàng</option>
+                            <option value="Nhân viên kho">Nhân viên kho</option>
+                        </select>
+
+                        <button class="btn" onclick="openmodal('Modal_NhanVien')">Thêm nhân viên</button>
+                    </div>
                     <div class="table-loai">
                         <table>
                             <thead>
@@ -286,17 +321,18 @@
                         </table>
                     </div>
                 </section>
-                
+
 
 
                 <section id="QL_NhaCungCap" class="content-section">
                     <h2 style="color: rgb(248, 31, 103);">QUẢN LÝ NHÀ CUNG CẤP</h2>
                     <div id="Modal_NhaCungCap" class="modal">
                         <div class="modal-content">
-                            <div onclick="close_Modal_NhaCungCap('Modal_NhaCungCap')" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
+                            <div onclick="close_Modal_NhaCungCap('Modal_NhaCungCap')"
+                                style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
                                 <span>&times;</span>
                             </div>
-                
+
                             <div style="display: flex; width: 1000px; justify-content: space-between;">
                                 <div style="flex: 1;">
                                     <label>Mã Nhà Cung Cấp:</label>
@@ -311,15 +347,23 @@
                                     <input id="DCNCC" type="text">
                                 </div>
                             </div>
-                
+
                             <div>
-                                <button id="btnupdate2" style="display:none;" onclick="capnhatnhacungcap()">Cập nhật nhà cung cấp</button>
+                                <button id="btnupdate2" style="display:none;" onclick="capnhatnhacungcap()">Cập nhật nhà
+                                    cung cấp</button>
                                 <button id="btnadd2" onclick="themnhacungcap()">Thêm nhà cung cấp</button>
                             </div>
                         </div>
                     </div>
-                    <button class="btn" onclick="openmodal('Modal_NhaCungCap')">Thêm nhà cung cấp</button>
-                
+                    <div style="display: flex;justify-content: space-around;">
+
+                        <input type="text" placeholder="Tên nhà cung cấp" id="Search_TenNCC">
+                        <input type="text" placeholder="Số điện thoại" id="Search_SDT">
+
+
+                        <button class="btn" onclick="openmodal('Modal_NhaCungCap')">Thêm nhà cung cấp</button>
+
+                    </div>
                     <div class="table-loai">
                         <table>
                             <thead>
@@ -341,10 +385,11 @@
                     <h2 style="color: rgb(248, 31, 103);">QUẢN LÝ KHÁCH HÀNG</h2>
                     <div id="Modal_KhachHang" class="modal">
                         <div class="modal-content">
-                            <div onclick="close_Modal_KhachHang('Modal_KhachHang')" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
+                            <div onclick="close_Modal_KhachHang('Modal_KhachHang')"
+                                style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
                                 <span>&times;</span>
                             </div>
-                
+
                             <div style="display: flex; width: 1000px; justify-content: space-between;">
                                 <div style="flex: 1;">
                                     <label>Mã Khách Hàng:</label>
@@ -359,15 +404,25 @@
                                     <input id="sodienthoai_KH" type="text">
                                 </div>
                             </div>
-                
+
                             <div>
-                                <button id="btnupdate_KH" style="display:none;" onclick="capnhatkhachhang()">Cập nhật khách hàng</button>
+                                <button id="btnupdate_KH" style="display:none;" onclick="capnhatkhachhang()">Cập nhật
+                                    khách hàng</button>
                                 <button id="btnadd_KH" onclick="themkhachhang()">Thêm khách hàng</button>
                             </div>
                         </div>
                     </div>
-                    <button class="btn" onclick="openmodal('Modal_KhachHang')">Thêm khách hàng</button>
-                
+
+                    <div style="display: flex;justify-content: space-around;">
+
+                        <input type="text" placeholder="Tên nhà cung cấp" id="Search_TenKH">
+                        <input type="text" placeholder="Số điện thoại" id="Search_SDT_KH">
+
+                        <button class="btn" onclick="openmodal('Modal_KhachHang')">Thêm khách hàng</button>
+
+
+                    </div>
+
                     <div class="table-loai">
                         <table>
                             <thead>
@@ -383,73 +438,88 @@
                         </table>
                     </div>
                 </section>
-                
+
 
                 <section id="QL_DonNhap" class="content-section">
                     <h2 style="color: rgb(248, 31, 103);">QUẢN LÝ ĐƠN NHẬP</h2>
-                    
+
                     <div style="display: flex;">
-                    <div class="order-form">
-                        <div class="form-grid">
-                            <div class="form-group">
-                                <label for="employeeName">Tên Nhân Viên</label>
-                                <input type="text" id="TenNV" value="Phạm Thanh Long" readonly>
+                        <div class="order-form">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="employeeName">Tên Nhân Viên</label>
+                                    <input type="text" id="TenNV" value="Phạm Thanh Long" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="supplier">Tên nhà cung cấp</label>
+                                    <select id="TenNCC">
+                                        <option>Nguyen Văn A</option>
+                                        <option>Nguyen Văn B</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="importDate">Ngày Nhập</label>
+                                    <input type="date" id="NgayNhap">
+                                </div>
+                                <div class="form-group">
+                                    <label for="status">Trạng Thái</label>
+                                    <select id="status_item">
+                                        <option>Chờ xử lý</option>
+                                        <option>Đang xử lý</option>
+                                        <option>Đã nhập</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="supplier">Tên nhà cung cấp</label>
-                                <select id="TenNCC">
-                                    <option>Nguyen Văn A</option>
-                                    <option>Nguyen Văn B</option>
-                                </select>
+                            <div class="search-container">
+                                <label for="searchInput">Tìm Kiếm</label>
+                                <div class="search-input-container">
+                                    <input type="text" id="searchInput" placeholder="Nhập tên sản phẩm">
+                                    <span class="search-icon">&#128269;</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="importDate">Ngày Nhập</label>
-                                <input type="date" id="NgayNhap" >
-                            </div>
-                            <div class="form-group">
-                                <label for="status">Trạng Thái</label>
-                                <select id="status_item">
-                                    <option>Chờ xử lý</option>
-                                    <option>Đang xử lý</option>
-                                    <option>Đã nhập</option>
-                                </select>
+                            <div id="productList" class="product-grid"></div>
+                        </div>
+                        <div class="cart">
+                            <h2>
+                                <span class="cart-icon">&#128722;</span>
+                                Giỏ hàng
+                            </h2>
+                            <div id="cartItems"></div>
+                            <div class="cart-total">
+                                <p>Tổng giá trị: <strong id="totalValue" style="color: red;">0 </strong> VND</p>
+                                <button id="buyButton" class="buy-button" onclick="muahang()">Mua hàng</button>
                             </div>
                         </div>
-                        <div class="search-container">
-                            <label for="searchInput">Tìm Kiếm</label>
-                            <div class="search-input-container">
-                                <input type="text" id="searchInput" placeholder="Nhập tên sản phẩm">
-                                <span class="search-icon">&#128269;</span>
-                            </div>
-                        </div>
-                        <div id="productList" class="product-grid"></div>
                     </div>
-                    <div class="cart">
-                        <h2>
-                            <span class="cart-icon">&#128722;</span>
-                            Giỏ hàng
-                        </h2>
-                        <div id="cartItems"></div>
-                        <div class="cart-total">
-                            <p >Tổng giá trị: <strong id="totalValue" style="color: red;">0 </strong> VND</p>
-                            <button id="buyButton" class="buy-button" onclick="muahang()">Mua hàng</button>
-                        </div>
-                    </div>
-                </div>
                 </section>
 
                 <section id="List_DonNhap" class="content-section">
                     <h2 style="color: rgb(248, 31, 103); ">DANH SÁCH ĐƠN NHẬP</h2>
                     <div id="Modal_CT_DonNhap" class="modal">
                         <div class="modal-content">
-                            <div onclick="closemodal_CT_DN()" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
+                            <div onclick="closemodal_CT_DN()"
+                                style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
                                 <span>&times;</span>
                             </div>
-                
+
                             <div class="CTDN">
 
                             </div>
                         </div>
+                    </div>
+                    <div style="display: flex;justify-content: space-around;">
+                        <input type="date" placeholder="Từ ngày" id="Search_NgayNhapStart">
+                        <input type="date" placeholder="Đến ngày" id="Search_NgayNhapEnd">
+                        <select id="Search_TenNCC_select">
+
+                        </select>
+                        <select id="Search_TrangThaiNhap">
+                            <option>Chờ xử lý</option>
+                            <option>Đang xử lý</option>
+                            <option>Đã nhập</option>
+                        </select>
+
+
                     </div>
                     <div class="table-loai">
                         <table>
@@ -472,8 +542,8 @@
                                     <td>Địa Chỉ</td>
                                     <td>Số Điện Thoại</td>
                                     <td>Tổng Tiền</td>
-                                    <td >
-                                        <select >
+                                    <td>
+                                        <select>
                                             <option>Chờ xử lý</option>
                                             <option>Đang xử lý</option>
                                             <option>Hoàn Thành</option>
@@ -493,27 +563,29 @@
 
                 <section id="List_DonBan" class="content-section">
                     <h2 style="color: rgb(248, 31, 103); ">DANH SÁCH ĐƠN BÁN</h2>
-                    <div class="search-container">
-                        <select id="statusSearch">
-                          <option value="">Tất cả trạng thái</option>
-                          <option value="Chờ xác nhận">Chờ xác nhận</option>
-                          <option value="Đang xử lý">Đang xử lý</option>
-                          <option value="Đang giao hàng">Đang giao hàng</option>
-                          <option value="Đã giao">Đã giao</option>
-                        </select>
-                        <input type="date" id="dateSearch">
-                        <input type="text" id="customerNameSearch" placeholder="Tên khách hàng">
-                      </div>
+                    
                     <div id="Modal_CT_DonBan" class="modal">
                         <div class="modal-content">
-                            <div onclick="closemodal_CT_DB()" style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
+                            <div onclick="closemodal_CT_DB()"
+                                style="float: right; font-size: 20px; margin-top: -10px; background-color: pink;">
                                 <span>&times;</span>
                             </div>
-                
+
                             <div class="CTDB">
 
                             </div>
                         </div>
+                    </div>
+                    <div style="display: flex;justify-content: space-around;">
+                        <input type="date" placeholder="Từ ngày" id="Search_NgayBanStart">
+                        <input type="date" placeholder="Đến ngày" id="Search_NgayBanEnd">
+                        <input type="text" placeholder="Tên Khách Hàng" id="Search_TenKHHH">
+                        <select id="Search_TrangThaiBan">
+                            <option>Chờ xác nhận</option>
+                            <option>Đang xử lý</option>
+                            <option>Đang giao hàng</option>
+                            <option>Đã giao hàng</option>
+                        </select>
                     </div>
                     <div class="table-loai">
                         <table>
@@ -535,8 +607,8 @@
                                     <td>Địa Chỉ</td>
                                     <td>Số Điện Thoại</td>
                                     <td>Tổng Tiền</td>
-                                    <td >
-                                        <select >
+                                    <td>
+                                        <select>
                                             <option>Chờ xử lý</option>
                                             <option>Đang xử lý</option>
                                             <option>Hoàn Thành</option>
@@ -552,21 +624,23 @@
                         </table>
                     </div>
                 </section>
-                
-                
+
+
             </section>
         </main>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
     <script src="/js/JS_ADMIN/Xu_Ly_Anh.js    " defer></script>
     <script src="/js/JS_ADMIN/apiService.js    " defer></script>
-    <script src="/js/JS_ADMIN/ADMIN.JS  "defer></script>
-    <script src="/js/JS_ADMIN/QL_DonNhap.js"defer></script>
-    <script src="/js/JS_ADMIN/QL_Loai.js "defer></script>
-    <script src="/js/JS_ADMIN/QL_SP.JS  "defer></script>
-    <script src="/js/JS_ADMIN/QL_NhanVien.js  "defer></script>
+    <script src="/js/JS_ADMIN/ADMIN.JS  " defer></script>
+    <script src="/js/JS_ADMIN/QL_DonNhap.js" defer></script>
+    <script src="/js/JS_ADMIN/QL_Loai.js " defer></script>
+    <script src="/js/JS_ADMIN/QL_SP.JS  " defer></script>
+    <script src="/js/JS_ADMIN/QL_NhanVien.js  " defer></script>
     <script src="/js/JS_ADMIN/QL_NhaCC.JS  "></script>
-    <script src="/js/JS_ADMIN/QL_KhachHang.js     "defer></script>
-    <script src="/js/JS_ADMIN/QL_DonBan.js     "defer></script>
+    <script src="/js/JS_ADMIN/QL_KhachHang.js     " defer></script>
+    <script src="/js/JS_ADMIN/QL_DonBan.js     " defer></script>
 
 
 
@@ -576,4 +650,5 @@
 
 
 </body>
+
 </html>

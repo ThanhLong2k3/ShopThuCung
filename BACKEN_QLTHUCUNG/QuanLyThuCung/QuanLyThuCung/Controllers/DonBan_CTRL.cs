@@ -34,6 +34,14 @@ public class DonBan_CTRL : ControllerBase
         var result = _donBanBLL.GetAll();
         return Ok(result);
     }
+
+    [Route("Search_DonBan2")]
+    [HttpGet]
+    public ActionResult<List<V_DonBan_DTO>> Search_DonBan2(DateTime ? NgayBanStart,DateTime? NgayBanEnd, string? Tenkhachhang, string? TrangThai)
+    {
+        var result = _donBanBLL.Search_DonBan2(NgayBanStart,NgayBanEnd, Tenkhachhang, TrangThai);
+        return Ok(result);
+    }
     [Route("GetByMaDonBan")]
     [HttpGet]
     public ActionResult<List<V_DonBan_DTO>> GetByMaDonBan(int id)

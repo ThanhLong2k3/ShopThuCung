@@ -3,6 +3,37 @@ function openmodal(id){
     modal.style.display = "block";
 
 }
+let Search_NhanVien=[];
+let searchTimeoutNV; 
+
+async function searchNhanVien() {
+    const name = document.getElementById("Search_nameNV").value.trim();
+    const chucVu = document.getElementById("Search_ChucVu").value;
+
+    let url = apiEndpoints.NhanVien.Search_NhanVien;
+    if (name) url += `tennv=${encodeURIComponent(name)}&`;
+    if (chucVu) url += `chucvu=${encodeURIComponent(chucVu)}&`;
+    url = url.slice(0, -1);
+
+    try {
+        Search_NhanVien = await getDaTa(url); 
+        loadnhanvien(); 
+    } catch (error) {
+        console.error("Lỗi khi tìm kiếm:", error);
+        renderError("Lỗi khi tìm kiếm: " + error.message); 
+    }
+}
+
+function handleSearchNhanVien() {
+    if (searchTimeoutNV) {
+        clearTimeout(searchTimeoutNV);
+    }
+    searchTimeoutNV = setTimeout(searchNhanVien, 1000); 
+}
+
+document.getElementById("Search_nameNV").addEventListener("input", handleSearchNhanVien);
+document.getElementById("Search_ChucVu").addEventListener("change", handleSearchNhanVien);
+
 
 function close_Modal_NhanVien(id) {
     document.getElementById(id).style.display = 'none';
@@ -21,7 +52,13 @@ function close_Modal_NhanVien(id) {
 async function loadnhanvien() {
     $('.dsnhanvien').html('<tr><td colspan="8">Loading...</td></tr>'); 
     try {
-        let data = await getDaTa(apiEndpoints.NhanVien.getAll);
+        let data;
+        if (!Array.isArray(Search_NhanVien) || Search_NhanVien.length === 0) {
+            const get_all_NhanVien = await getDaTa(apiEndpoints.NhanVien.getAll);
+            data = get_all_NhanVien;
+        } else {
+            data = Search_NhanVien;
+        }
         if (data) {
             let listNhanVien = data;
             let htmlArray = '';

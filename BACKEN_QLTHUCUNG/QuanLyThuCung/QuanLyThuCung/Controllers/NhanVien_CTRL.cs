@@ -36,7 +36,13 @@ public class NhanVien_CTRL : ControllerBase
         }
         return Ok(result);
     }
-
+    [Route("Search_NV")]
+    [HttpGet]
+    public ActionResult<List<NhanVien_DTO>> Search_NV(string? tennv, string? chucvu)
+    {
+        var result = _nhanVienBLL.Search_NV(tennv, chucvu);
+        return Ok(result);
+    }
     [Route("get_all")]
     [HttpGet]
     public ActionResult<List<NhanVien_DTO>> GetAll()

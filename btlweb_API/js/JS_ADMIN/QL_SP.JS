@@ -1,72 +1,116 @@
 
-function openmodal(){
-    var modal = document.getElementById("Modal_ThuCung");    
+let Data_Search_ThuCung = [];
+function openmodal() {
+    var modal = document.getElementById("Modal_ThuCung");
     modal.style.display = "block";
     dotenloaira();
 
 
 }
 
+let searchTimeout;
 
-function close_Modal_SP() {
-        document.getElementById("Modal_ThuCung").style.display = "none";
-        document.getElementById("mathucung").value = '';
-        document.getElementById("tenthucung").value = '';
-        document.getElementById("loai").value = '';
-        document.getElementById("soluong").value = '';
-        document.getElementById("gianhap").value = '';
-        document.getElementById("giaban").value = '';
-        CKEDITOR.instances.description.setData('');
-        document.getElementById("anh").value = '';
-        document.getElementById('preview').style.display = 'none';
-        document.getElementById("btnadd").style.display = 'block';
-        document.getElementById("btnupdate").style.display = 'none';
-        document.getElementById('mathucung').removeAttribute('readonly');
+async function searchPets() {
+    const name = document.getElementById("Search_name").value.trim();
+    const loai = document.getElementById("Search_Loai").value;
+    const giaMin = document.getElementById("Search_GiaMin").value;
+    const giaMax = document.getElementById("Search_GiaMax").value;
+
+    let url = apiEndpoints.ThuCung.Search_ThuCung;
+    if (name) url += `ten=${encodeURIComponent(name)}&`;
+    if (loai) url += `ma=${encodeURIComponent(loai)}&`;
+    if (giaMin) url += `giaMin=${giaMin}&`;
+    if (giaMax) url += `giaMax=${giaMax}&`;
+
+    url = url.slice(0, -1);
+    Data_Search_ThuCung = await getDaTa(url);
+    loadthucung();
 }
 
+function handleSearch() {
+    if (searchTimeout) {
+        clearTimeout(searchTimeout);
+    }
+    searchTimeout = setTimeout(searchPets,1000);
+}
+
+document.getElementById("Search_name").addEventListener("input", handleSearch);
+document.getElementById("Search_Loai").addEventListener("change", handleSearch);
+document.getElementById("Search_GiaMin").addEventListener("input", handleSearch);
+document.getElementById("Search_GiaMax").addEventListener("input", handleSearch);
+
+
+function close_Modal_SP() {
+    document.getElementById("Modal_ThuCung").style.display = "none";
+    document.getElementById("mathucung").value = '';
+    document.getElementById("tenthucung").value = '';
+    document.getElementById("loai").value = '';
+    document.getElementById("soluong").value = '';
+    document.getElementById("gianhap").value = '';
+    document.getElementById("giaban").value = '';
+    CKEDITOR.instances.description.setData('');
+    document.getElementById("anh").value = '';
+    document.getElementById('preview').style.display = 'none';
+    document.getElementById("btnadd").style.display = 'block';
+    document.getElementById("btnupdate").style.display = 'none';
+    document.getElementById('mathucung').removeAttribute('readonly');
+}
 
 
 async function dotenloaira() {
     const data = await apiEndpoints.fetchWithError(apiEndpoints.Loai.getAll);
     let htmlArray = [];
+    
+    htmlArray.push(`
+        <option value="">Chọn loại thú cưng</option>
+    `);
+
     if (data) {
         for (const item of data) {
             htmlArray.push(`
                 <option value="${item.maLoai}">${item.tenLoai}</option>
             `);
-        }        
-        $('#loai').html(htmlArray.join(''));
+        }
+    }
+
+    $('#loai').html(htmlArray.join(''));
+    $('#Search_Loai').html(htmlArray.join(''));
+}
+
+async function loadthucung() {
+    try {
+        let data;
+        if (!Array.isArray(Data_Search_ThuCung) || Data_Search_ThuCung.length === 0) {
+            const get_all_ThuCung = await getDaTa(apiEndpoints.ThuCung.getAll);
+            data = get_all_ThuCung;
+        } else {
+            data = Data_Search_ThuCung;
+        }
+
+        if (data && Array.isArray(data)) {
+            let htmlArray = data.map(thuCung => `
+                <tr>
+                    <td><img src="${thuCung.anh}" alt="${thuCung.tenThuCung}" style="max-width: 100px; max-height: 100px; object-fit: cover;"></td>
+                    <td>${thuCung.tenThuCung}</td>
+                    <td>${thuCung.tenLoai}</td>
+                    <td>${thuCung.soLuong}</td>
+                    <td>${thuCung.giaBan.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
+                    <td>${thuCung.giaNhap.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</td>
+                    <td>${thuCung.moTa}</td>
+                    <td><button onclick="suathucung('${thuCung.maThuCung}')">Sửa</button></td>
+                    <td><button onclick="xoathucung('${thuCung.maThuCung}')">Xóa</button></td>
+                </tr>
+            `).join('');
+            $('.dsthucung').html(htmlArray);
+        } else {
+            $('.dsthucung').html('<tr><td colspan="9">Không có dữ liệu để hiển thị.</td></tr>');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        $('.dsthucung').html('<tr><td colspan="9">Lỗi khi tải dữ liệu: ' + error.message + '</td></tr>');
     }
 }
 
-function loadthucung() {
-    getDaTa(apiEndpoints.ThuCung.getAll)
-        .then(data => {
-            if(data && Array.isArray(data)) {
-                let htmlArray = data.map(thuCung => `
-                    <tr>
-                        <td><img src="${thuCung.anh}" alt="${thuCung.tenThuCung}" style="max-width: 100px; max-height: 100px; object-fit: cover;"></td>
-                        <td>${thuCung.tenThuCung}</td>
-                        <td>${thuCung.tenLoai}</td>
-                        <td>${thuCung.soLuong}</td>
-                        <td>${thuCung.giaBan.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'})}</td>
-                        <td>${thuCung.giaNhap.toLocaleString('vi-VN', {style: 'currency', currency: 'VND'})}</td>
-                        <td>${thuCung.moTa}</td>
-                        <td><button onclick="suathucung('${thuCung.maThuCung}')">Sửa</button></td>
-                        <td><button onclick="xoathucung('${thuCung.maThuCung}')">Xóa</button></td>
-                    </tr>
-                `).join('');
-                
-                $('.dsthucung').html(htmlArray);
-            } else {
-                throw new Error("Dữ liệu không hợp lệ");
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            $('.dsthucung').html('<tr><td colspan="9">Lỗi khi tải dữ liệu: ' + error.message + '</td></tr>');
-        });
-}
 function validateAndFormatPetData(data) {
     const formattedData = {
         maThuCung: data.maThuCung ? parseInt(data.maThuCung) : 0,
@@ -102,7 +146,7 @@ async function themthucung() {
         const giaban = document.getElementById("giaban").value;
         const mota = CKEDITOR.instances.description.getData();
         const anhFile = document.getElementById("anh").files[0];
-        
+
         if (!ten || !loaiValue || !soluong || !gianhap || !giaban || !anhFile) {
             throw new Error("Vui lòng nhập đầy đủ thông tin và chọn ảnh.");
         }
@@ -137,7 +181,7 @@ async function themthucung() {
 }
 
 async function xoathucung(ma) {
-        await deleteData(apiEndpoints.ThuCung.delete(ma), loadthucung);
+    await deleteData(apiEndpoints.ThuCung.delete(ma), loadthucung);
 }
 
 function resetForm() {
@@ -158,8 +202,8 @@ function resetForm() {
 
 async function suathucung(ma) {
     let data = await getDaTa(apiEndpoints.ThuCung.getById(ma));
-    const modal=document.getElementById("Modal_ThuCung");
-    modal.style.display="block";
+    const modal = document.getElementById("Modal_ThuCung");
+    modal.style.display = "block";
     document.getElementById("btnadd").style.display = 'none';
     document.getElementById("btnupdate").style.display = 'block';
     document.getElementById('mathucung').setAttribute('readonly', 'true');
@@ -170,7 +214,7 @@ async function suathucung(ma) {
     document.getElementById('soluong').value = data[0].soLuong;
     document.getElementById('gianhap').value = data[0].giaNhap;
     document.getElementById('giaban').value = data[0].giaBan;
-    CKEDITOR.instances.description.setData(data[0].moTa); 
+    CKEDITOR.instances.description.setData(data[0].moTa);
     document.getElementById('anh').value = '';
     document.getElementById('preview').src = data[0].anh;
     document.getElementById('preview').style.display = 'block';
@@ -218,7 +262,7 @@ async function capnhatthucung() {
     } catch (error) {
         alert(error.message);
     }
-    
+
 }
 
 
@@ -240,9 +284,7 @@ CKEDITOR.replace('description', {
 });
 
 
-
-function show_ThuCung()
-{
+function show_ThuCung() {
     showSection('users');
     loadthucung();
     dotenloaira();

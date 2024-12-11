@@ -12,6 +12,7 @@ const apiEndpoints = {
 
     },
     ThuCung: {
+        Search_ThuCung:`${localHot_AD}api/ThuCung_CTRL/Search_ThuCung?`,
         getAll: `${localHot_AD}api/ThuCung_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/ThuCung_CTRL/get_by_id?id=${MA}`,
         getByMa: (MA)=> `${localHot_AD}api/ThuCung_CTRL/get_by_ma?id=${MA}`,
@@ -21,6 +22,7 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/ThuCung_CTRL/delete/${MA}`,
     },
     NhanVien: {
+        Search_NhanVien:`${localHot_AD}api/NhanVien_CTRL/Search_NV?`,
         getAll: `${localHot_AD}api/NhanVien_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/NhanVien_CTRL/get_by_id?id=${MA}`,
         getByTK: (TK) => `${localHot_AD}api/NhanVien_CTRL/get_by_tk?id=${TK}`,
@@ -29,6 +31,7 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/NhanVien_CTRL/delete/${MA}`,
     },
     NCC: {
+        Search_NCC:`${localHot_AD}api/NhaCungCap_CTRL/Search_NCC?`,
         getAll: `${localHot_AD}api/NhaCungCap_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/NhaCungCap_CTRL/get_by_id?id=${MA}`,
         add: `${localHot_AD}api/NhaCungCap_CTRL/create`,
@@ -36,6 +39,7 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/NhaCungCap_CTRL/delete/${MA}`,
     },
     KHACHHANG: {
+        Search_KH:`${localHot_AD}api/KhachHang_CTRL/Search_KH?`,
         getAll: `${localHot_AD}api/KhachHang_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/KhachHang_CTRL/get_by_id?id=${MA}`,
         getByTK: (TK) => `${localHot_AD}api/KhachHang_CTRL/get_by_TK?id=${TK}`,
@@ -45,6 +49,7 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/KhachHang_CTRL/delete/${MA}`,
     },
     DONNHAP: {
+        Search_DN:`${localHot_AD}api/DonNhap_CTRL/Search_DonNhap?`,
         getAll: `${localHot_AD}api/DonNhap_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/DonNhap_CTRL/get_by_id?id=${MA}`,
         add: `${localHot_AD}api/DonNhap_CTRL/create`,
@@ -53,6 +58,7 @@ const apiEndpoints = {
     },
     DONBAN:{
         Search_DonBan:`${localHot_AD}'api/DonBan_CTRL/SEARCH_DONBAN'`,
+        Search_DonBan2:`${localHot_AD}api/DonBan_CTRL/Search_DonBan2?`,
         create:`${localHot_ND}/api/DonBan_CTRL/create`,
         getAll: `${localHot_AD}api/DonBan_CTRL/get_all`,
         getById: (MA) => `${localHot_AD}api/DonBan_CTRL/get_by_id?id=${MA}`,

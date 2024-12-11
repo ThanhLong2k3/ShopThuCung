@@ -31,6 +31,21 @@ namespace DAL
                 throw ex;
             }
         }
+        public List<V_DonNhap_DTO> Search_DonNhap(DateTime? ngaynhapstar, DateTime? ngayNhapEnd, int? maNhaCungCap, string? trangThai)
+        {
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "SearchDonNhap","@NgayNhapStart",ngaynhapstar,"@NgayNhapEnd",ngayNhapEnd,"@MaNhaCungCap",maNhaCungCap,"@TrangThai",trangThai);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<V_DonNhap_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
 
         public List<V_DonNhap_DTO> GetById(int id)
         {

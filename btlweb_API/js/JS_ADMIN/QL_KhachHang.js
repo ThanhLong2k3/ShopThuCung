@@ -1,3 +1,36 @@
+let Search_KH = [];
+let searchTimeoutKH;
+
+async function searchKH() {
+    const name = document.getElementById("Search_TenKH").value.trim();
+    const sdt = document.getElementById("Search_SDT_KH").value;
+
+    let url = apiEndpoints.KHACHHANG.Search_KH;
+    if (name) url += `tenkh=${encodeURIComponent(name)}&`;
+    if (sdt) url += `sdt=${encodeURIComponent(sdt)}&`;
+    debugger
+    url = url.slice(0, -1);
+
+    try {
+        Search_KH = await getDaTa(url);
+        loadkhachhang();
+    } catch (error) {
+        console.error("Lỗi khi tìm kiếm:", error);
+        renderError("Lỗi khi tìm kiếm: " + error.message);
+    }
+}
+
+function handlesearchKH() {
+    if (searchTimeoutKH) {
+        clearTimeout(searchTimeoutKH);
+    }
+    searchTimeoutKH = setTimeout(searchKH, 1000);
+}
+
+document.getElementById("Search_TenKH").addEventListener("input", handlesearchKH);
+document.getElementById("Search_SDT_KH").addEventListener("input", handlesearchKH);
+
+
 function openmodal(id) {
     var modal = document.getElementById(id);
     modal.style.display = "block";
@@ -18,8 +51,13 @@ function close_Modal_KhachHang(id) {
 async function loadkhachhang() {
     const tableBody = $('.dskh');
     tableBody.html('<tr><td colspan="4">Đang tải dữ liệu...</td></tr>');
-    let data = await getDaTa(apiEndpoints.KHACHHANG.getAll);
-    console.log(data);
+    let data;
+    if (!Array.isArray(Search_KH) || Search_KH.length === 0) {
+        const get_all_KH = await getDaTa(apiEndpoints.KHACHHANG.getAll);
+        data = get_all_KH;
+    } else {
+        data = Search_KH;
+    }
     if (data) {
         let listKhachHang = data;
         let htmlArray = '';

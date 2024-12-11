@@ -1,9 +1,4 @@
 ﻿using DTO;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DAL.Interface
 {
@@ -11,6 +6,8 @@ namespace DAL.Interface
     {
         public List<KhachHang_DTO> GetAll();
         public List<KhachHang_DTO> GetById(int id);
+        public List<KhachHang_DTO> Search_KH(string ? tenkh,string ? sdt);
+
         public List<KhachHang_DTO> GetByTK(string id);
 
         int Create(KhachHang_DTO model);

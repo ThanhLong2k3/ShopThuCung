@@ -18,7 +18,10 @@ namespace BLL
         {
             return _res.GetAll();
         }
-
+        public List<KhachHang_DTO> Search_KH(string? tenkh , string? sdt)
+        {
+            return _res.Search_KH(tenkh,sdt);
+        }
         public List<KhachHang_DTO> GetById(int id)
         {
             return _res.GetById(id);
