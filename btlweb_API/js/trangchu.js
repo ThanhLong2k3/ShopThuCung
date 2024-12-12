@@ -133,11 +133,12 @@ let Get_MeNu = async () => {
             for (let i = 0; i < Math.min(4, data.length); i++) {
                 await Get_Top5_MaLoai(data[i].maLoai, `Loai${i + 1}`);
                 document.getElementById(`titel_Loai${i + 1}`).innerHTML = data[i].tenLoai;
+                document.getElementById(`maLoai${i+1}`).innerHTML=data[i].maLoai;
             }
 
             let htmlarr = '';
             data.map(sp => {
-                htmlarr += `<li style="padding-left: 5px;" value=${sp.maLoai}> ${sp.tenLoai}</li>`;
+                htmlarr += `<li style="padding-left: 5px;" onClick="getmaloai_menu(${sp.maLoai})"> ${sp.tenLoai}</li>`;
             });
             document.getElementById('danhmuc_con').innerHTML = htmlarr;
         } else {
@@ -148,8 +149,37 @@ let Get_MeNu = async () => {
     }
 };
 
+function getmaloai_menu(ma){
+    localStorage.setItem("MaLoai",JSON.stringify(ma));
+    debugger
+    window.location.href="./Search_user.html";
+}
+
+function getmaloai(id){
+    let ma=document.getElementById(id).innerHTML;
+    localStorage.setItem("MaLoai",JSON.stringify(ma));
+    window.location.href="./Search_user.html";
+}
 
 
+
+
+let searchTimeoutNameTC;
+
+async function searThuCungName() {
+    const name = document.getElementById("Search_name").value.trim();
+    localStorage.setItem("NameThuCung",JSON.stringify(name));
+    window.location.href="./Search_user.html";
+}
+
+function handleSearchNhaCC() {
+    if (searchTimeoutNameTC) {
+        clearTimeout(searchTimeoutNameTC);
+    }
+    searchTimeoutNameTC = setTimeout(searThuCungName, 1000);
+}
+
+document.getElementById("Search_name").addEventListener("input", handleSearchNhaCC);
+Get_MeNu();
 Get_Top5_BanChay();
 
-Get_MeNu();

@@ -63,3 +63,19 @@ async function addgh() {
     }
     
 }
+let searchTimeoutNameTC;
+
+async function searThuCungName() {
+    const name = document.getElementById("Search_name").value.trim();
+    localStorage.setItem("NameThuCung",JSON.stringify(name));
+    window.location.href="./Search_user.html";
+}
+
+function handleSearchNhaCC() {
+    if (searchTimeoutNameTC) {
+        clearTimeout(searchTimeoutNameTC);
+    }
+    searchTimeoutNameTC = setTimeout(searThuCungName, 1000);
+}
+
+document.getElementById("Search_name").addEventListener("input", handleSearchNhaCC);
