@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo-search">
+            <a href="./Home.html" class="logo">
+                <img src="/logo.png" alt="Logo">
+            </a>
+            <div class="search-bar">
+                <input type="text"  id="Search_name"  placeholder="Tìm kiếm sản phẩm...">
+                <button>
+                    <img src="/iconsearch.png" alt="Search" width="20" height="20">
+                </button>
+            </div>
+        </div>
+    
+        <nav class="nav-items">
+            <a href="./Home.html" class="nav-item">
+                <img src="/anh/gt.png" alt="Trang chủ">
+                <span>TRANG CHỦ</span>
+            </a>
+    
+            <a href="./giohang.html" class="nav-item" id="cartLink" style="display: none;">
+                <img src="/anh/giohang.png" alt="Giỏ hàng">
+                <span>GIỎ HÀNG</span>
+            </a>
+    
+            <a href="./ThongTin.html" class="nav-item" id="profileLink" style="display: none;">
+                <img src="/anh/blog.png" alt="Thông tin">
+                <span>THÔNG TIN CÁ NHÂN</span>
+            </a>
+    
+            <div class="nav-item" id="userDropdown" style="display: none;">
+                <span id="userName" style="margin-right: 50px;"></span>
+                <div class="dropdown-content">
+                    <a href="/settings">Cài đặt</a>
+                    <a href="#" id="logoutBtn">Đăng xuất</a>
+                </div>
+            </div>
+    
+            <a href="./dangnhap.html" class="nav-item" id="loginBtn" style="margin-right: 100px;">
+                <span>ĐĂNG NHẬP</span>
+            </a>
+        </nav>
+    </header>
+    <div class="sanphamuathich" id="spuathich" style=" margin-top: 100px;">
+        <div class="titel">
+            <div class="anhtt">
+                <img src="/anh/titel_spuathich.png" style="height: 100%; width: 50px;" alt="">
+            </div>
+            <span id="name_Loai">Danh sách tìm kiếm</span>
+        </div>
+        <hr style="margin-top: 0px;margin-bottom: 0px;">
+        <div class="spuathich" id="Search_Loai">
+            <a   onclick="setdulieu(event, this)" class="link-reset">
+                <div class="sp-uathich">
+                    <div class="sptren">
+                        <span class="giamgia" id="giamgia">-12%</span>
+                        <img src="/anhsp/bat1.jpg" class="anh" id="anh">
+                        <img src="/anhsp/bat2.jpg" class="anhcon" id="anh2">
+                        <img src="/anhsp/bat3.jpg" class="anhcon" id="anh3">
+                        <img src="/anhsp/bat4.jpg" class="anhcon" id="anh4">
+                    </div>
+                    <div class="chusp">
+                        <h2 style="font-size: 14px; color: #f72585;" id="tensp">BÁT ĂN CAO CẤP </h2>
+                        <span style="color: red;"><strong id="gia">105.000</strong> vnd</span>
+                    </div>
+                </div>
+            </a>
+            <a   onclick="setdulieu(event, this)" class="link-reset">
+                <div class="sp-uathich">
+                    <div class="sptren">
+                        <span class="giamgia" id="giamgia">-10%</span>
+                        <img src="/anhsp/bearge1.jpg" class="anh" id="anh">
+                        <img src="/anhsp/bearge2.jpg" class="anhcon" id="anh2">
+                        <img src="/anhsp/bearge3.jpg" class="anhcon" id="anh3">
+                        <img src="/anhsp/bearge4.jpg" class="anhcon" id="anh4">
+                    </div>
+                    <div class="chusp">
+                        <h2 style="font-size: 14px; color: #f72585;" id="tensp">CÚN CON BEARGE</h2>
+                        <span style="color: red;"><strong id="gia">1.500.000</strong> vnd</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a   onclick="setdulieu(event, this)" class="link-reset">
+                <div class="sp-uathich">
+                    <div class="sptren">
+                        <span class="giamgia" id="giamgia">-12%</span>
+                        <img src="/anhsp/chaudungcat1.jpg" class="anh" id="anh">
+                        <img src="/anhsp/chaudungcat2.jpg" class="anhcon" id="anh2">
+                        <img src="/anhsp/chaudungcat3.jpg" class="anhcon" id="anh3">
+                        <img src="/anhsp/chaudungcat4.jpg" class="anhcon" id="anh4">
+                    </div>
+                    <div class="chusp">
+                        <h2 style="font-size: 14px; color: #f72585;" id="tensp">CHẬU ĐỰNG CÁT </h2>
+                        <span style="color: red;"><strong id="gia">90.000</strong> vnd</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a   onclick="setdulieu(event, this)" class="link-reset">
+                <div class="sp-uathich">
+                    <div class="sptren">
+                        <span class="giamgia" id="giamgia">-5%</span>
+                        <img src="/anhsp/corgi1.jpg" class="anh" id="anh">
+                        <img src="/anhsp/corgi2.jpg" class="anhcon" id="anh2">
+                        <img src="/anhsp/corgi3.jpg" class="anhcon" id="anh3">
+                        <img src="/anhsp/corgi4.jpg" class="anhcon" id="anh4">
+                    </div>
+                    <div class="chusp">
+                        <h2 style="font-size: 14px; color: #f72585;" id="tensp">CORGI LÔNG VÀNG</h2>
+                        <span style="color: red;"><strong id="gia">3.150.000</strong> vnd</span>
+                    </div>
+                </div>
+            </a>
+            
+            <a   onclick="setdulieu(event, this)" class="link-reset">
+                <div class="sp-uathich">
+                    <div class="sptren">
+                        <span class="giamgia" id="giamgia">-12%</span>
+                        <img src="/anhsp/dochoihamster1.jpg" class="anh" id="anh">
+                        <img src="/anhsp/dochoihamster2.jpg" class="anhcon" id="anh2">
+                        <img src="/anhsp/dochoihamster3.jpg" class="anhcon" id="anh3">
+                        <img src="/anhsp/dochoihamster4.jpg" class="anhcon" id="anh4">
+                    </div>
+                    <div class="chusp">
+                        <h2 style="font-size: 14px; color: #f72585;" id="tensp">CẦU TRƯỢT HAMSTER</h2>
+                        <span style="color: red;"><strong id="gia">215.000</strong> vnd</span>
+                    </div>
+                </div>
+            </a>    
+        </div>
+    </div>
+</body>
+<script src="/js/JS_ADMIN/apiService.js    "></script>
+<script src="/js/Checklogin.js    "></script>
+
+<script src="/js/Search_user.js"></script>
+</html>
