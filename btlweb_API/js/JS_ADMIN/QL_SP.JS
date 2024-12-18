@@ -4,8 +4,6 @@ function openmodal() {
     var modal = document.getElementById("Modal_ThuCung");
     modal.style.display = "block";
     dotenloaira();
-
-
 }
 
 let searchTimeout;
@@ -111,7 +109,7 @@ async function loadthucung() {
     }
 }
 
-function validateAndFormatPetData(data) {
+const validateAndFormatPetData=(data) => {
     const formattedData = {
         maThuCung: data.maThuCung ? parseInt(data.maThuCung) : 0,
         tenThuCung: data.tenThuCung || "",
@@ -184,7 +182,7 @@ async function xoathucung(ma) {
     await deleteData(apiEndpoints.ThuCung.delete(ma), loadthucung);
 }
 
-function resetForm() {
+const resetForm=()=> {
     document.getElementById("mathucung").value = '';
     document.getElementById("tenthucung").value = '';
     document.getElementById("loai").value = '';

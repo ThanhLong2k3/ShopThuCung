@@ -9,14 +9,16 @@
 <body>
     <div id="dangnhap">
         <img src="/logo.png" alt="Logo" class="logo"/>
+        <div   class="show-password" onclick="togglePassword()"  style="height: 40px;width: 50px;position: absolute; z-index: 2000;margin-top: 155px;margin-left: 21.5%; text-align: center;line-height: 48px;">Hiện</div>
+
         <h2>Đăng nhập</h2>
         
         <label for="sdt">Tên đăng nhập hoặc email:</label>
         <input type="text" class="txt" id="tk" placeholder="Nhập Tên đăng nhập hoặc email..."/>
         
         <label for="mk">Mật khẩu:</label>
-        <input type="password" class="txt" id="mk" placeholder="Nhập mật khẩu..."/>
-        
+        <input  type="password" style="position: relative;" class="txt" id="mk" placeholder="Nhập mật khẩu..."/>
+
         <a href="#" class="forgot-password">Quên mật khẩu?</a>
         
         <input type="button" onclick="dangnhap()" value="ĐĂNG NHẬP" id="dn"/>

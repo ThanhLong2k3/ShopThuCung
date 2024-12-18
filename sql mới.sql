@@ -1203,7 +1203,7 @@ END
 
 
 GO
-CREATE PROCEDURE ThongKeDoanhThu
+CREATE or alter PROCEDURE ThongKeDoanhThu
 AS
 BEGIN
     -- Tổng tiền nhập
@@ -1222,9 +1222,23 @@ BEGIN
     INNER JOIN DonBan db ON cdb.maDonBan = db.maDonBan
     WHERE db.trangThai = N'Đã giao hàng'; -- Chỉ tính đơn bán đã hoàn tất
 
+	--Tổng tiền nhập đã bán
+	DECLARE @TongNhap_DaBan DECIMAL(18,2);
+	SELECT 
+        @TongNhap_DaBan = SUM(cdb.soLuong * TC.giaNhap)
+    FROM ChiTietDonBan cdb
+    INNER JOIN DonBan db ON cdb.maDonBan = db.maDonBan
+	INNER JOIN ThuCung TC ON cdb.maThuCung=TC.maThuCung
+    WHERE db.trangThai = N'Đã giao hàng'; -- Chỉ tính đơn bán đã hoàn tất
+
     -- Doanh thu = Tổng tiền bán - Tổng tiền nhập
-    DECLARE @DoanhThu DECIMAL(18, 2);
-    SET @DoanhThu = @TongTienBan - @TongTienNhap;
+	DECLARE @DoanhThu DECIMAL(18,2);
+    SET @DoanhThu = @TongTienBan - @TongNhap_DaBan;
+	SELECT 
+        @TongTienBan = SUM(cdb.soLuong * cdb.giaBan)
+    FROM ChiTietDonBan cdb
+    INNER JOIN DonBan db ON cdb.maDonBan = db.maDonBan
+    WHERE db.trangThai = N'Đã giao hàng'; -- Chỉ tính đơn bán đã hoàn tất
 
     -- Kết quả trả về
     SELECT 
@@ -1233,7 +1247,7 @@ BEGIN
         @DoanhThu AS DoanhThu,
         CASE 
             WHEN @TongTienNhap = 0 THEN 0 -- Tránh chia cho 0
-            ELSE (@DoanhThu * 100.0 / @TongTienNhap) 
+            ELSE (@TongTienBan/@TongNhap_DaBan * 100.0)-100 
         END AS LaiXuat; -- Lãi xuất tính theo phần trăm
 END;
 GO

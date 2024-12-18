@@ -81,7 +81,8 @@ h2 {
     background-color: rgb(253, 100, 151);
     color: white;
     height: 40px;
-    border-radius: 20%;
+    border-radius: 5px;
+    border-color: rgb(253, 100, 151);
 }
 /* Modal Styles */
 .modal {

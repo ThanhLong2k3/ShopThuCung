@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\loaithucungrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -194,10 +198,6 @@
       "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\interface\\ithongkereponsitory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7F5F8794-9DCE-459B-88E2-7DADB4A9501E}|DAL\\DAL.csproj|solutionrelative:dal\\thongke_dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|c:\\users\\plinhh\\desktop\\shop\\shopthucung\\backen_qlthucung\\quanlythucung\\dto\\thongke_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0076D727-4A1A-4FDE-B1FE-F1F638A33487}|DTO\\DTO.csproj|solutionrelative:dto\\thongke_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -351,7 +351,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -363,32 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DonBan_DTO.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonBan_DTO.cs",
-              "RelativeDocumentMoniker": "DTO\\DonBan_DTO.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonBan_DTO.cs",
-              "RelativeToolTip": "DTO\\DonBan_DTO.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T02:57:07.619Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "KhachHangRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
-              "RelativeDocumentMoniker": "DAL\\KhachHangRepository.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
-              "RelativeToolTip": "DAL\\KhachHangRepository.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAgwE0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T08:01:06.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "ThuCungRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThuCungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\ThuCungRepository.cs",
@@ -396,25 +371,24 @@
               "RelativeToolTip": "DAL\\ThuCungRepository.cs",
               "ViewState": "AQIAADAAAAAAAAAAAAAYwD0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T08:08:03.535Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T08:08:03.535Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoaiThuCungRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\LoaiThuCungRepository.cs",
               "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\LoaiThuCungRepository.cs",
               "RelativeToolTip": "DAL\\LoaiThuCungRepository.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAgwDcAAABDAAAA",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAgwD0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-05T08:00:51.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DonBan_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
@@ -422,12 +396,11 @@
               "RelativeToolTip": "QuanLyThuCung\\Controllers\\DonBan_CTRL.cs",
               "ViewState": "AQIAAB8AAAAAAAAAAAA6wCsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T07:44:12.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-02T07:44:12.765Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DonBan_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonBan_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\DonBan_BLL.cs",
@@ -439,7 +412,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ThongKe_DAL.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThongKe_DAL.cs",
+              "RelativeDocumentMoniker": "DAL\\ThongKe_DAL.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThongKe_DAL.cs",
+              "RelativeToolTip": "DAL\\ThongKe_DAL.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBcAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T03:16:01.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KhachHangRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
+              "RelativeDocumentMoniker": "DAL\\KhachHangRepository.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\KhachHangRepository.cs",
+              "RelativeToolTip": "DAL\\KhachHangRepository.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAgwE0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T08:01:06.834Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DonBan_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonBan_DTO.cs",
+              "RelativeDocumentMoniker": "DTO\\DonBan_DTO.cs",
+              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\DonBan_DTO.cs",
+              "RelativeToolTip": "DTO\\DonBan_DTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T02:57:07.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "IDonBan_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonBan_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\IDonBan_BLL.cs",
@@ -451,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IDonBanRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonBanRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IDonBanRepository.cs",
@@ -463,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DonBanRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonBanRepository.cs",
               "RelativeDocumentMoniker": "DAL\\DonBanRepository.cs",
@@ -475,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "NhaCungCapRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhaCungCapRepository.cs",
               "RelativeDocumentMoniker": "DAL\\NhaCungCapRepository.cs",
@@ -487,7 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ThuCung_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\ThuCung_CTRL.cs",
@@ -499,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ThuCung_DTO.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DTO\\ThuCung_DTO.cs",
               "RelativeDocumentMoniker": "DTO\\ThuCung_DTO.cs",
@@ -511,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IThuCungRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IThuCungRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IThuCungRepository.cs",
@@ -523,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "IThuCung_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IThuCung_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\IThuCung_BLL.cs",
@@ -535,7 +545,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ThuCung_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ThuCung_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\ThuCung_BLL.cs",
@@ -547,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "NhaCungCap_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhaCungCap_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\NhaCungCap_BLL.cs",
@@ -559,7 +569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "IBLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IBLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\IBLL.cs",
@@ -571,7 +581,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "INhaCungCapRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhaCungCapRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\INhaCungCapRepository.cs",
@@ -583,7 +593,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IDonNhap_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IDonNhap_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\IDonNhap_BLL.cs",
@@ -595,7 +605,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ICTDonNhap_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ICTDonNhap_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\ICTDonNhap_BLL.cs",
@@ -607,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DonNhapRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\DonNhapRepository.cs",
               "RelativeDocumentMoniker": "DAL\\DonNhapRepository.cs",
@@ -619,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "IDonNhapRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IDonNhapRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IDonNhapRepository.cs",
@@ -631,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "DonNhap_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\DonNhap_CTRL.cs",
@@ -643,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "DonNhap_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\DonNhap_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\DonNhap_BLL.cs",
@@ -655,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Program.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Program.cs",
@@ -667,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "NhanVienRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\NhanVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\NhanVienRepository.cs",
@@ -679,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "NhaCungCap_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\NhaCungCap_CTRL.cs",
@@ -691,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "NhanVien_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\NhanVien_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\NhanVien_BLL.cs",
@@ -703,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ITaiKhoanBLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\ITaiKhoanBLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\ITaiKhoanBLL.cs",
@@ -715,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "INhanVienRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\INhanVienRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\INhanVienRepository.cs",
@@ -727,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "KhachHang_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\KhachHang_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\KhachHang_BLL.cs",
@@ -739,7 +749,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "NhanVien_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\NhanVien_CTRL.cs",
@@ -751,7 +761,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "KhachHang_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\KhachHang_CTRL.cs",
@@ -763,7 +773,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "IKhachHang_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IKhachHang_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\IKhachHang_BLL.cs",
@@ -775,7 +785,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "INhanVien_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\INhanVien_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\INhanVien_BLL.cs",
@@ -787,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "IKhachHangRepository.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IKhachHangRepository.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IKhachHangRepository.cs",
@@ -799,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "CTDonBan_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\CTDonBan_CTRL.cs",
               "RelativeDocumentMoniker": "USE\\Controllers\\CTDonBan_CTRL.cs",
@@ -811,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "USE\\Properties\\launchSettings.json",
@@ -823,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "IThongKe_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\interface\\IThongKe_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\interface\\IThongKe_BLL.cs",
@@ -835,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "ocelot.json",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\Gateway\\ocelot.json",
               "RelativeDocumentMoniker": "Gateway\\ocelot.json",
@@ -847,7 +857,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Properties\\launchSettings.json",
@@ -859,7 +869,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\Gateway\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Gateway\\Properties\\launchSettings.json",
@@ -871,7 +881,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "TaiKhoan_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\USE\\Controllers\\TaiKhoan_CTRL.cs",
               "RelativeDocumentMoniker": "USE\\Controllers\\TaiKhoan_CTRL.cs",
@@ -883,7 +893,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\Gateway\\Program.cs",
               "RelativeDocumentMoniker": "Gateway\\Program.cs",
@@ -895,7 +905,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "ThongKe_BLL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\BLL\\ThongKe_BLL.cs",
               "RelativeDocumentMoniker": "BLL\\ThongKe_BLL.cs",
@@ -907,7 +917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "ocelot.json",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Documents\\Zalo Received Files\\ocelot.json",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Documents\\Zalo Received Files\\ocelot.json",
@@ -919,7 +929,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "ThongKe_CTRL.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\QuanLyThuCung\\Controllers\\ThongKe_CTRL.cs",
               "RelativeDocumentMoniker": "QuanLyThuCung\\Controllers\\ThongKe_CTRL.cs",
@@ -931,7 +941,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "IThongKeReponsitory.cs",
               "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\Interface\\IThongKeReponsitory.cs",
               "RelativeDocumentMoniker": "DAL\\Interface\\IThongKeReponsitory.cs",
@@ -940,18 +950,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T03:13:50.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "ThongKe_DAL.cs",
-              "DocumentMoniker": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThongKe_DAL.cs",
-              "RelativeDocumentMoniker": "DAL\\ThongKe_DAL.cs",
-              "ToolTip": "C:\\Users\\Plinhh\\Desktop\\Shop\\ShopThuCung\\BACKEN_QLTHUCUNG\\QuanLyThuCung\\DAL\\ThongKe_DAL.cs",
-              "RelativeToolTip": "DAL\\ThongKe_DAL.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T03:16:01.457Z"
             },
             {
               "$type": "Document",

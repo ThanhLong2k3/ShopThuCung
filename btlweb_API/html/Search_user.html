@@ -6,6 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/home.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #Search_Loai {
+             display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 cột */
+            gap: 16px; /* Khoảng cách giữa các sản phẩm */
+            height: auto;
+}
+    </style>
 </head>
 <body>
     <header class="header">
@@ -50,7 +58,7 @@
             </a>
         </nav>
     </header>
-    <div class="sanphamuathich" id="spuathich" style=" margin-top: 100px;">
+    <div class="sanphamuathich" id="spuathich" style=" margin-top: 100px;height: auto;">
         <div class="titel">
             <div class="anhtt">
                 <img src="/anh/titel_spuathich.png" style="height: 100%; width: 50px;" alt="">
@@ -58,7 +66,7 @@
             <span id="name_Loai">Danh sách tìm kiếm</span>
         </div>
         <hr style="margin-top: 0px;margin-bottom: 0px;">
-        <div class="spuathich" id="Search_Loai">
+        <div id="Search_Loai">
             <a   onclick="setdulieu(event, this)" class="link-reset">
                 <div class="sp-uathich">
                     <div class="sptren">

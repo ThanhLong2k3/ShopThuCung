@@ -25,6 +25,7 @@ async function Get_TC_Ma() {
         if (Array.isArray(data) && data.length > 0) {
             let htmlarr = data.map(sp => createProductHTML(sp)).join('');
             document.getElementById('Search_Loai').innerHTML = htmlarr;
+            localStorage.removeItem("MaLoai"); 
         } else {
             document.getElementById('Search_Loai').innerHTML = 'Không có dữ liệu sản phẩm.';
         }

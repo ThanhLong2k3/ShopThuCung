@@ -14,13 +14,30 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        #bieudo {
+            width: 90%;
+            max-width: 700px;
+            margin: 30px auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
     <div class="trang_quan_tri">
         <aside class="ben_trai">
-            <div class="logo" onclick="showSection('ADMIN')">
-                <h2>Adminator</h2>
+            <div class="logo" >
+                <img src="../../logo.png" height="100%" width="100%" onclick="showSection('ADMIN')">
             </div>
             <nav>
                 <ul>
@@ -75,7 +92,7 @@
 
                         </div>
                         <div class="thong_ke_item">
-                            <span>Lãi Xuất</span>
+                            <span>Lãi Suất</span>
                             <h3 id="LaiXuat">20000000000000000</h3>
                         </div>
                         <div class="thong_ke_item">
@@ -91,10 +108,93 @@
                     </div>
 
                     <div class="noidung_sanpham">
-                        <div class="thoi_tiet">
-
-
+                        <div id="bieudo">
+                            <canvas id="salesChart" width="600" height="400"></canvas>
                         </div>
+                    
+                        <script>
+                            // Lấy canvas trong thẻ #bieudo
+                            const ctx = document.getElementById('salesChart').getContext('2d');
+                    
+                            // Dữ liệu thống kê doanh thu bán hàng (giả lập)
+                            const salesData = {
+                                labels: ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'],
+                                datasets: [{
+                                    label: 'Doanh thu (Triệu VND)',
+                                    data: [120, 150, 180, 200, 250, 300, 280, 320, 310, 400, 450, 500],
+                                    backgroundColor: [
+                                        'rgba(255, 179, 186, 0.8)', // pastel hồng
+                                        'rgba(255, 223, 186, 0.8)', // pastel cam
+                                        'rgba(255, 255, 186, 0.8)', // pastel vàng
+                                        'rgba(186, 255, 201, 0.8)', // pastel xanh lá
+                                        'rgba(186, 225, 255, 0.8)', // pastel xanh dương
+                                        'rgba(210, 186, 255, 0.8)', // pastel tím nhạt
+                                        'rgba(255, 204, 229, 0.8)', // pastel hồng phấn
+                                        'rgba(255, 239, 186, 0.8)', // pastel vàng nhạt
+                                        'rgba(186, 255, 236, 0.8)', // pastel xanh ngọc
+                                        'rgba(186, 211, 255, 0.8)', // pastel xanh biển
+                                        'rgba(224, 186, 255, 0.8)', // pastel tím
+                                        'rgba(255, 186, 210, 0.8)'  // pastel hồng đậm
+                                    ],
+                                    borderColor: 'rgba(0, 0, 0, 0.1)', // Viền mờ
+                                    borderWidth: 1,
+                                    borderRadius: 10,
+                                    barThickness: 30 // Độ dày cột
+                                }]
+                            };
+                    
+                            // Cấu hình biểu đồ
+                            const config = {
+                                type: 'bar', // Dạng biểu đồ cột
+                                data: salesData,
+                                options: {
+                                    responsive: true,
+                                    plugins: {
+                                        legend: {
+                                            position: 'top',
+                                            labels: {
+                                                font: {
+                                                    size: 14
+                                                },
+                                                color: '#333'
+                                            }
+                                        },
+                                        tooltip: {
+                                            callbacks: {
+                                                label: function(context) {
+                                                    return `Doanh thu: ${context.raw} Triệu VND`;
+                                                }
+                                            }
+                                        }
+                                    },
+                                    scales: {
+                                        x: {
+                                            ticks: {
+                                                color: '#555',
+                                                font: {
+                                                    size: 12
+                                                }
+                                            }
+                                        },
+                                        y: {
+                                            beginAtZero: true,
+                                            ticks: {
+                                                color: '#555',
+                                                font: {
+                                                    size: 12
+                                                },
+                                                callback: function(value) {
+                                                    return value + ' triệu';
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            };
+                    
+                            // Khởi tạo biểu đồ
+                            new Chart(ctx, config);
+                        </script>
                         <div class="san_pham_da_ban">
                             <div class="san_pham_da_ban_item">
                                 <h3>Tên Loại </h3>
@@ -141,12 +241,12 @@
                             <input id="tenloai" style="width: 500px;" type="text">
                             <div>
                                 <button id="btn_up" style="display:none;" onclick="UpdateL()">Cập nhật thú cưng</button>
-                                <button id="btn_add" onclick="setloai()">Thêm thú cưng</button>
+                                <button id="btn_add" onclick="setloai()">Thêm loại thú cưng</button>
                             </div>
                         </div>
 
                     </div>
-                    <button class="btn" onclick="openmodal('Modal_Loai')">Thêm thú cưng</button>
+                    <button class="btn" onclick="openmodal('Modal_Loai')">Thêm loại thú cưng</button>
                     <div class="table-loai">
 
                         <table>
