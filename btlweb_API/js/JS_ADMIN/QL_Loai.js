@@ -1,32 +1,42 @@
 
-async function loadloai() {
+
+let dataTrang=[];
+
+async function loadloai(page = 1) {
     const tableBody = $('.dsloai');
     tableBody.html('<tr><td colspan="4">Đang tải dữ liệu...</td></tr>');
-    debugger;
+  
     try {
-        const loai = await getDaTa(apiEndpoints.Loai.getAll);
-        let htmlArray = '';
-        
-        for (let i = 0; i < loai.length; i++) {
-                htmlArray += `
-                <tr>
-                    <td>${loai[i].maLoai}</td>
-                    <td>${loai[i].tenLoai}</td>
-                    <td><button onclick="sualoaicho('${loai[i].maLoai}')">Sửa</button></td>
-                    <td><button onclick="xoaloaicho('${loai[i].maLoai}')">Xóa</button></td>
-                </tr>
-                `;
-        }
-        
-        tableBody.html(htmlArray || '<tr><td colspan="4">Không có dữ liệu</td></tr>');
+      let ListLoai = [];
+  
+      if (dataTrang.length > 0) {
+        ListLoai = dataTrang;
+      } else {
+        let data = await getDaTa(apiEndpoints.Loai.PhanTrang(page));
+        ListLoai = data;
+      }
+  
+      // Tạo HTML cho bảng
+      if (ListLoai.length > 0) {
+        const htmlArray = ListLoai.map(
+          (item) => `
+            <tr>
+                <td>${item.maLoai}</td>
+                <td>${item.tenLoai}</td>
+                <td><button onclick="sualoaicho('${item.maLoai}')">Sửa</button></td>
+                <td><button onclick="xoaloaicho('${item.maLoai}')">Xóa</button></td>
+            </tr>
+          `
+        ).join('');
+        tableBody.html(htmlArray);
+      } else {
+        tableBody.html('<tr><td colspan="4">Không có dữ liệu</td></tr>');
+      }
     } catch (error) {
-        console.log(error);
-        console.error('Error:', error);
-        tableBody.html('<tr><td colspan="4">Lỗi tải dữ liệu</td></tr>');
+      console.error('Error:', error);
+      tableBody.html('<tr><td colspan="4">Lỗi tải dữ liệu</td></tr>');
     }
-}
-
-
+  }
 
 
 async function setloai() {
@@ -95,6 +105,24 @@ window.onclick = function(event) {
         close_Modal_Loai('Modal_Loai');
     }
 };
+document.getElementById('pagination_Loai').addEventListener('click', function (event) {
+    if (event.target.classList.contains('page-item')) {
+
+      document.querySelectorAll('.page-item').forEach(function (item) {
+        item.classList.remove('active');
+      });
+  
+
+      event.target.classList.add('active');
+  
+
+      const activeValue = parseInt(event.target.textContent);
+      if(activeValue)
+      {
+        loadloai(activeValue);
+      } 
+    }
+  });
 
 
 

@@ -1,4 +1,5 @@
-﻿using BLL.Interface;
+﻿using BLL;
+using BLL.Interface;
 using DTO;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection;
@@ -16,7 +17,13 @@ namespace QuanLyThuCung.Controllers
         {
             _thuCungBLL = thuCungBLL;
         }
-
+        [Route("PhanTrang")]
+        [HttpGet]
+        public ActionResult<List<QL_LoaiThuCung_DTO>> PhanTrang(int PageIndex, int PageSize)
+        {
+            var result = _thuCungBLL.PhanTrang(PageIndex, PageSize);
+            return Ok(result);
+        }
         [Route("get_by_id")]
         [HttpGet]
         public ActionResult<List<QL_LoaiThuCung_DTO>> GetById(int id)

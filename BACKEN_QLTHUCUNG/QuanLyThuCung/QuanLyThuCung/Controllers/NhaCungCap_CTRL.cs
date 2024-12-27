@@ -14,6 +14,14 @@ public class NhaCungCap_CTRL : ControllerBase
         _nhaCungCapBLL = nhaCungCapBLL;
     }
 
+    [Route("PhanTrang")]
+    [HttpGet]
+    public ActionResult<List<NhaCungCap_DTO>> PhanTrang(int PageIndex, int PageSize)
+    {
+        var result = _nhaCungCapBLL.PhanTrang(PageIndex, PageSize);
+        return Ok(result);
+    }
+
     [Route("get_by_id")]
     [HttpGet]
     public ActionResult<List<NhaCungCap_DTO>> GetById(int id)

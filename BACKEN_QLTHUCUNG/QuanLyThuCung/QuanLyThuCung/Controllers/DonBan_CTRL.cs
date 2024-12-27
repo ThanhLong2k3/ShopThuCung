@@ -25,7 +25,13 @@ public class DonBan_CTRL : ControllerBase
         }
         return Ok(result);
     }
-   
+    [Route("PhanTrang")]
+    [HttpGet]
+    public ActionResult<List<V_DonBan_DTO>> PhanTrang(int PageIndex,int PageSize)
+    {
+        var result = _donBanBLL.PhanTrang(PageIndex,PageSize);
+        return Ok(result);
+    }
 
     [Route("get_all")]
     [HttpGet]

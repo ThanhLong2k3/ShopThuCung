@@ -30,7 +30,18 @@ async function SIGN_UP() {
 
 }
 
-
+function togglePassword() {
+    const passwordInput = document.getElementById('mk');
+    const showPasswordButton = document.querySelector('.show-password');
+    debugger
+    if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        showPasswordButton.textContent = 'Ẩn';
+    } else {
+        passwordInput.type = 'password';
+        showPasswordButton.textContent = 'Hiện';
+    }
+}
 
 
 async function dangnhap() {

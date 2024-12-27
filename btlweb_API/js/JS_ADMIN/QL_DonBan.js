@@ -79,11 +79,11 @@ function formatDate(date) {
     let year = d.getFullYear(); 
     return `${day}/${month}/${year}`;
 }
-async function Show_List_DB() {
+async function Show_List_DB(page=1) {
     try {
 
         if (!Array.isArray(Search_DB) || Search_DB.length === 0) {
-            list_DonBan = await getDaTa(apiEndpoints.DONBAN.getAll);
+            list_DonBan = await getDaTa(apiEndpoints.DONBAN.PhanTrang(page));
         } else {
             list_DonBan = Search_DB;
         }
@@ -239,3 +239,22 @@ async function UpTrangThai() {
 
     }
 }
+
+
+
+
+document.getElementById('pagination_DonBan').addEventListener('click', function (event) {
+    if (event.target.classList.contains('page-item')) {
+      document.querySelectorAll('.page-item').forEach(function (item) {
+        item.classList.remove('active');
+      });
+  
+      event.target.classList.add('active');
+
+      const activeValue = parseInt(event.target.textContent);
+      if(activeValue)
+      {
+        Show_List_DB(activeValue);
+      } 
+    }
+  });

@@ -21,7 +21,7 @@ namespace DAL
             string msgError = "";
             try
             {
-                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "ThongKeDoanhThu_ThangHienTai");
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "ThongKeDoanhThu");
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 return dt.ConvertTo<ThongKe_DTO>().FirstOrDefault();

@@ -47,10 +47,10 @@ function close_Modal_NhaCungCap() {
     resetForm_NCC();
 }
 
-async function loadnhacungcap() {
+async function loadnhacungcap(page=1) {
     let data;
     if (!Array.isArray(Search_NCC) || Search_NCC.length === 0) {
-        const get_all_NCC = await getDaTa(apiEndpoints.NCC.getAll);
+        const get_all_NCC = await getDaTa(apiEndpoints.NCC.PhanTrang(page));
         data = get_all_NCC;
     } else {
         data = Search_NCC;
@@ -147,3 +147,20 @@ function show_NCC() {
     showSection('QL_NhaCungCap');
     loadnhacungcap();
 }
+
+
+document.getElementById('pagination_NhaCungCap').addEventListener('click', function (event) {
+    if (event.target.classList.contains('page-item')) {
+      document.querySelectorAll('.page-item').forEach(function (item) {
+        item.classList.remove('active');
+      });
+  
+      event.target.classList.add('active');
+      const activeValue = parseInt(event.target.textContent);
+      if(activeValue)
+      {
+        loadnhacungcap(activeValue);
+      } 
+    }
+  });
+

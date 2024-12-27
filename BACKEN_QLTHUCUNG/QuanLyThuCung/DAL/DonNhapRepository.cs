@@ -31,6 +31,24 @@ namespace DAL
                 throw ex;
             }
         }
+        public List<V_DonNhap_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
+
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_DonNhap_Pagination",
+                    "@PageNumber", PageIndex,
+                    "@PageSize", PageSize);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<V_DonNhap_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<V_DonNhap_DTO> Search_DonNhap(DateTime? ngaynhapstar, DateTime? ngayNhapEnd, int? maNhaCungCap, string? trangThai)
         {
             string msgError = "";

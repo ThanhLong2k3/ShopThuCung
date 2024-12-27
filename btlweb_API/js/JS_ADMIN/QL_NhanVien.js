@@ -6,6 +6,7 @@ function openmodal(id){
 let Search_NhanVien=[];
 let searchTimeoutNV; 
 
+
 async function searchNhanVien() {
     const name = document.getElementById("Search_nameNV").value.trim();
     const chucVu = document.getElementById("Search_ChucVu").value;
@@ -49,12 +50,12 @@ function close_Modal_NhanVien(id) {
             document.getElementById("btnupdate").style.display = 'none';
             document.getElementById('taikhoan').removeAttribute('readonly');
 }
-async function loadnhanvien() {
+async function loadnhanvien(page=1) {
     $('.dsnhanvien').html('<tr><td colspan="8">Loading...</td></tr>'); 
     try {
         let data;
         if (!Array.isArray(Search_NhanVien) || Search_NhanVien.length === 0) {
-            const get_all_NhanVien = await getDaTa(apiEndpoints.NhanVien.getAll);
+            const get_all_NhanVien = await getDaTa(apiEndpoints.NhanVien.PhanTrang(page));
             data = get_all_NhanVien;
         } else {
             data = Search_NhanVien;
@@ -81,7 +82,12 @@ async function loadnhanvien() {
         alert("Could not load employee data. Please try again later.");
     }
 }
-
+function show_NV()
+{
+    debugger;
+    showSection('QL_Nhanvien');
+    loadnhanvien();
+}
 
 function themnhanvien() {
     let taikhoan = document.getElementById("taikhoan").value.trim();
@@ -121,7 +127,7 @@ function themnhanvien() {
         localStorage.setItem('ListNhanVien', JSON.stringify(listNhanVien));
         alert("Thêm nhân viên thành công!");
         document.getElementById("Modal_NhanVien").style.display = "none";
-        resetForm();
+        resetForm_NhanVien();
         loadnhanvien();
     };
     reader.readAsDataURL(anhthe);
@@ -148,7 +154,7 @@ async function suanhanvien(ma) {
     
 }
 
-var resetForm =() => {
+const resetForm_NhanVien =() => {
     document.getElementById("taikhoan").value = '';
     document.getElementById("tennhanvien").value = '';
     document.getElementById("matkhau").value = '';
@@ -211,15 +217,10 @@ async function capnhatnhanvien() {
         anhThe: anhData
     };
 
-    try {
         await updateData(apiEndpoints.NhanVien.update, NV, loadnhanvien);
         let element = document.getElementById("Modal_NhanVien");
-        //element.style.display = "none";
-        debugger;
-        resetForm();
-    } catch (error) {
-        alert("Lỗi khi cập nhật nhân viên: " + error.message);
-    }
+        element.style.display = "none";
+     
 }
 
 
@@ -227,10 +228,19 @@ async function xoanhanvien(ma) {
    await deleteData(apiEndpoints.NhanVien.delete(ma),loadnhanvien);
  }
 
- 
-function show_NV()
-{
-    showSection('QL_Nhanvien');
-    loadnhanvien();
-}
+
+ document.getElementById('pagination_NhanVien').addEventListener('click', function (event) {
+    if (event.target.classList.contains('page-item')) {
+      document.querySelectorAll('.page-item').forEach(function (item) {
+        item.classList.remove('active');
+      });
+  
+      event.target.classList.add('active');
+      const activeValue = parseInt(event.target.textContent);
+      if(activeValue)
+      {
+        loadnhanvien(activeValue);
+      } 
+    }
+  });
 

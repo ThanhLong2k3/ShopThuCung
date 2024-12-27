@@ -23,6 +23,8 @@ body {
     text-align: center;
     border: 1px solid #f8f5f5;
     margin-bottom: 20px;
+    background-image: url('images/logo.png');
+    background-size: cover;
 }
 
 .logo h2 {

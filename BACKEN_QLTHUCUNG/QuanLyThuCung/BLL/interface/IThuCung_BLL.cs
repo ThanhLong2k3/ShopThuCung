@@ -10,8 +10,11 @@ namespace BLL.Interface
     public partial  interface IThuCung_BLL
     {
         public List<V_ThuCung_DTO> Get_Top5_ThuCung();
+        public List<V_ThuCung_DTO> PhanTrang(int PageIndex, int PageSize);
+
         List<V_ThuCung_DTO> GetAll();
-        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax);
+        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax, int pagenumber, int pagesize);
+
         List<ThuCung_DTO> GetById(int id);
         List<V_ThuCung_DTO> Get_MaLoai(int id);
         int Create(ThuCung_DTO model);

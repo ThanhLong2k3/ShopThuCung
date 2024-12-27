@@ -10,6 +10,8 @@ namespace DAL.Interface
     public partial interface INhaCungCapRepository
     {
         public List<NhaCungCap_DTO> GetAll();
+        public List<NhaCungCap_DTO> PhanTrang(int PageIndex, int PageSize);
+
         public List<NhaCungCap_DTO> GetById(int id);
         public List<NhaCungCap_DTO> Search_NCC(string? ten,string? sdt);
         int Create(NhaCungCap_DTO model);

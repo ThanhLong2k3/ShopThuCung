@@ -31,7 +31,24 @@ namespace DAL
                 throw ex;
             }
         }
+        public List<NhanVien_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
 
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_NhanVien_Pagination",
+                    "@pageIndex", PageIndex,
+                    "@PageSize", PageSize);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<NhanVien_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<NhanVien_DTO> Search_NV(string? tennv, string? chucvu)
         {
             string msgError = "";

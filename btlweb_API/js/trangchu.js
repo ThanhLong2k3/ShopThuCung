@@ -5,7 +5,7 @@ var images = [
     "/anhpaner/pn3.jpg"
 ];
 
-var interval; // Variable to hold the interval ID
+var interval; 
 
 document.addEventListener('DOMContentLoaded', function () {
     hienThiSlide();
@@ -167,6 +167,7 @@ function getmaloai(id){
 let searchTimeoutNameTC;
 
 async function searThuCungName() {
+    debugger
     const name = document.getElementById("Search_name").value.trim();
     localStorage.setItem("NameThuCung",JSON.stringify(name));
     window.location.href="./Search_user.html";

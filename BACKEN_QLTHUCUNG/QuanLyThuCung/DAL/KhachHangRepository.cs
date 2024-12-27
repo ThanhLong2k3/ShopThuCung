@@ -62,7 +62,24 @@ namespace DAL
                 throw ex;
             }
         }
+        public List<KhachHang_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
 
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_KhachHang_Pagination",
+                    "@PageNumber", PageIndex,
+                    "@PageSize", PageSize);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<KhachHang_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<KhachHang_DTO> GetByTK(string id)
         {
             string msgError = "";

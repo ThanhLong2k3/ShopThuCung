@@ -9,6 +9,7 @@ const apiEndpoints = {
         delete: (MA) => `${localHot_AD}api/LoaiThuCung_CTRL/delete/${MA}`,
         getTop5:`${localHot_AD}api/LoaiThuCung_CTRL/get_top5`,
         getTop10:`${localHot_AD}api/LoaiThuCung_CTRL/get_top10`,
+        PhanTrang:(PageIndex)=>`${localHot_AD}api/LoaiThuCung_CTRL/PhanTrang?PageIndex=${PageIndex}&PageSize=${10}`
 
     },
     ThuCung: {
@@ -20,6 +21,7 @@ const apiEndpoints = {
         add: `${localHot_AD}api/ThuCung_CTRL/create`,
         update: `${localHot_AD}api/ThuCung_CTRL/update`,
         delete: (MA) => `${localHot_AD}api/ThuCung_CTRL/delete/${MA}`,
+        PhanTrang:(PageIndex)=>`${localHot_AD}api/ThuCung_CTRL/PhanTrang?PageIndex=${PageIndex}&PageSize=${10}`
     },
     NhanVien: {
         Search_NhanVien:`${localHot_AD}api/NhanVien_CTRL/Search_NV?`,
@@ -29,6 +31,8 @@ const apiEndpoints = {
         add: `${localHot_AD}api/NhanVien_CTRL/create`,
         update: `${localHot_AD}api/NhanVien_CTRL/update`,
         delete: (MA) => `${localHot_AD}api/NhanVien_CTRL/delete/${MA}`,
+        PhanTrang:(PageIndex)=>`${localHot_AD}api/NhanVien_CTRL/PhanTrang?PageIndex=${PageIndex}&PageSize=${10}`
+
     },
     NCC: {
         Search_NCC:`${localHot_AD}api/NhaCungCap_CTRL/Search_NCC?`,
@@ -37,6 +41,8 @@ const apiEndpoints = {
         add: `${localHot_AD}api/NhaCungCap_CTRL/create`,
         update: `${localHot_AD}api/NhaCungCap_CTRL/update`,
         delete: (MA) => `${localHot_AD}api/NhaCungCap_CTRL/delete/${MA}`,
+        PhanTrang:(PageIndex)=>`${localHot_AD}api/NhaCungCap_CTRL/PhanTrang?PageIndex=${PageIndex}&PageSize=${10}`
+
     },
     KHACHHANG: {
         Search_KH:`${localHot_AD}api/KhachHang_CTRL/Search_KH?`,
@@ -47,6 +53,8 @@ const apiEndpoints = {
         add: `${localHot_AD}api/KhachHang_CTRL/create`,
         update: `${localHot_AD}api/KhachHang_CTRL/update`,
         delete: (MA) => `${localHot_AD}api/KhachHang_CTRL/delete/${MA}`,
+        PhanTrang:(PageIndex)=>`${localHot_AD}api/KhachHang_CTRL/PhanTrang?PageIndex=${PageIndex}&PageSize=${10}`
+
     },
     DONNHAP: {
         Search_DN:`${localHot_AD}api/DonNhap_CTRL/Search_DonNhap?`,
@@ -55,6 +63,8 @@ const apiEndpoints = {
         add: `${localHot_AD}api/DonNhap_CTRL/create`,
         update: `${localHot_AD}api/DonNhap_CTRL/update`,
         delete: (MA) => `${localHot_AD}api/DonNhap_CTRL/delete/${MA}`,
+        PhanTrang:(PageIndex)=>`${localHot_AD}api/DonNhap_CTRL/PhanTrang?PageIndex=${PageIndex}&PageSize=${10}`
+
     },
     DONBAN:{
         Search_DonBan:`${localHot_AD}'api/DonBan_CTRL/SEARCH_DONBAN'`,
@@ -65,6 +75,8 @@ const apiEndpoints = {
         getByID_DonBan:(MA)=>`${localHot_AD}api/DonBan_CTRL/GetByMaDonBan?id=${MA}`,
         delete: (MA) => `${localHot_AD}api/DonBan_CTRL/delete/${MA}`,    
         update:`${localHot_AD}api/DonBan_CTRL/update`,
+        PhanTrang:(PageIndex)=>`${localHot_AD}api/DonBan_CTRL/PhanTrang?PageIndex=${PageIndex}&PageSize=${10}`
+
     },
     CTDONNHAP:{
         getAll: `${localHot_AD}api/CTDonNhap_CTRL/get_all`,
