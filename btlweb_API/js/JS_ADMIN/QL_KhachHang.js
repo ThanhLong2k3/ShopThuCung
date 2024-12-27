@@ -48,12 +48,12 @@ function close_Modal_KhachHang(id) {
     resetForm_KH();
 }
 
-async function loadkhachhang() {
+async function loadkhachhang(page=1) {
     const tableBody = $('.dskh');
     tableBody.html('<tr><td colspan="4">Đang tải dữ liệu...</td></tr>');
     let data;
     if (!Array.isArray(Search_KH) || Search_KH.length === 0) {
-        const get_all_KH = await getDaTa(apiEndpoints.KHACHHANG.getAll);
+        const get_all_KH = await getDaTa(apiEndpoints.KHACHHANG.PhanTrang(page));
         data = get_all_KH;
     } else {
         data = Search_KH;
@@ -153,3 +153,18 @@ function show_KhachHang()
 }
 
 
+
+document.getElementById('pagination_KhachHang').addEventListener('click', function (event) {
+    if (event.target.classList.contains('page-item')) {
+      document.querySelectorAll('.page-item').forEach(function (item) {
+        item.classList.remove('active');
+      });
+  
+      event.target.classList.add('active');
+      const activeValue = parseInt(event.target.textContent);
+      if(activeValue)
+      {
+        loadkhachhang(activeValue);
+      } 
+    }
+  });

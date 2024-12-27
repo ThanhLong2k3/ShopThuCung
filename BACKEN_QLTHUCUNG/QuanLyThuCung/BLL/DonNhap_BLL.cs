@@ -42,5 +42,10 @@ namespace BLL
         {
             return _res.Delete(id);
         }
+
+        public List<V_DonNhap_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
+            return _res.PhanTrang(PageIndex, PageSize);
+        }
     }
 }

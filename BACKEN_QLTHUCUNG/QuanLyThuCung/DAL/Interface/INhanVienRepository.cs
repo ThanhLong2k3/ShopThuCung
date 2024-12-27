@@ -10,6 +10,7 @@ namespace DAL.Interface
     public partial interface INhanVienRepository
     {
         public List<NhanVien_DTO> GetAll();
+        public List<NhanVien_DTO> PhanTrang(int PageIndex, int PageSize);
         public List<NhanVien_DTO> GetById(int id);
         public List<NhanVien_DTO> Search_NV(string ? tennv,string ? chucvu);
 

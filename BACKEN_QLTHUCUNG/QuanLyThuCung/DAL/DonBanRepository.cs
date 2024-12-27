@@ -33,6 +33,25 @@ namespace DAL
             }
         }
 
+        public List<V_DonBan_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
+
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_DonBan_Pagination",
+                    "@PageNumber", PageIndex,
+                    "@PageSize", PageSize);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<V_DonBan_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<V_DonBan_DTO> GetById(int id)
         {
             string msgError = "";

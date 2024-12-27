@@ -13,7 +13,13 @@ public class NhanVien_CTRL : ControllerBase
     {
         _nhanVienBLL = nhanVienBLL;
     }
-
+    [Route("PhanTrang")]
+    [HttpGet]
+    public ActionResult<List<NhanVien_DTO>> PhanTrang(int PageIndex, int PageSize)
+    {
+        var result = _nhanVienBLL.PhanTrang(PageIndex, PageSize);
+        return Ok(result);
+    }
     [Route("get_by_id")]
     [HttpGet]
     public ActionResult<List<NhanVien_DTO>> GetById(int id)

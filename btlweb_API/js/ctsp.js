@@ -45,13 +45,16 @@ async function addgh() {
     const maThuCung=parseInt(localStorage.getItem('masp'));
     let soluong = parseInt(document.getElementById('soluong').value); 
     let giohang_ID =await  getDaTa(apiEndpoints.GIOHANG.GETBYID_TK(maThuCung,taiKhoan));
-    
+    if(taiKhoan==null){
+        alert("Bạn chưa đăng nhập !");
+        return;
+    }
     if(giohang_ID.length>0)
     {
         await updateData_gh(apiEndpoints.GIOHANG.UPDATE_SL_1(taiKhoan,maThuCung,0));
         alert("Đã thêm sản phẩm vào giỏ hàng!");
     }
-    else if(giohang_ID.length==null && taiKhoan!=""){             
+    else{             
         let Hang={
             taiKhoan: taiKhoan,
             maThuCung: maThuCung,
@@ -60,9 +63,7 @@ async function addgh() {
         await addDonHang(apiEndpoints.GIOHANG.ADD,Hang);
         alert("Đã thêm sản phẩm vào giỏ hàng!");
     }
-    else{
-        alert("Bạn chưa đăng nhập !");
-    }
+    
     
 }
 let searchTimeoutNameTC;

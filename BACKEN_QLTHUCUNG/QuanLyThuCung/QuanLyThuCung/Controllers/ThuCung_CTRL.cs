@@ -14,6 +14,14 @@ public class ThuCung_CTRL : ControllerBase
         _thuCungBLL = thuCungBLL;
     }
 
+    [Route("PhanTrang")]
+    [HttpGet]
+    public ActionResult<List<V_ThuCung_DTO>> PhanTrang(int PageIndex, int PageSize)
+    {
+        var result = _thuCungBLL.PhanTrang(PageIndex, PageSize);
+        return Ok(result);
+    }
+
     [Route("get_by_id")]
     [HttpGet]
     public ActionResult<List<ThuCung_DTO>> GetById(int id)
@@ -47,9 +55,9 @@ public class ThuCung_CTRL : ControllerBase
 
     [Route("Search_ThuCung")]
     [HttpGet]
-    public ActionResult<List<V_ThuCung_DTO>> Search_ThuCung(string? ten, int ? ma, decimal? giamin, decimal? giamax)
+    public ActionResult<List<V_ThuCung_DTO>> Search_ThuCung(string? ten, int ? ma, decimal? giamin, decimal? giamax,int pagenumber,int pageSize)
     {
-        var result = _thuCungBLL.Search_ThuCung(ten, ma, giamin, giamax);
+        var result = _thuCungBLL.Search_ThuCung(ten, ma, giamin, giamax,pagenumber,pageSize);
         return Ok(result);
     }
 

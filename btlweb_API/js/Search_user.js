@@ -1,11 +1,21 @@
 async function searchname() {
     try {
         let NameThuCung = JSON.parse(localStorage.getItem("NameThuCung"));
-        let url = `${apiEndpoints.ThuCung.Search_ThuCung}${NameThuCung ? `ten=${encodeURIComponent(NameThuCung)}` : ''}`;
+        let url = `${apiEndpoints.ThuCung.Search_ThuCung}${NameThuCung ? `ten=${encodeURIComponent(NameThuCung)}&pagenumber=1&pageSize=10` : ''}`;
 
         let data = await getDaTa(url);
         if (data && Array.isArray(data) && data.length > 0) {
             let htmlarr = data.map(sp => createProductHTML(sp)).join('');
+            if(data.length>5)
+            {
+                            document.getElementById('page').innerHTML = `<div class="pagination">
+                            <span class="page-item active">1</span>
+                            <span class="page-item">2</span>
+                            <span class="page-item">3</span>
+                            <span class="page-item">4</span>
+                            <span class="page-item">5</span>
+                          </div>`;
+            }
             document.getElementById('Search_Loai').innerHTML = htmlarr;
             localStorage.removeItem("NameThuCung"); 
         } else {
@@ -20,7 +30,9 @@ async function searchname() {
 async function Get_TC_Ma() {
     try {
         let MaLoai = JSON.parse(localStorage.getItem("MaLoai"));
-        let data = await getDaTa(apiEndpoints.ThuCung.getByMa(MaLoai));
+        let url = `${apiEndpoints.ThuCung.Search_ThuCung}${MaLoai ? `ma=${encodeURIComponent(MaLoai)}&pagenumber=1&pageSize=10` : ''}`;
+
+        let data = await getDaTa(url);
 
         if (Array.isArray(data) && data.length > 0) {
             let htmlarr = data.map(sp => createProductHTML(sp)).join('');

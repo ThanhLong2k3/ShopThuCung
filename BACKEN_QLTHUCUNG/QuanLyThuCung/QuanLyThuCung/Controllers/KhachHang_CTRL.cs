@@ -13,7 +13,13 @@ public class KhachHang_CTRL : ControllerBase
     {
         _khachHangBLL = khachHangBLL;
     }
-
+    [Route("PhanTrang")]
+    [HttpGet]
+    public ActionResult<List<KhachHang_DTO>> PhanTrang(int PageIndex, int PageSize)
+    {
+        var result = _khachHangBLL.PhanTrang(PageIndex, PageSize);
+        return Ok(result);
+    }
     [Route("get_by_id")]
     [HttpGet]
     public ActionResult<List<KhachHang_DTO>> GetById(int id)

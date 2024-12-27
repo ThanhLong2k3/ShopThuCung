@@ -19,9 +19,9 @@ namespace BLL
             return _res.GetAll();
         }
 
-        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax)
+        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax, int pagenumber, int pagesize)
         {
-            return _res.Search_ThuCung(tenthucung, maloai, giabanmin,giabanmax);
+            return _res.Search_ThuCung(tenthucung, maloai, giabanmin,giabanmax,pagenumber,pagesize);
         }
         public List<V_ThuCung_DTO> Get_Top5_ThuCung()
         {
@@ -48,6 +48,11 @@ namespace BLL
         public bool Delete(int id)
         {
             return _res.Delete(id);
+        }
+
+        public List<V_ThuCung_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
+            return _res.PhanTrang(PageIndex, PageSize);
         }
     }
 }

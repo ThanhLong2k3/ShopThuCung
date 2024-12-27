@@ -10,6 +10,8 @@ namespace BLL.Interface
     public partial interface ILoai_BLL
     {
         List<QL_LoaiThuCung_DTO> GetAll();
+        public List<QL_LoaiThuCung_DTO> PhanTrang(int PageIndex, int PageSize);
+
         List<QL_LoaiThuCung_DTO> Get_Top5_Loai();
         List<QL_LoaiThuCung_DTO> Get_Top10_Loai();
 

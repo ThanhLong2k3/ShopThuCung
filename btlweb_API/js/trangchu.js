@@ -5,7 +5,7 @@ var images = [
     "/anhpaner/pn3.jpg"
 ];
 
-var interval; // Variable to hold the interval ID
+var interval; 
 
 document.addEventListener('DOMContentLoaded', function () {
     hienThiSlide();

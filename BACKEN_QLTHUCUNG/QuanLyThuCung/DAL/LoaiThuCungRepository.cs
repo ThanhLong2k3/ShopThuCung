@@ -137,5 +137,23 @@ namespace DAL
             }
         }
 
+        public List<QL_LoaiThuCung_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
+
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_Loai_Pagination",
+                    "@PageNumber", PageIndex,
+                    "@PageSize", PageSize);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<QL_LoaiThuCung_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

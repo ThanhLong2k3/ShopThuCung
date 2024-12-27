@@ -185,11 +185,11 @@ function formatDate(date) {
     let year = d.getFullYear();
     return `${day}/${month}/${year}`;
 }
-async function Show_List_DN() {
+async function Show_List_DN(page=1) {
     try {
         showSection('List_DonNhap');
         if (!Array.isArray(Search_DN) || Search_DN.length === 0) {
-            const get_all_DN = await getDaTa(apiEndpoints.DONNHAP.getAll);
+            const get_all_DN = await getDaTa(apiEndpoints.DONNHAP.PhanTrang(page));
             List_DonNhap = get_all_DN;
         } else {
             List_DonNhap = Search_DN;
@@ -509,3 +509,22 @@ async function UpTrangThai_DN() {
         
     }
 }
+
+
+
+
+document.getElementById('pagination_DonNhap').addEventListener('click', function (event) {
+    if (event.target.classList.contains('page-item')) {
+      document.querySelectorAll('.page-item').forEach(function (item) {
+        item.classList.remove('active');
+      });
+  
+      event.target.classList.add('active');
+
+      const activeValue = parseInt(event.target.textContent);
+      if(activeValue)
+      {
+        Show_List_DN(activeValue);
+      } 
+    }
+  });

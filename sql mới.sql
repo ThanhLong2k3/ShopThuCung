@@ -229,6 +229,7 @@ BEGIN
     SELECT * FROM NhanVien;
 END
 go
+GO
 -- Stored Procedure để lấy nhân viên theo ID
 CREATE PROCEDURE Get_NhanVien_ById
     @maNhanVien int
@@ -1363,16 +1364,22 @@ END
 GO
 
 -- 4. Search ThuCung
-CREATE PROCEDURE SearchThuCung
+CREATE OR ALTER PROCEDURE SearchThuCung
     @TenThuCung NVARCHAR(100) = NULL,
     @MaLoai INT = NULL,
     @GiaBanMin DECIMAL(18, 2) = NULL,
-    @GiaBanMax DECIMAL(18, 2) = NULL
+    @GiaBanMax DECIMAL(18, 2) = NULL,
+    @PageNumber INT = 1, -- Trang hiện tại
+    @PageSize INT = 10   -- Số bản ghi mỗi trang
 AS
 BEGIN
     DECLARE @SQL NVARCHAR(MAX)
-    SET @SQL = 'SELECT t.*, l.tenLoai FROM ThuCung t JOIN Loai l ON t.maLoai = l.maLoai WHERE 1=1'
+    SET @SQL = 'SELECT t.*, l.tenLoai 
+                FROM ThuCung t 
+                JOIN Loai l ON t.maLoai = l.maLoai 
+                WHERE 1=1'
     
+    -- Thêm các điều kiện tìm kiếm
     IF @TenThuCung IS NOT NULL
         SET @SQL = @SQL + ' AND t.tenThuCung LIKE ''%'' + @TenThuCung + ''%'''
     IF @MaLoai IS NOT NULL
@@ -1382,9 +1389,19 @@ BEGIN
     IF @GiaBanMax IS NOT NULL
         SET @SQL = @SQL + ' AND t.giaBan <= @GiaBanMax'
     
-    EXEC sp_executesql @SQL, N'@TenThuCung NVARCHAR(100), @MaLoai INT, @GiaBanMin DECIMAL(18, 2), @GiaBanMax DECIMAL(18, 2)', 
-                       @TenThuCung, @MaLoai, @GiaBanMin, @GiaBanMax
+    -- Thêm phân trang
+    SET @SQL = @SQL + ' ORDER BY t.maThuCung 
+                        OFFSET (@PageNumber - 1) * @PageSize ROWS 
+                        FETCH NEXT @PageSize ROWS ONLY'
+
+    -- Thực thi câu lệnh SQL với tham số
+    EXEC sp_executesql @SQL, 
+        N'@TenThuCung NVARCHAR(100), @MaLoai INT, @GiaBanMin DECIMAL(18, 2), @GiaBanMax DECIMAL(18, 2), @PageNumber INT, @PageSize INT', 
+        @TenThuCung, @MaLoai, @GiaBanMin, @GiaBanMax, @PageNumber, @PageSize
 END
+GO
+SELECT*FROM ThuCung
+exec SearchThuCung @MaLoai=5
 GO
 
 -- 5. Search DonNhap
@@ -1444,3 +1461,129 @@ BEGIN
 END
 GO
 
+----//PHAN TRANG
+
+CREATE PROCEDURE Get_NhanVien_Pagination
+    @pageIndex INT,        -- Trang hiện tại (bắt đầu từ 1)
+    @pageSize INT          -- Số lượng bản ghi mỗi trang
+AS
+BEGIN
+    SET NOCOUNT ON;        -- Tắt thông báo ảnh hưởng đến số lượng hàng
+
+    -- Tính toán vị trí bắt đầu
+    DECLARE @startRow INT = (@pageIndex - 1) * @pageSize;
+    SELECT maNhanVien,taiKhoan, tenNhanVien, diaChi, soDienThoai,chucVu,anhThe -- Các cột bạn muốn trả về
+    FROM NhanVien
+    ORDER BY maNhanVien                               -- Sắp xếp theo cột, có thể tùy chỉnh
+    OFFSET @startRow ROWS                             -- Bỏ qua số hàng
+    FETCH NEXT @pageSize ROWS ONLY;                   -- Lấy số lượng hàng tiếp theo
+END
+GO
+CREATE PROCEDURE Get_KhachHang_Pagination
+    @PageNumber INT,          -- Số trang
+    @PageSize INT             -- Số bản ghi trên mỗi trang
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT maKhachHang, taiKhoan, tenKhachHang, diaChi_KH, soDienThoai_KH
+    FROM KhachHang
+    ORDER BY maKhachHang
+    OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END
+GO
+
+CREATE PROCEDURE Get_NhaCungCap_Pagination
+    @PageNumber INT,
+    @PageSize INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT MaNhaCungCap, tenNhaCungCap, soDienThoai, diaChi
+    FROM NhaCungCap
+    ORDER BY MaNhaCungCap
+    OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END
+
+GO
+CREATE PROCEDURE Get_Loai_Pagination
+    @PageNumber INT,
+    @PageSize INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT maLoai, tenLoai
+    FROM Loai
+    ORDER BY maLoai
+    OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END
+
+GO
+CREATE PROCEDURE Get_ThuCung_Pagination
+    @PageNumber INT,
+    @PageSize INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT *,Loai.tenLoai FROM ThuCung inner join Loai on ThuCung.maLoai=Loai.maLoai
+    ORDER BY maThuCung
+    OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END
+GO
+CREATE PROCEDURE Get_DonNhap_Pagination
+    @PageNumber INT,   -- Số trang hiện tại (bắt đầu từ 1)
+    @PageSize INT      -- Số bản ghi trên mỗi trang
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        dn.trangThai,
+        nv.tenNhanVien,
+        dn.ngayNhap,
+        ncc.tenNhaCungCap,
+        ncc.soDienThoai,
+        ncc.diaChi,
+        dn.tongTien,
+        dn.maDonNhap
+    FROM DonNhap dn
+    INNER JOIN NhaCungCap ncc ON dn.maNhaCungCap = ncc.MaNhaCungCap
+    INNER JOIN NhanVien nv ON dn.maNhanVien = nv.maNhanVien
+    ORDER BY dn.maDonNhap DESC
+    OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END;
+GO
+CREATE PROCEDURE Get_DonBan_Pagination
+    @PageNumber INT,   -- Số trang hiện tại (bắt đầu từ 1)
+    @PageSize INT      -- Số bản ghi trên mỗi trang
+AS
+BEGIN
+    SET NOCOUNT ON;
+
+    SELECT 
+        db.maDonBan,
+        db.ngayBan,
+        db.maNhanVien,
+        db.maKhachHang,
+        db.tongTien,
+        db.trangThai,
+        nv.tenNhanVien,
+        kh.tenKhachHang,
+        kh.soDienThoai_KH,
+        kh.diaChi_KH
+    FROM DonBan db
+    FULL JOIN NhanVien nv ON db.maNhanVien = nv.maNhanVien
+    INNER JOIN KhachHang kh ON db.maKhachHang = kh.maKhachHang
+    ORDER BY db.maDonBan DESC
+    OFFSET (@PageNumber - 1) * @PageSize ROWS
+    FETCH NEXT @PageSize ROWS ONLY;
+END;
+GO

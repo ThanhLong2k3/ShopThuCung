@@ -13,6 +13,13 @@ public class DonNhap_CTRL : ControllerBase
     {
         _donNhapBLL = donNhapBLL;
     }
+    [Route("PhanTrang")]
+    [HttpGet]
+    public ActionResult<List<V_DonNhap_DTO>> PhanTrang(int PageIndex, int PageSize)
+    {
+        var result = _donNhapBLL.PhanTrang(PageIndex, PageSize);
+        return Ok(result);
+    }
 
     [Route("get_by_id")]
     [HttpGet]

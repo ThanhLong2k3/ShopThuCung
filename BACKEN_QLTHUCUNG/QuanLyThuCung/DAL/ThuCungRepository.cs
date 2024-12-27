@@ -31,13 +31,15 @@ namespace DAL
                 throw ex;
             }
         }
-       
-        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax)
+
+        public List<V_ThuCung_DTO> Search_ThuCung(string? tenthucung, int? maloai, decimal? giabanmin, decimal? giabanmax, int pagenumber, int pagesize)
         {
             string msgError = "";
             try
             {
-                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "SearchThuCung","@TenThuCung",tenthucung,"@MaLoai",maloai,"@GiaBanMin",giabanmin,"@GiaBanMax",giabanmax);
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "SearchThuCung","@TenThuCung",tenthucung,"@MaLoai",maloai,"@GiaBanMin",giabanmin,"@GiaBanMax",giabanmax,
+                    "@PageNumber",pagenumber,
+                    "@PageSize",pagesize);
                 if (!string.IsNullOrEmpty(msgError))
                     throw new Exception(msgError);
                 return dt.ConvertTo<V_ThuCung_DTO>().ToList();
@@ -62,7 +64,24 @@ namespace DAL
                 throw ex;
             }
         }
+        public List<V_ThuCung_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
 
+            string msgError = "";
+            try
+            {
+                var dt = _dbHelper.ExecuteSProcedureReturnDataTable(out msgError, "Get_ThuCung_Pagination",
+                    "@PageNumber", PageIndex,
+                    "@PageSize", PageSize);
+                if (!string.IsNullOrEmpty(msgError))
+                    throw new Exception(msgError);
+                return dt.ConvertTo<V_ThuCung_DTO>().ToList();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         public List<ThuCung_DTO> GetById(int id)
         {
             string msgError = "";

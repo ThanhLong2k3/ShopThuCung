@@ -46,5 +46,9 @@ namespace BLL
                 return _res.Search_NCC(ten, sdt);
             
         }
+        public List<NhaCungCap_DTO> PhanTrang(int PageIndex, int PageSize)
+        {
+            return _res.PhanTrang(PageIndex, PageSize);
+        }
     }
 }

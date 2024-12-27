@@ -10,6 +10,7 @@ namespace DAL.Interface
     public partial interface ILoaiThuCungRepository
     {
         public List<QL_LoaiThuCung_DTO> GetAll();
+        public List<QL_LoaiThuCung_DTO> PhanTrang(int PageIndex, int PageSize);
         public List<QL_LoaiThuCung_DTO> Get_Top5_Loai();
         public List<QL_LoaiThuCung_DTO> Get_Top10_Loai();
 
